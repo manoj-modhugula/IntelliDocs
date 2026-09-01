@@ -1,0 +1,81 @@
+# Dependencies
+node_modules/
+.npm/
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+*.egg-info/
+*.tsbuildinfo
+
+# Environment files (keep *.example)
+.env
+.env.local
+.env.*.local
+*.env
+!.env.example
+!**/.env.example
+!**/.env.local.example
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS / Finder
+.DS_Store
+Thumbs.db
+Library/
+
+# Logs
+*.log
+logs/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+coverage/
+coverage.xml
+test-results/
+playwright-report/
+results.xml
+
+# Terraform (directory removed; keep patterns if it returns)
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+
+# Certificates
+*.pem
+*.cert
+*.key
+
+# Misc
+*.bak
+*.tmp
+.aws-sam/
+
+# Generated artifacts
+benchmark_results.json
+claims_verification.json
+coverage.json
+measurement_results.json
+accuracy_results.json
+ragas_results.json
+advanced_retrieval_benchmark.json
+resume_benchmark_results.json
+resume_numbers.txt
+verification_results.json
+feature_verification_results.json

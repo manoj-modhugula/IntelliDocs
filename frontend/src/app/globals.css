@@ -1,0 +1,887 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  COLOR & UI PRINCIPLES (IntelliDocs)
+  ---------------------------------──
+  • ONE ACCENT (primary): Use for "this is important / interactive" only:
+    primary actions, links, selected/active states, tags, key icons. Keeps hierarchy clear.
+  • NEUTRALS everywhere else: Page background, body text, borders, glass surfaces.
+    No accent on large areas - use slate/gray so the accent stays meaningful.
+  • SEMANTIC only when needed: success (green), danger (red), warning (amber)
+    for status and destructive actions. Don’t use for decoration.
+  • WHERE NOT to use color: Large background fills, long body text, decorative
+    use everywhere. Prefer neutrals so primary and semantic colors stand out.
+*/
+
+:root {
+  /* --- Physics / Spring Tokens --------------------------------------------- */
+  --spring-bouncy: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --spring-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --spring-tight: cubic-bezier(0.4, 0, 0.2, 1);
+  /* --- Design Tokens (Best UI Principles) ---------------------------------── */
+  /* Safe area for mobile notches */
+  --sat: env(safe-area-inset-top);
+  --sar: env(safe-area-inset-right);
+  --sab: env(safe-area-inset-bottom);
+  --sal: env(safe-area-inset-left);
+  /* Spacing scale (8px base) */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  /* Transitions (snappy, instant feel) */
+  --ease-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-fast: 100ms;
+  --duration-normal: 150ms;
+  --duration-slow: 200ms;
+  /* Fully transparent glass - zero white fill, depth comes only from blur + border + shadow */
+  --glass-bg: transparent;
+  --glass-bg-strong: transparent;
+  --glass-bg-soft: transparent;
+  --glass-border: rgba(0, 0, 0, 0.1);
+  --glass-border-strong: rgba(0, 0, 0, 0.16);
+  --glass-shadow: 0 2px 12px rgba(15, 23, 42, 0.06), 0 1px 3px rgba(15, 23, 42, 0.04);
+  --glass-shadow-hover: 0 4px 18px rgba(15, 23, 42, 0.1), 0 2px 6px rgba(15, 23, 42, 0.06);
+  --glass-blur: 28px;
+}
+
+.dark {
+  --glass-bg: transparent;
+  --glass-bg-strong: transparent;
+  --glass-bg-soft: transparent;
+  --glass-border: rgba(255, 255, 255, 0.22);
+  --glass-border-strong: rgba(255, 255, 255, 0.32);
+  --glass-shadow: 0 2px 12px rgba(0, 0, 0, 0.2), 0 1px 4px rgba(0, 0, 0, 0.12);
+  --glass-shadow-hover: 0 4px 18px rgba(0, 0, 0, 0.28), 0 2px 6px rgba(0, 0, 0, 0.14);
+  --glass-blur: 28px;
+}
+
+@layer base {
+  * {
+    @apply border-slate-200 dark:border-slate-800;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-anchor: auto;
+  }
+
+  body {
+    @apply text-slate-900 dark:text-slate-100;
+    background: #ffffff;
+    overflow-y: scroll;
+  }
+
+  .dark body {
+    background: #000000;
+  }
+
+  /* GPU hints - applied only to elements that actually animate */
+  .gpu-layer {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  /* Custom scrollbar - minimal and smooth */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-300/70 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-400/80;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    @apply bg-slate-600/70;
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-500/80;
+  }
+
+  /* Focus visible for accessibility (WCAG 2.1) */
+  :focus-visible {
+    @apply outline-2 outline-slate-900 dark:outline-slate-300 outline-offset-2;
+  }
+}
+
+@layer components {
+  /*
+    Semantic color utilities - use these instead of raw sky/rose classes for consistency.
+    Primary (sky): links, primary actions, selected state, tags, accent icons.
+    Danger (rose): delete, errors. Success (emerald): confirmations. Warning (amber): caution.
+  */
+  .tag-accent {
+    background: transparent;
+    color: rgb(2 132 199);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(calc(var(--glass-blur) * 0.75));
+    -webkit-backdrop-filter: blur(calc(var(--glass-blur) * 0.75));
+  }
+  .text-primary {
+    @apply text-sky-600;
+  }
+  .dark .text-primary {
+    @apply text-sky-400;
+  }
+  .bg-primary-muted {
+    background: transparent;
+  }
+  .btn-primary {
+    background: transparent;
+    color: rgb(2 132 199);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(calc(var(--glass-blur) * 0.75));
+    -webkit-backdrop-filter: blur(calc(var(--glass-blur) * 0.75));
+  }
+  .btn-primary:hover {
+    background: transparent;
+  }
+  .text-danger {
+    @apply text-rose-600;
+  }
+  .dark .text-danger {
+    @apply text-rose-400;
+  }
+  .bg-danger-muted {
+    background: transparent;
+  }
+  .text-success {
+    @apply text-emerald-600;
+  }
+  .dark .text-success {
+    @apply text-emerald-400;
+  }
+  .text-warning {
+    @apply text-amber-600;
+  }
+  .dark .text-warning {
+    @apply text-amber-400;
+  }
+
+  /* Fully transparent frosted glass - zero fill, depth from blur + border + shadow only */
+  .glass {
+    background: transparent;
+    backdrop-filter: blur(var(--glass-blur)) saturate(1.6);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.6);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    /* Isolate each glass surface into its own paint layer */
+    isolation: isolate;
+  }
+
+  .glass-panel {
+    @apply glass rounded-2xl;
+  }
+
+  .glass-card {
+    @apply glass rounded-xl;
+  }
+
+  .glass-modal {
+    background: transparent;
+    backdrop-filter: blur(var(--glass-blur)) saturate(1.8);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.8);
+    border: 1px solid var(--glass-border-strong);
+    box-shadow: var(--glass-shadow-hover);
+  }
+
+  /* List rows / small info surfaces - same background as chat list, nav list, document list */
+  .info-row {
+    @apply glass rounded-lg;
+  }
+
+  /* Inline code / pills in descriptions - same foreground as panels */
+  .info-pill {
+    @apply glass rounded px-1 py-0.5;
+  }
+
+  /* Same “little bit of white” as nav bar items - background only (no extra border) */
+  .card-bg {
+    background: transparent;
+  }
+
+  .glass-input {
+    background: transparent;
+    backdrop-filter: blur(var(--glass-blur)) saturate(1.6);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.6);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+  }
+
+  /* Readable placeholders in dark mode for glass inputs and their input/textarea children */
+  .dark .glass-input::placeholder,
+  .dark .glass-input input::placeholder,
+  .dark .glass-input textarea::placeholder {
+    color: rgb(148 163 184); /* slate-400 */
+  }
+
+  /* Page content wrapper - F-pattern, max-width for readability */
+  .page-content {
+    @apply max-w-4xl mx-auto px-6;
+  }
+
+  .page-content-wide {
+    @apply max-w-5xl mx-auto px-6;
+  }
+
+  /* Smooth loading animations - GPU-friendly */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in var(--duration-normal) var(--ease-out) forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.25s var(--ease-out) forwards;
+  }
+
+  /* Typing indicator - lightweight bounce */
+  @keyframes bounce-dot {
+    0%,
+    60%,
+    100% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-4px);
+    }
+  }
+
+  .typing-dot {
+    animation: bounce-dot 0.8s ease-in-out infinite;
+  }
+
+  .typing-dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .typing-dot:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .typing-dot:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  /* Skeleton loading */
+  @keyframes skeleton-pulse {
+    0%,
+    100% {
+      opacity: 0.4;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  .skeleton {
+    @apply bg-slate-200 dark:bg-slate-800 rounded;
+    animation: skeleton-pulse 1.5s ease-in-out infinite;
+  }
+
+  /* Content visibility - render off-screen content lazily (memory/scroll perf) */
+  .content-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 100px;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Performance: GPU layer for animated/interactive elements */
+.gpu-layer {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+  /* Scroll regions: isolate layout/paint for smooth scroll */
+.scroll-region {
+  contain: layout paint;
+  overflow-anchor: auto;
+}
+
+/* Conversation list items - GPU-composited entrance, no Framer Motion JS overhead */
+.conv-list-item {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  animation: slide-in-left 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes slide-in-left {
+  from { opacity: 0; transform: translateX(-8px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Send button - CSS-only spring-like scale on hover/tap, zero JS overhead */
+.send-button {
+  transition: transform 140ms var(--spring-bouncy), color 100ms ease, opacity 100ms ease, box-shadow 140ms ease;
+}
+.send-button:not(:disabled):hover {
+  transform: scale(1.05);
+  box-shadow: var(--glass-shadow-hover);
+}
+.send-button:not(:disabled):active {
+  transform: scale(0.88);
+}
+
+/* Suggestion buttons - CSS-only hover lift, no Framer Motion */
+.suggestion-btn {
+  transition: transform 140ms var(--spring-bouncy), background-color 120ms ease, border-color 120ms ease, box-shadow 140ms ease;
+}
+.suggestion-btn:hover {
+  transform: scale(1.018);
+  box-shadow: var(--glass-shadow-hover);
+}
+.suggestion-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Upload floating icon - pure CSS bounce, no JS */
+.upload-float {
+  animation: float-up-bounce 3s ease-in-out infinite;
+}
+@keyframes float-up-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Hero CTA buttons - CSS-only micro-interaction, zero JS overhead */
+.hero-btn {
+  transition: transform 160ms var(--spring-bouncy), background-color 120ms ease, border-color 120ms ease, box-shadow 160ms ease;
+}
+.hero-btn:hover {
+  transform: scale(1.018);
+  box-shadow: var(--glass-shadow-hover);
+}
+.hero-btn:active {
+  transform: scale(0.98);
+}
+
+  /* --- Spring Animation Keyframes ---------------------------------------─ */
+@keyframes spring-in {
+  0% { opacity: 0; transform: scale(0.8) translateY(8px); }
+  60% { opacity: 1; transform: scale(1.04) translateY(-2px); }
+  80% { transform: scale(0.97) translateY(1px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+@keyframes spring-bounce-in {
+  0% { opacity: 0; transform: scale(0.5); }
+  60% { opacity: 1; transform: scale(1.15); }
+  80% { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
+
+@keyframes spring-slide-in-right {
+  0% { opacity: 0; transform: translateX(16px); }
+  60% { opacity: 1; transform: translateX(-3px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes spring-slide-in-left {
+  0% { opacity: 0; transform: translateX(-16px); }
+  60% { opacity: 1; transform: translateX(3px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes float-up {
+  0% { opacity: 0; transform: translateY(12px) scale(0.96); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(56, 189, 248, 0); }
+  50% { opacity: 0.85; box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15); }
+}
+
+.animate-spring-in {
+  animation: spring-in 0.35s var(--spring-bouncy) forwards;
+}
+
+.animate-spring-bounce-in {
+  animation: spring-bounce-in 0.4s var(--spring-bouncy) forwards;
+}
+
+.animate-spring-slide-right {
+  animation: spring-slide-in-right 0.3s var(--spring-smooth) forwards;
+}
+
+.animate-spring-slide-left {
+  animation: spring-slide-in-left 0.3s var(--spring-smooth) forwards;
+}
+
+.animate-float-up {
+  animation: float-up 0.3s var(--spring-smooth) forwards;
+}
+
+/* Cursor glow for streaming text */
+.streaming-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: currentColor;
+  margin-left: 1px;
+  vertical-align: text-bottom;
+  border-radius: 1px;
+  animation: cursor-blink 1.1s ease-in-out infinite, cursor-glow 2s ease-in-out infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes cursor-glow {
+  0%, 100% { box-shadow: 0 0 2px 0 rgba(56, 189, 248, 0); }
+  50% { box-shadow: 0 0 6px 2px rgba(56, 189, 248, 0.35); }
+}
+
+/* Scroll-to-bottom FAB */
+.scroll-to-bottom-fab {
+  position: fixed;
+  bottom: calc(2rem + env(safe-area-inset-bottom));
+  right: 1.5rem;
+  z-index: 30;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  backdrop-filter: blur(var(--glass-blur)) saturate(1.6);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.6);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  color: var(--text-slate-700, #334155);
+}
+
+.dark .scroll-to-bottom-fab {
+  color: var(--text-slate-300, #cbd5e1);
+}
+
+.scroll-to-bottom-fab:hover {
+  transform: scale(1.08);
+}
+
+.scroll-to-bottom-fab:active {
+  transform: scale(0.95);
+}
+
+/* --- KaTeX Math Styling ------------------------------------------------ */
+.katex {
+  font-size: 1.08em;
+  color: #1e293b; /* slate-800 */
+}
+
+.dark .katex {
+  color: #e2e8f0; /* slate-200 */
+}
+
+/* Display math (block equations) */
+.katex-display {
+  margin: 1rem 0;
+  padding: 0.875rem 1.25rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+  border-left: 3px solid #6366f1;
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+}
+
+.dark .katex-display {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  border-color: #334155;
+  border-left-color: #818cf8;
+}
+
+.katex-display > .katex {
+  color: #0f172a; /* slate-900 */
+}
+
+.dark .katex-display > .katex {
+  color: #f1f5f9; /* slate-100 */
+}
+
+/* Inline math */
+.prose .katex:not(.katex-display .katex) {
+  background: #f1f5f9;
+  padding: 0.125rem 0.3rem;
+  border-radius: 0.25rem;
+  border: 1px solid #e2e8f0;
+}
+
+.dark .prose .katex:not(.katex-display .katex) {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+/* --- Markdown Prose Enhancements --------------------------------------- */
+
+/* Tables */
+.prose table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: 0.875rem;
+}
+
+.prose th,
+.prose td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+}
+
+.dark .prose th,
+.dark .prose td {
+  border-color: #334155;
+}
+
+.prose th {
+  background: transparent;
+  font-weight: 600;
+  text-align: left;
+  color: #334155;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.dark .prose th {
+  background: transparent;
+  color: #cbd5e1;
+}
+
+.prose tr:nth-child(even) {
+  background: transparent;
+}
+
+.dark .prose tr:nth-child(even) {
+  background: transparent;
+}
+
+.prose tr:hover {
+  background: transparent;
+  opacity: 0.95;
+}
+
+.dark .prose tr:hover {
+  background: transparent;
+  opacity: 0.95;
+}
+
+.prose hr {
+  border-color: #e2e8f0;
+  margin: 1.5rem 0;
+}
+
+.dark .prose hr {
+  border-color: #334155;
+}
+
+/* Section headings inside responses */
+.prose h2 {
+  padding-bottom: 0.375rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.dark .prose h2 {
+  border-bottom-color: #334155;
+}
+
+.prose h3 {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.dark .prose h3 {
+  border-bottom-color: #1e293b;
+}
+
+/* Numbered/bulleted list polish */
+.prose ol > li::marker {
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.prose ul > li::marker {
+  color: #94a3b8;
+}
+
+/* Blockquote - same “little bit of white” as nav */
+.prose blockquote {
+  background: transparent;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 0.5rem 1rem;
+}
+
+.dark .prose blockquote {
+  background: transparent;
+}
+
+/* Prose overflow: prevent long strings/code from breaking chat bubbles */
+.prose pre {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.prose code {
+  word-break: break-all;
+}
+
+.prose pre code {
+  word-break: normal;
+}
+
+.prose img,
+.prose video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Arc-style: smooth overscroll */
+.overscroll-behavior-contain {
+  overscroll-behavior: contain;
+}
+
+/* --- Interactive Elements - Micro-interactions ------------------------------─ */
+
+/* Icon-only button - scale micro-interaction */
+.icon-btn {
+  transition: transform 130ms var(--spring-bouncy), color 90ms ease, background-color 90ms ease, box-shadow 130ms ease;
+}
+.icon-btn:hover {
+  transform: scale(1.08);
+  box-shadow: var(--glass-shadow);
+}
+.icon-btn:active {
+  transform: scale(0.92);
+}
+
+/* Conversation / sidebar list item - subtle glass lift on hover */
+.conv-item {
+  transition: transform 160ms var(--spring-bouncy), background-color 120ms ease, box-shadow 120ms ease, border-color 120ms ease;
+}
+.conv-item:hover {
+  transform: scale(1.01);
+  background-color: var(--glass-bg-strong);
+  box-shadow: var(--glass-shadow-hover);
+}
+.dark .conv-item:hover {
+  background-color: var(--glass-bg);
+}
+
+/* Document list item */
+.doc-item {
+  transition: background-color 120ms ease, transform 160ms var(--spring-bouncy), box-shadow 140ms ease;
+}
+.doc-item:hover {
+  transform: scale(1.01);
+  box-shadow: var(--glass-shadow-hover);
+}
+
+/* Feature cards on home page */
+.feature-card {
+  transition: transform 120ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 120ms ease;
+}
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+}
+.dark .feature-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* Tab toggle buttons */
+.tab-btn {
+  transition: background-color 120ms ease, color 100ms ease, transform 140ms var(--spring-bouncy), box-shadow 120ms ease;
+}
+.tab-btn:hover {
+  transform: scale(1.008);
+}
+.tab-btn:active {
+  transform: scale(0.97);
+}
+
+/* Scroll-to-bottom FAB */
+.scroll-to-bottom-fab {
+  position: fixed;
+  bottom: calc(2.5rem + env(safe-area-inset-bottom));
+  right: 1.5rem;
+  z-index: 30;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  backdrop-filter: blur(var(--glass-blur)) saturate(1.6);
+  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(1.6);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  color: var(--text-slate-600, #334155);
+  transition: transform 120ms cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 120ms ease;
+}
+.dark .scroll-to-bottom-fab {
+  color: var(--text-slate-300, #cbd5e1);
+}
+.scroll-to-bottom-fab:hover {
+  transform: scale(1.06);
+  box-shadow: var(--glass-shadow-hover);
+}
+.scroll-to-bottom-fab:active {
+  transform: scale(0.95);
+}
+
+/* Peek tooltip - conversation hover preview */
+.peek-tooltip {
+  position: fixed;
+  z-index: 200;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+/* Citation card - expand/collapse */
+.citation-card {
+  transition: background-color 120ms ease, transform 140ms var(--spring-bouncy), box-shadow 140ms ease;
+}
+.citation-card:hover {
+  transform: scale(1.01);
+  box-shadow: var(--glass-shadow-hover);
+}
+
+/* Action row buttons (copy, pin, citations) */
+.action-btn {
+  transition: transform 120ms var(--spring-bouncy), color 100ms ease, opacity 100ms ease;
+}
+.action-btn:hover {
+  transform: scale(1.04);
+}
+.action-btn:active {
+  transform: scale(0.95);
+}
+
+.glass-interactive {
+  transition:
+    background-color 120ms ease,
+    border-color 120ms ease,
+    box-shadow 150ms ease;
+}
+
+.glass-interactive:hover {
+  box-shadow: var(--glass-shadow-hover);
+  border-color: var(--glass-border-strong);
+}
+
+.glass-interactive:active {
+  opacity: 0.85;
+}
+
+.glass-depth {
+  transition: transform 200ms var(--spring-bouncy), box-shadow 200ms ease;
+}
+
+.glass-depth:hover {
+  transform: scale(1.008);
+}
+
+.glass-depth > .glass,
+.glass-depth > .glass-card,
+.glass-depth > .glass-panel {
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-chip {
+  background: transparent;
+  backdrop-filter: blur(calc(var(--glass-blur) * 0.75));
+  -webkit-backdrop-filter: blur(calc(var(--glass-blur) * 0.75));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.spring-fade-up {
+  animation: spring-fade-up 420ms var(--spring-smooth) both;
+}
+
+@keyframes spring-fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Workspace / select dropdowns */
+select.glass-select {
+  transition: box-shadow 100ms ease, border-color 100ms ease;
+}
+select.glass-select:focus {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}
