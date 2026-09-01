@@ -37,7 +37,7 @@ export default function RegisterPage() {
       await register(email, password, name || undefined);
       // Prefetch main routes before redirect so navigation feels instant
       ['/', '/chat', '/documents', '/workspaces', '/settings'].forEach((href) => router.prefetch(href));
-      router.push('/');
+      router.push('/chat');
     } catch (err) {
       // Error is handled by the store
     }

@@ -2,7 +2,7 @@
 
 import { useState, memo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { User, Sparkles, FileText, ChevronDown, ChevronUp, Copy, Check, Pin, PinOff, MessageCircle } from 'lucide-react';
+import { User, Sparkles, FileText, ChevronDown, ChevronUp, Copy, Check, Pin, PinOff, MessageCircle, BookOpen } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import remarkGfm from 'remark-gfm';
@@ -24,6 +24,7 @@ interface ChatMessageProps {
   followUpSuggestions?: string[];
   onFollowUpClick?: (text: string) => void;
   onAskAboutChunk?: (citation: Citation) => void;
+  onOpenSource?: (citation: Citation) => void;
 }
 
 const remarkPlugins = [remarkMath, remarkGfm];
@@ -200,6 +201,7 @@ export const ChatMessage = memo(function ChatMessage({
   followUpSuggestions,
   onFollowUpClick,
   onAskAboutChunk,
+  onOpenSource,
 }: ChatMessageProps) {
   const [showCitations, setShowCitations] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -381,6 +383,7 @@ export const ChatMessage = memo(function ChatMessage({
                     citation={citation}
                     index={index + 1}
                     onAskAboutChunk={citation.chunkId && onAskAboutChunk ? () => onAskAboutChunk(citation) : undefined}
+                    onOpenSource={onOpenSource ? () => onOpenSource(citation) : undefined}
                   />
                 </motion.div>
               ))}
@@ -412,10 +415,12 @@ const CitationCard = memo(function CitationCard({
   citation,
   index,
   onAskAboutChunk,
+  onOpenSource,
 }: {
   citation: Citation;
   index: number;
   onAskAboutChunk?: () => void;
+  onOpenSource?: () => void;
 }) {
   const [expanded, setExpanded] = useState(false);
 
@@ -448,20 +453,36 @@ const CitationCard = memo(function CitationCard({
           )}>
             {citation.chunkText}
           </p>
-          {onAskAboutChunk && (
-            <button
-              type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                onAskAboutChunk();
-              }}
-              className="action-btn mt-2 flex items-center gap-1.5 text-xs text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300"
-              title="Ask a follow-up about this passage"
-            >
-              <MessageCircle className="w-3.5 h-3.5" />
-              Ask about this
-            </button>
-          )}
+          <div className="mt-2 flex flex-wrap gap-2">
+            {onOpenSource && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onOpenSource();
+                }}
+                className="action-btn flex items-center gap-1.5 text-xs text-amber-800 dark:text-amber-300 hover:text-amber-950 dark:hover:text-amber-200"
+                title="Open this page in the source viewer"
+              >
+                <BookOpen className="w-3.5 h-3.5" />
+                Open page
+              </button>
+            )}
+            {onAskAboutChunk && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onAskAboutChunk();
+                }}
+                className="action-btn flex items-center gap-1.5 text-xs text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300"
+                title="Ask a follow-up about this passage"
+              >
+                <MessageCircle className="w-3.5 h-3.5" />
+                Ask about this
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>

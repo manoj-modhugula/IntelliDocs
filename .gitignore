@@ -62,6 +62,11 @@ results.xml
 *.cert
 *.key
 
+# Local document originals (source viewer)
+backend/data/
+backend/scripts/evaluation/fixtures/multimodal/*.pdf
+backend/scripts/evaluation/fixtures/hard/*.pdf
+
 # Misc
 *.bak
 *.tmp

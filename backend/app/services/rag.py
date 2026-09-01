@@ -65,7 +65,14 @@ CONTEXT FROM DOCUMENTS:
     def _format_context(self, chunks: List[tuple]) -> str:
         context_parts = []
         for i, (chunk, score) in enumerate(chunks, 1):
-            context_parts.append(f"[{i}] (Relevance: {score:.2f})\n{chunk.content}\n")
+            kind = getattr(chunk, "chunk_type", None)
+            kind = kind if isinstance(kind, str) and kind else "text"
+            caption = getattr(chunk, "caption", None)
+            caption = caption if isinstance(caption, str) and caption else ""
+            header = f"[{i}] ({kind}, relevance {score:.2f})"
+            if caption and caption not in (chunk.content or ""):
+                header += f"\nCaption: {caption}"
+            context_parts.append(f"{header}\n{chunk.content}\n")
         return "\n---\n".join(context_parts)
 
     def _detect_prompt_injection(self, query: str) -> bool:
@@ -226,6 +233,17 @@ CONTEXT FROM DOCUMENTS:
         
         citations = []
         for i, (chunk, score) in enumerate(chunks, 1):
+            bbox = None
+            x0, y0, x1, y1 = (
+                getattr(chunk, "bbox_x0", None),
+                getattr(chunk, "bbox_y0", None),
+                getattr(chunk, "bbox_x1", None),
+                getattr(chunk, "bbox_y1", None),
+            )
+            if all(isinstance(v, (int, float)) for v in (x0, y0, x1, y1)):
+                bbox = {"x0": float(x0), "y0": float(y0), "x1": float(x1), "y1": float(y1)}
+            kind = getattr(chunk, "chunk_type", None)
+            kind = kind if isinstance(kind, str) and kind else "text"
             citations.append({
                 "id": f"cite-{i}",
                 "chunkId": chunk.id,
@@ -234,8 +252,20 @@ CONTEXT FROM DOCUMENTS:
                 "pageNumber": chunk.page_number,
                 "chunkText": chunk.content[:200] + "..." if len(chunk.content) > 200 else chunk.content,
                 "relevanceScore": score,
+                "chunkType": kind,
+                "bbox": bbox,
             })
         return citations
+
+    def _ground_answer(self, answer: str, chunks: List[tuple], citations: List[dict]) -> tuple:
+        if not getattr(settings, "ENABLE_NLI_FILTER", True) or not answer:
+            return answer, citations, []
+        from app.services.grounding import filter_answer, filter_citations
+
+        filtered, dropped, kept_idx = filter_answer(answer, chunks)
+        if kept_idx:
+            citations = filter_citations(citations, kept_idx)
+        return filtered, citations, dropped
     
     async def answer(
         self,
@@ -344,6 +374,9 @@ CONTEXT FROM DOCUMENTS:
             }
         
         citations = await self._build_citations(chunks, db)
+        answer, citations, dropped = self._ground_answer(answer, chunks, citations)
+        if dropped:
+            self._log().info("NLI dropped %s unsupported claim(s)", len(dropped))
         
         result = {
             "answer": answer,
@@ -519,18 +552,19 @@ CONTEXT FROM DOCUMENTS:
 
         yield {"type": "status", "status": "thinking", "message": "Generating answer..."}
         citations = await self._build_citations(chunks, db)
-        yield {"type": "citations", "citations": citations}
 
         context = self._format_context(chunks)
         system = self.system_prompt.format(context=context)
         if skill_instruction:
             system += "\n\nADDITIONAL INSTRUCTION (user-selected, apply to this response): " + skill_instruction
 
+        nli_on = getattr(settings, "ENABLE_NLI_FILTER", True)
         full_answer = ""
         try:
             async for token in self._llm.generate_stream(query, system_prompt=system):
                 full_answer += token
-                yield {"type": "content", "content": token}
+                if not nli_on:
+                    yield {"type": "content", "content": token}
         except LLMRateLimitError as e:
             self._log().error(f"LLM rate limited during streaming: {e}")
             yield {"type": "error", "message": "AI service is busy, please retry", "error_type": "rate_limited"}
@@ -543,6 +577,19 @@ CONTEXT FROM DOCUMENTS:
         except Exception as e:
             self._log().error(f"Unexpected error during LLM streaming: {e}", exc_info=True)
             yield {"type": "error", "message": "An unexpected error occurred while generating a response. Please try again.", "error_type": "generation_failed"}
+
+        if nli_on and full_answer:
+            full_answer, citations, dropped = self._ground_answer(full_answer, chunks, citations)
+            if dropped:
+                self._log().info("NLI dropped %s unsupported claim(s)", len(dropped))
+
+        yield {"type": "citations", "citations": citations}
+        if nli_on and full_answer:
+            CHUNK = 200
+            for i in range(0, len(full_answer), CHUNK):
+                piece = full_answer[i : i + CHUNK]
+                if piece:
+                    yield {"type": "content", "content": piece}
 
         # Generate follow-up suggestions (non-blocking)
         if full_answer and not getattr(settings, "DISABLE_FOLLOW_UP_SUGGESTIONS", False):

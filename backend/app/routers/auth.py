@@ -7,7 +7,7 @@ import time
 from typing import Optional, Dict
 from collections import defaultdict
 from fastapi import APIRouter, HTTPException, status, Depends, Request
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import get_db
@@ -63,7 +63,7 @@ class LoginRequest(BaseModel):
 class RegisterRequest(BaseModel):
     """Registration request body."""
     email: EmailStr
-    password: str
+    password: str = Field(min_length=8, max_length=128)
     name: Optional[str] = None
 
 

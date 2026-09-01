@@ -433,6 +433,11 @@ const DocumentRow = memo(function DocumentRow({ document, workspaceName, isDelet
             </>
           )}
         </div>
+        {document.status === 'error' && document.errorMessage && (
+          <p className="mt-1 text-xs text-rose-600 dark:text-rose-400 truncate" title={document.errorMessage}>
+            {document.errorMessage}
+          </p>
+        )}
       </div>
 
       {/* Status */}

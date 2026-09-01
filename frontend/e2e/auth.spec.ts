@@ -8,7 +8,7 @@ test('register and redirect to chat', async ({ page }) => {
   });
 
   const ts = Date.now();
-  const email = `user-${ts}@intellidocs.test`;
+  const email = `user-${ts}@example.com`;
   const password = 'Test123!@#';
 
   await page.goto('/register');

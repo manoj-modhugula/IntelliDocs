@@ -4,8 +4,10 @@ Document management endpoints with multi-tenant isolation.
 
 import uuid
 import logging
+from io import BytesIO
 from typing import Optional, List
 from fastapi import APIRouter, Depends, HTTPException, Request, UploadFile, File, Form, BackgroundTasks
+from fastapi.responses import Response
 from pydantic import BaseModel, ConfigDict
 from sqlalchemy import select, or_
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -18,6 +20,7 @@ from app.core.rate_limit import upload_limiter
 from app.models import Document, DocumentStatus, Workspace, User
 from app.services.ingestion import ingestion_service
 from app.services.cache import cache_service
+from app.services.storage import storage_service
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
@@ -155,11 +158,23 @@ async def upload_document(
     
     # Create document record
     doc_id = documentId or str(uuid.uuid4())
+    try:
+        stored_key = await storage_service.upload_document(
+            file=BytesIO(file_bytes),
+            filename=file.filename,
+            content_type=content_type,
+            document_id=doc_id,
+        )
+    except Exception as e:
+        logger.error("Failed to store original file for %s: %s", doc_id, e)
+        raise HTTPException(status_code=500, detail="Failed to store document file")
+
     document = Document(
         id=doc_id,
         name=file.filename,
         file_type=content_type,
         file_size=file_size,
+        s3_key=stored_key,
         status=DocumentStatus.PENDING.value,
         workspace_id=effective_workspace,
         user_id=user.id if user else None,
@@ -265,6 +280,39 @@ async def get_document(
     )
 
 
+@router.get("/{document_id}/file")
+async def get_document_file(
+    document_id: str,
+    db: AsyncSession = Depends(get_db),
+    tenant: TenantContext = Depends(get_tenant_context),
+):
+    document = await db.get(Document, document_id)
+    if not document:
+        raise HTTPException(status_code=404, detail="Document not found")
+    if not await _user_can_access_document(db, tenant, document):
+        raise HTTPException(status_code=403, detail="Access denied")
+    if not document.s3_key:
+        raise HTTPException(status_code=404, detail="Original file is not available")
+    try:
+        data = await storage_service.download_document(document.s3_key)
+    except FileNotFoundError:
+        raise HTTPException(status_code=404, detail="Original file is not available")
+    except Exception as e:
+        logger.error("Failed to read file for document %s: %s", document_id, e)
+        raise HTTPException(status_code=500, detail="Failed to read document file")
+
+    media_type = document.file_type or "application/octet-stream"
+    filename = document.name or "document"
+    return Response(
+        content=data,
+        media_type=media_type,
+        headers={
+            "Content-Disposition": f'inline; filename="{filename}"',
+            "Cache-Control": "private, max-age=3600",
+        },
+    )
+
+
 @router.get("/{document_id}/status", response_model=DocumentStatusResponse)
 async def get_document_status(
     document_id: str,
@@ -346,8 +394,14 @@ async def delete_document(
     if not await _user_can_access_document(db, tenant, document):
         raise HTTPException(status_code=403, detail="Access denied")
     
+    stored_key = document.s3_key
     await db.delete(document)
     await db.commit()
+    if stored_key:
+        try:
+            await storage_service.delete_document(stored_key)
+        except Exception as e:
+            logger.warning("Failed to delete stored file %s: %s", stored_key, e)
     if tenant.user_id:
         await cache_service.delete(f"workspaces:user:{tenant.user_id}")
     logger.info(f"Document {document_id} deleted")

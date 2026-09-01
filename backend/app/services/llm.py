@@ -97,6 +97,20 @@ class LLMService:
         if "Write a brief" in prompt and "Question:" in prompt:
             q = prompt.split("Question:")[-1].split("\n")[0].strip()
             return f"IntelliDocs uses {q} for document intelligence. It uses RAG, pgvector, and hybrid search."
+        if system_prompt and "CONTEXT FROM DOCUMENTS" in system_prompt:
+            import re as _re
+            blob = system_prompt.split("CONTEXT FROM DOCUMENTS:", 1)[-1]
+            blocks = _re.findall(
+                r"\[\d+\].*?\n(.*?)(?:\n---|\Z)", blob, flags=_re.S
+            )
+            evidence = (blocks[0] if blocks else "").strip()
+            evidence = _re.sub(r"\s+", " ", evidence)
+            if evidence:
+                sentences = _re.split(r"(?<=[.!?])\s+", evidence)
+                grounded = " ".join(s for s in sentences[:3] if s.strip()).strip()
+                if grounded and not grounded.endswith((".", "?", "!")):
+                    grounded += "."
+                return f"{grounded} [1]" if grounded else "I could not find that in the documents."
         if system_prompt and "context" in system_prompt.lower():
             return "IntelliDocs is an AI document platform. PostgreSQL with pgvector, Redis caching, FastAPI, Next.js 14. AWS Bedrock for LLM and Titan embeddings. Hybrid search: semantic (pgvector) and keyword (BM25) with RRF. SSE streaming. Lambda and S3 for ingestion. Formats: PDF, DOCX, TXT, Markdown."
         return "IntelliDocs is an AI-powered document intelligence platform using RAG, pgvector, and hybrid search."

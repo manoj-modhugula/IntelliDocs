@@ -61,6 +61,25 @@ class TestRAGService:
         assert citations[0]["documentId"] == "doc-1"
         assert citations[0]["pageNumber"] == 5
         assert citations[0]["relevanceScore"] == 0.85
+
+    @pytest.mark.asyncio
+    async def test_build_citations_includes_bbox_and_type(self):
+        class C:
+            id = "chunk-1"
+            document_id = "doc-1"
+            page_number = 2
+            content = "| SKU | Price |"
+            chunk_type = "table"
+            bbox_x0 = 10.0
+            bbox_y0 = 20.0
+            bbox_x1 = 200.0
+            bbox_y1 = 80.0
+
+        mock_db = MagicMock()
+        mock_db.execute = AsyncMock(return_value=MagicMock(all=MagicMock(return_value=[])))
+        citations = await self.rag._build_citations([(C(), 0.7)], mock_db)
+        assert citations[0]["chunkType"] == "table"
+        assert citations[0]["bbox"] == {"x0": 10.0, "y0": 20.0, "x1": 200.0, "y1": 80.0}
     
     @pytest.mark.asyncio
     async def test_build_citations_truncates_long_content(self):

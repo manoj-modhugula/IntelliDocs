@@ -1,0 +1,21 @@
+{
+  "workspace_id": "eval-workspace",
+  "document": "fixtures/acme_refund_policy.pdf",
+  "cases": [
+    {
+      "question": "How long is the refund window after purchase?",
+      "relevant_keywords": ["14 days", "refund"],
+      "category": "policy"
+    },
+    {
+      "question": "Do digital gift cards qualify for a refund?",
+      "relevant_keywords": ["gift cards", "refund"],
+      "category": "policy"
+    },
+    {
+      "question": "What email should customers use for refund status?",
+      "relevant_keywords": ["refunds@acme.test", "refund"],
+      "category": "policy"
+    }
+  ]
+}

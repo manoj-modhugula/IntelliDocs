@@ -57,6 +57,14 @@
   --glass-blur: 28px;
 }
 
+.source-mark {
+  background: rgba(245, 215, 110, 0.7);
+  color: inherit;
+  padding: 0 0.1em;
+  border-radius: 0.15em;
+  box-decoration-break: clone;
+}
+
 .dark {
   --glass-bg: transparent;
   --glass-bg-strong: transparent;

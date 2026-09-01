@@ -62,6 +62,14 @@ class TestRouterInclusion:
         assert any("/prometheus" in r for r in routes)
 
 
+class TestBodyLimits:
+    def test_json_limit_is_10mb_and_uploads_are_50mb(self):
+        from app.main import _MAX_JSON_BYTES, _MAX_UPLOAD_BYTES
+
+        assert _MAX_JSON_BYTES == 10 * 1024 * 1024
+        assert _MAX_UPLOAD_BYTES == 50 * 1024 * 1024
+
+
 class TestCORSMiddleware:
     """Tests for CORS middleware."""
 

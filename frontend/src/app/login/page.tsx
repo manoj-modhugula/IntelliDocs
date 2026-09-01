@@ -21,7 +21,7 @@ export default function LoginPage() {
       await login(email, password);
       // Prefetch main routes before redirect so navigation feels instant
       ['/', '/chat', '/documents', '/workspaces', '/settings'].forEach((href) => router.prefetch(href));
-      router.push('/');
+      router.push('/chat');
     } catch (err) {
       // Error is handled by the store
     }

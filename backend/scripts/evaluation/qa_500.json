@@ -1,0 +1,5005 @@
+{
+  "workspace_id": "eval-multimodal",
+  "cases": [
+    {
+      "question": "How long does site 0 retain logs?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "What is the log retention period at site 0?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "Site 0 keeps logs for how many days?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "Which retention window applies to site 0?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "How many days of logs does site 0 store?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "What retention policy does site 0 use?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "For site 0, how long are logs kept?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 0.",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "Site 0 log retention duration?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "How long are records retained at site 0?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "Give the retention days used by site 0.",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "What is site 0's log keep period?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "Retention length for logs at site 0?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "How long does site 0 keep operational logs?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 0"
+      ],
+      "category": "text",
+      "document": "site_000.pdf",
+      "fact_id": "site-0-retention"
+    },
+    {
+      "question": "What is the price of SKU-N000?",
+      "relevant_keywords": [
+        "SKU-N000",
+        "10.99"
+      ],
+      "category": "table",
+      "document": "site_000.pdf",
+      "fact_id": "sku-0"
+    },
+    {
+      "question": "How much does SKU-N000 cost?",
+      "relevant_keywords": [
+        "SKU-N000",
+        "10.99"
+      ],
+      "category": "table",
+      "document": "site_000.pdf",
+      "fact_id": "sku-0"
+    },
+    {
+      "question": "Look up SKU-N000 in the price table.",
+      "relevant_keywords": [
+        "SKU-N000",
+        "10.99"
+      ],
+      "category": "table",
+      "document": "site_000.pdf",
+      "fact_id": "sku-0"
+    },
+    {
+      "question": "What does figure FIG-UNIT-000 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-000",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_000.pdf",
+      "fact_id": "fig-0"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-000.",
+      "relevant_keywords": [
+        "FIG-UNIT-000",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_000.pdf",
+      "fact_id": "fig-0"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-000?",
+      "relevant_keywords": [
+        "FIG-UNIT-000",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_000.pdf",
+      "fact_id": "fig-0"
+    },
+    {
+      "question": "How long does site 1 retain logs?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "What is the log retention period at site 1?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "Site 1 keeps logs for how many days?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "Which retention window applies to site 1?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "How many days of logs does site 1 store?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "What retention policy does site 1 use?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "For site 1, how long are logs kept?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 1.",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "Site 1 log retention duration?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "How long are records retained at site 1?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "Give the retention days used by site 1.",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "What is site 1's log keep period?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "Retention length for logs at site 1?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "How long does site 1 keep operational logs?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 1"
+      ],
+      "category": "text",
+      "document": "site_001.pdf",
+      "fact_id": "site-1-retention"
+    },
+    {
+      "question": "What is the price of SKU-N001?",
+      "relevant_keywords": [
+        "SKU-N001",
+        "11.99"
+      ],
+      "category": "table",
+      "document": "site_001.pdf",
+      "fact_id": "sku-1"
+    },
+    {
+      "question": "How much does SKU-N001 cost?",
+      "relevant_keywords": [
+        "SKU-N001",
+        "11.99"
+      ],
+      "category": "table",
+      "document": "site_001.pdf",
+      "fact_id": "sku-1"
+    },
+    {
+      "question": "Look up SKU-N001 in the price table.",
+      "relevant_keywords": [
+        "SKU-N001",
+        "11.99"
+      ],
+      "category": "table",
+      "document": "site_001.pdf",
+      "fact_id": "sku-1"
+    },
+    {
+      "question": "What does figure FIG-UNIT-001 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-001",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_001.pdf",
+      "fact_id": "fig-1"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-001.",
+      "relevant_keywords": [
+        "FIG-UNIT-001",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_001.pdf",
+      "fact_id": "fig-1"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-001?",
+      "relevant_keywords": [
+        "FIG-UNIT-001",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_001.pdf",
+      "fact_id": "fig-1"
+    },
+    {
+      "question": "How long does site 2 retain logs?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "What is the log retention period at site 2?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "Site 2 keeps logs for how many days?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "Which retention window applies to site 2?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "How many days of logs does site 2 store?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "What retention policy does site 2 use?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "For site 2, how long are logs kept?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 2.",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "Site 2 log retention duration?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "How long are records retained at site 2?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "Give the retention days used by site 2.",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "What is site 2's log keep period?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "Retention length for logs at site 2?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "How long does site 2 keep operational logs?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 2"
+      ],
+      "category": "text",
+      "document": "site_002.pdf",
+      "fact_id": "site-2-retention"
+    },
+    {
+      "question": "What is the price of SKU-N002?",
+      "relevant_keywords": [
+        "SKU-N002",
+        "12.99"
+      ],
+      "category": "table",
+      "document": "site_002.pdf",
+      "fact_id": "sku-2"
+    },
+    {
+      "question": "How much does SKU-N002 cost?",
+      "relevant_keywords": [
+        "SKU-N002",
+        "12.99"
+      ],
+      "category": "table",
+      "document": "site_002.pdf",
+      "fact_id": "sku-2"
+    },
+    {
+      "question": "Look up SKU-N002 in the price table.",
+      "relevant_keywords": [
+        "SKU-N002",
+        "12.99"
+      ],
+      "category": "table",
+      "document": "site_002.pdf",
+      "fact_id": "sku-2"
+    },
+    {
+      "question": "What does figure FIG-UNIT-002 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-002",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_002.pdf",
+      "fact_id": "fig-2"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-002.",
+      "relevant_keywords": [
+        "FIG-UNIT-002",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_002.pdf",
+      "fact_id": "fig-2"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-002?",
+      "relevant_keywords": [
+        "FIG-UNIT-002",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_002.pdf",
+      "fact_id": "fig-2"
+    },
+    {
+      "question": "How long does site 3 retain logs?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "What is the log retention period at site 3?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "Site 3 keeps logs for how many days?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "Which retention window applies to site 3?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "How many days of logs does site 3 store?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "What retention policy does site 3 use?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "For site 3, how long are logs kept?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 3.",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "Site 3 log retention duration?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "How long are records retained at site 3?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "Give the retention days used by site 3.",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "What is site 3's log keep period?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "Retention length for logs at site 3?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "How long does site 3 keep operational logs?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 3"
+      ],
+      "category": "text",
+      "document": "site_003.pdf",
+      "fact_id": "site-3-retention"
+    },
+    {
+      "question": "What is the price of SKU-N003?",
+      "relevant_keywords": [
+        "SKU-N003",
+        "13.99"
+      ],
+      "category": "table",
+      "document": "site_003.pdf",
+      "fact_id": "sku-3"
+    },
+    {
+      "question": "How much does SKU-N003 cost?",
+      "relevant_keywords": [
+        "SKU-N003",
+        "13.99"
+      ],
+      "category": "table",
+      "document": "site_003.pdf",
+      "fact_id": "sku-3"
+    },
+    {
+      "question": "Look up SKU-N003 in the price table.",
+      "relevant_keywords": [
+        "SKU-N003",
+        "13.99"
+      ],
+      "category": "table",
+      "document": "site_003.pdf",
+      "fact_id": "sku-3"
+    },
+    {
+      "question": "What does figure FIG-UNIT-003 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-003",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_003.pdf",
+      "fact_id": "fig-3"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-003.",
+      "relevant_keywords": [
+        "FIG-UNIT-003",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_003.pdf",
+      "fact_id": "fig-3"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-003?",
+      "relevant_keywords": [
+        "FIG-UNIT-003",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_003.pdf",
+      "fact_id": "fig-3"
+    },
+    {
+      "question": "How long does site 4 retain logs?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "What is the log retention period at site 4?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "Site 4 keeps logs for how many days?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "Which retention window applies to site 4?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "How many days of logs does site 4 store?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "What retention policy does site 4 use?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "For site 4, how long are logs kept?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 4.",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "Site 4 log retention duration?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "How long are records retained at site 4?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "Give the retention days used by site 4.",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "What is site 4's log keep period?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "Retention length for logs at site 4?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "How long does site 4 keep operational logs?",
+      "relevant_keywords": [
+        "11 days",
+        "Site 4"
+      ],
+      "category": "text",
+      "document": "site_004.pdf",
+      "fact_id": "site-4-retention"
+    },
+    {
+      "question": "What is the price of SKU-N004?",
+      "relevant_keywords": [
+        "SKU-N004",
+        "14.99"
+      ],
+      "category": "table",
+      "document": "site_004.pdf",
+      "fact_id": "sku-4"
+    },
+    {
+      "question": "How much does SKU-N004 cost?",
+      "relevant_keywords": [
+        "SKU-N004",
+        "14.99"
+      ],
+      "category": "table",
+      "document": "site_004.pdf",
+      "fact_id": "sku-4"
+    },
+    {
+      "question": "Look up SKU-N004 in the price table.",
+      "relevant_keywords": [
+        "SKU-N004",
+        "14.99"
+      ],
+      "category": "table",
+      "document": "site_004.pdf",
+      "fact_id": "sku-4"
+    },
+    {
+      "question": "What does figure FIG-UNIT-004 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-004",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_004.pdf",
+      "fact_id": "fig-4"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-004.",
+      "relevant_keywords": [
+        "FIG-UNIT-004",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_004.pdf",
+      "fact_id": "fig-4"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-004?",
+      "relevant_keywords": [
+        "FIG-UNIT-004",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_004.pdf",
+      "fact_id": "fig-4"
+    },
+    {
+      "question": "How long does site 5 retain logs?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "What is the log retention period at site 5?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "Site 5 keeps logs for how many days?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "Which retention window applies to site 5?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "How many days of logs does site 5 store?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "What retention policy does site 5 use?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "For site 5, how long are logs kept?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 5.",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "Site 5 log retention duration?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "How long are records retained at site 5?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "Give the retention days used by site 5.",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "What is site 5's log keep period?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "Retention length for logs at site 5?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "How long does site 5 keep operational logs?",
+      "relevant_keywords": [
+        "12 days",
+        "Site 5"
+      ],
+      "category": "text",
+      "document": "site_005.pdf",
+      "fact_id": "site-5-retention"
+    },
+    {
+      "question": "What is the price of SKU-N005?",
+      "relevant_keywords": [
+        "SKU-N005",
+        "15.99"
+      ],
+      "category": "table",
+      "document": "site_005.pdf",
+      "fact_id": "sku-5"
+    },
+    {
+      "question": "How much does SKU-N005 cost?",
+      "relevant_keywords": [
+        "SKU-N005",
+        "15.99"
+      ],
+      "category": "table",
+      "document": "site_005.pdf",
+      "fact_id": "sku-5"
+    },
+    {
+      "question": "Look up SKU-N005 in the price table.",
+      "relevant_keywords": [
+        "SKU-N005",
+        "15.99"
+      ],
+      "category": "table",
+      "document": "site_005.pdf",
+      "fact_id": "sku-5"
+    },
+    {
+      "question": "What does figure FIG-UNIT-005 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-005",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_005.pdf",
+      "fact_id": "fig-5"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-005.",
+      "relevant_keywords": [
+        "FIG-UNIT-005",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_005.pdf",
+      "fact_id": "fig-5"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-005?",
+      "relevant_keywords": [
+        "FIG-UNIT-005",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_005.pdf",
+      "fact_id": "fig-5"
+    },
+    {
+      "question": "How long does site 6 retain logs?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "What is the log retention period at site 6?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "Site 6 keeps logs for how many days?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "Which retention window applies to site 6?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "How many days of logs does site 6 store?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "What retention policy does site 6 use?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "For site 6, how long are logs kept?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 6.",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "Site 6 log retention duration?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "How long are records retained at site 6?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "Give the retention days used by site 6.",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "What is site 6's log keep period?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "Retention length for logs at site 6?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "How long does site 6 keep operational logs?",
+      "relevant_keywords": [
+        "13 days",
+        "Site 6"
+      ],
+      "category": "text",
+      "document": "site_006.pdf",
+      "fact_id": "site-6-retention"
+    },
+    {
+      "question": "What is the price of SKU-N006?",
+      "relevant_keywords": [
+        "SKU-N006",
+        "16.99"
+      ],
+      "category": "table",
+      "document": "site_006.pdf",
+      "fact_id": "sku-6"
+    },
+    {
+      "question": "How much does SKU-N006 cost?",
+      "relevant_keywords": [
+        "SKU-N006",
+        "16.99"
+      ],
+      "category": "table",
+      "document": "site_006.pdf",
+      "fact_id": "sku-6"
+    },
+    {
+      "question": "Look up SKU-N006 in the price table.",
+      "relevant_keywords": [
+        "SKU-N006",
+        "16.99"
+      ],
+      "category": "table",
+      "document": "site_006.pdf",
+      "fact_id": "sku-6"
+    },
+    {
+      "question": "What does figure FIG-UNIT-006 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-006",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_006.pdf",
+      "fact_id": "fig-6"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-006.",
+      "relevant_keywords": [
+        "FIG-UNIT-006",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_006.pdf",
+      "fact_id": "fig-6"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-006?",
+      "relevant_keywords": [
+        "FIG-UNIT-006",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_006.pdf",
+      "fact_id": "fig-6"
+    },
+    {
+      "question": "How long does site 7 retain logs?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "What is the log retention period at site 7?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "Site 7 keeps logs for how many days?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "Which retention window applies to site 7?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "How many days of logs does site 7 store?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "What retention policy does site 7 use?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "For site 7, how long are logs kept?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 7.",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "Site 7 log retention duration?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "How long are records retained at site 7?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "Give the retention days used by site 7.",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "What is site 7's log keep period?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "Retention length for logs at site 7?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "How long does site 7 keep operational logs?",
+      "relevant_keywords": [
+        "14 days",
+        "Site 7"
+      ],
+      "category": "text",
+      "document": "site_007.pdf",
+      "fact_id": "site-7-retention"
+    },
+    {
+      "question": "What is the price of SKU-N007?",
+      "relevant_keywords": [
+        "SKU-N007",
+        "17.99"
+      ],
+      "category": "table",
+      "document": "site_007.pdf",
+      "fact_id": "sku-7"
+    },
+    {
+      "question": "How much does SKU-N007 cost?",
+      "relevant_keywords": [
+        "SKU-N007",
+        "17.99"
+      ],
+      "category": "table",
+      "document": "site_007.pdf",
+      "fact_id": "sku-7"
+    },
+    {
+      "question": "Look up SKU-N007 in the price table.",
+      "relevant_keywords": [
+        "SKU-N007",
+        "17.99"
+      ],
+      "category": "table",
+      "document": "site_007.pdf",
+      "fact_id": "sku-7"
+    },
+    {
+      "question": "What does figure FIG-UNIT-007 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-007",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_007.pdf",
+      "fact_id": "fig-7"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-007.",
+      "relevant_keywords": [
+        "FIG-UNIT-007",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_007.pdf",
+      "fact_id": "fig-7"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-007?",
+      "relevant_keywords": [
+        "FIG-UNIT-007",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_007.pdf",
+      "fact_id": "fig-7"
+    },
+    {
+      "question": "How long does site 8 retain logs?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "What is the log retention period at site 8?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "Site 8 keeps logs for how many days?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "Which retention window applies to site 8?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "How many days of logs does site 8 store?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "What retention policy does site 8 use?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "For site 8, how long are logs kept?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 8.",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "Site 8 log retention duration?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "How long are records retained at site 8?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "Give the retention days used by site 8.",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "What is site 8's log keep period?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "Retention length for logs at site 8?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "How long does site 8 keep operational logs?",
+      "relevant_keywords": [
+        "15 days",
+        "Site 8"
+      ],
+      "category": "text",
+      "document": "site_008.pdf",
+      "fact_id": "site-8-retention"
+    },
+    {
+      "question": "What is the price of SKU-N008?",
+      "relevant_keywords": [
+        "SKU-N008",
+        "18.99"
+      ],
+      "category": "table",
+      "document": "site_008.pdf",
+      "fact_id": "sku-8"
+    },
+    {
+      "question": "How much does SKU-N008 cost?",
+      "relevant_keywords": [
+        "SKU-N008",
+        "18.99"
+      ],
+      "category": "table",
+      "document": "site_008.pdf",
+      "fact_id": "sku-8"
+    },
+    {
+      "question": "Look up SKU-N008 in the price table.",
+      "relevant_keywords": [
+        "SKU-N008",
+        "18.99"
+      ],
+      "category": "table",
+      "document": "site_008.pdf",
+      "fact_id": "sku-8"
+    },
+    {
+      "question": "What does figure FIG-UNIT-008 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-008",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_008.pdf",
+      "fact_id": "fig-8"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-008.",
+      "relevant_keywords": [
+        "FIG-UNIT-008",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_008.pdf",
+      "fact_id": "fig-8"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-008?",
+      "relevant_keywords": [
+        "FIG-UNIT-008",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_008.pdf",
+      "fact_id": "fig-8"
+    },
+    {
+      "question": "How long does site 9 retain logs?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "What is the log retention period at site 9?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "Site 9 keeps logs for how many days?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "Which retention window applies to site 9?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "How many days of logs does site 9 store?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "What retention policy does site 9 use?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "For site 9, how long are logs kept?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 9.",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "Site 9 log retention duration?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "How long are records retained at site 9?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "Give the retention days used by site 9.",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "What is site 9's log keep period?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "Retention length for logs at site 9?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "How long does site 9 keep operational logs?",
+      "relevant_keywords": [
+        "16 days",
+        "Site 9"
+      ],
+      "category": "text",
+      "document": "site_009.pdf",
+      "fact_id": "site-9-retention"
+    },
+    {
+      "question": "What is the price of SKU-N009?",
+      "relevant_keywords": [
+        "SKU-N009",
+        "19.99"
+      ],
+      "category": "table",
+      "document": "site_009.pdf",
+      "fact_id": "sku-9"
+    },
+    {
+      "question": "How much does SKU-N009 cost?",
+      "relevant_keywords": [
+        "SKU-N009",
+        "19.99"
+      ],
+      "category": "table",
+      "document": "site_009.pdf",
+      "fact_id": "sku-9"
+    },
+    {
+      "question": "Look up SKU-N009 in the price table.",
+      "relevant_keywords": [
+        "SKU-N009",
+        "19.99"
+      ],
+      "category": "table",
+      "document": "site_009.pdf",
+      "fact_id": "sku-9"
+    },
+    {
+      "question": "What does figure FIG-UNIT-009 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-009",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_009.pdf",
+      "fact_id": "fig-9"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-009.",
+      "relevant_keywords": [
+        "FIG-UNIT-009",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_009.pdf",
+      "fact_id": "fig-9"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-009?",
+      "relevant_keywords": [
+        "FIG-UNIT-009",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_009.pdf",
+      "fact_id": "fig-9"
+    },
+    {
+      "question": "How long does site 10 retain logs?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "What is the log retention period at site 10?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "Site 10 keeps logs for how many days?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "Which retention window applies to site 10?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "How many days of logs does site 10 store?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "What retention policy does site 10 use?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "For site 10, how long are logs kept?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 10.",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "Site 10 log retention duration?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "How long are records retained at site 10?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "Give the retention days used by site 10.",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "What is site 10's log keep period?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "Retention length for logs at site 10?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "How long does site 10 keep operational logs?",
+      "relevant_keywords": [
+        "17 days",
+        "Site 10"
+      ],
+      "category": "text",
+      "document": "site_010.pdf",
+      "fact_id": "site-10-retention"
+    },
+    {
+      "question": "What is the price of SKU-N010?",
+      "relevant_keywords": [
+        "SKU-N010",
+        "20.99"
+      ],
+      "category": "table",
+      "document": "site_010.pdf",
+      "fact_id": "sku-10"
+    },
+    {
+      "question": "How much does SKU-N010 cost?",
+      "relevant_keywords": [
+        "SKU-N010",
+        "20.99"
+      ],
+      "category": "table",
+      "document": "site_010.pdf",
+      "fact_id": "sku-10"
+    },
+    {
+      "question": "Look up SKU-N010 in the price table.",
+      "relevant_keywords": [
+        "SKU-N010",
+        "20.99"
+      ],
+      "category": "table",
+      "document": "site_010.pdf",
+      "fact_id": "sku-10"
+    },
+    {
+      "question": "What does figure FIG-UNIT-010 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-010",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_010.pdf",
+      "fact_id": "fig-10"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-010.",
+      "relevant_keywords": [
+        "FIG-UNIT-010",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_010.pdf",
+      "fact_id": "fig-10"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-010?",
+      "relevant_keywords": [
+        "FIG-UNIT-010",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_010.pdf",
+      "fact_id": "fig-10"
+    },
+    {
+      "question": "How long does site 11 retain logs?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "What is the log retention period at site 11?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "Site 11 keeps logs for how many days?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "Which retention window applies to site 11?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "How many days of logs does site 11 store?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "What retention policy does site 11 use?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "For site 11, how long are logs kept?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 11.",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "Site 11 log retention duration?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "How long are records retained at site 11?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "Give the retention days used by site 11.",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "What is site 11's log keep period?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "Retention length for logs at site 11?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "How long does site 11 keep operational logs?",
+      "relevant_keywords": [
+        "18 days",
+        "Site 11"
+      ],
+      "category": "text",
+      "document": "site_011.pdf",
+      "fact_id": "site-11-retention"
+    },
+    {
+      "question": "What is the price of SKU-N011?",
+      "relevant_keywords": [
+        "SKU-N011",
+        "21.99"
+      ],
+      "category": "table",
+      "document": "site_011.pdf",
+      "fact_id": "sku-11"
+    },
+    {
+      "question": "How much does SKU-N011 cost?",
+      "relevant_keywords": [
+        "SKU-N011",
+        "21.99"
+      ],
+      "category": "table",
+      "document": "site_011.pdf",
+      "fact_id": "sku-11"
+    },
+    {
+      "question": "Look up SKU-N011 in the price table.",
+      "relevant_keywords": [
+        "SKU-N011",
+        "21.99"
+      ],
+      "category": "table",
+      "document": "site_011.pdf",
+      "fact_id": "sku-11"
+    },
+    {
+      "question": "What does figure FIG-UNIT-011 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-011",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_011.pdf",
+      "fact_id": "fig-11"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-011.",
+      "relevant_keywords": [
+        "FIG-UNIT-011",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_011.pdf",
+      "fact_id": "fig-11"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-011?",
+      "relevant_keywords": [
+        "FIG-UNIT-011",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_011.pdf",
+      "fact_id": "fig-11"
+    },
+    {
+      "question": "How long does site 12 retain logs?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "What is the log retention period at site 12?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "Site 12 keeps logs for how many days?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "Which retention window applies to site 12?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "How many days of logs does site 12 store?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "What retention policy does site 12 use?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "For site 12, how long are logs kept?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 12.",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "Site 12 log retention duration?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "How long are records retained at site 12?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "Give the retention days used by site 12.",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "What is site 12's log keep period?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "Retention length for logs at site 12?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "How long does site 12 keep operational logs?",
+      "relevant_keywords": [
+        "19 days",
+        "Site 12"
+      ],
+      "category": "text",
+      "document": "site_012.pdf",
+      "fact_id": "site-12-retention"
+    },
+    {
+      "question": "What is the price of SKU-N012?",
+      "relevant_keywords": [
+        "SKU-N012",
+        "22.99"
+      ],
+      "category": "table",
+      "document": "site_012.pdf",
+      "fact_id": "sku-12"
+    },
+    {
+      "question": "How much does SKU-N012 cost?",
+      "relevant_keywords": [
+        "SKU-N012",
+        "22.99"
+      ],
+      "category": "table",
+      "document": "site_012.pdf",
+      "fact_id": "sku-12"
+    },
+    {
+      "question": "Look up SKU-N012 in the price table.",
+      "relevant_keywords": [
+        "SKU-N012",
+        "22.99"
+      ],
+      "category": "table",
+      "document": "site_012.pdf",
+      "fact_id": "sku-12"
+    },
+    {
+      "question": "What does figure FIG-UNIT-012 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-012",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_012.pdf",
+      "fact_id": "fig-12"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-012.",
+      "relevant_keywords": [
+        "FIG-UNIT-012",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_012.pdf",
+      "fact_id": "fig-12"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-012?",
+      "relevant_keywords": [
+        "FIG-UNIT-012",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_012.pdf",
+      "fact_id": "fig-12"
+    },
+    {
+      "question": "How long does site 13 retain logs?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "What is the log retention period at site 13?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "Site 13 keeps logs for how many days?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "Which retention window applies to site 13?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "How many days of logs does site 13 store?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "What retention policy does site 13 use?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "For site 13, how long are logs kept?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 13.",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "Site 13 log retention duration?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "How long are records retained at site 13?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "Give the retention days used by site 13.",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "What is site 13's log keep period?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "Retention length for logs at site 13?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "How long does site 13 keep operational logs?",
+      "relevant_keywords": [
+        "20 days",
+        "Site 13"
+      ],
+      "category": "text",
+      "document": "site_013.pdf",
+      "fact_id": "site-13-retention"
+    },
+    {
+      "question": "What is the price of SKU-N013?",
+      "relevant_keywords": [
+        "SKU-N013",
+        "23.99"
+      ],
+      "category": "table",
+      "document": "site_013.pdf",
+      "fact_id": "sku-13"
+    },
+    {
+      "question": "How much does SKU-N013 cost?",
+      "relevant_keywords": [
+        "SKU-N013",
+        "23.99"
+      ],
+      "category": "table",
+      "document": "site_013.pdf",
+      "fact_id": "sku-13"
+    },
+    {
+      "question": "Look up SKU-N013 in the price table.",
+      "relevant_keywords": [
+        "SKU-N013",
+        "23.99"
+      ],
+      "category": "table",
+      "document": "site_013.pdf",
+      "fact_id": "sku-13"
+    },
+    {
+      "question": "What does figure FIG-UNIT-013 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-013",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_013.pdf",
+      "fact_id": "fig-13"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-013.",
+      "relevant_keywords": [
+        "FIG-UNIT-013",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_013.pdf",
+      "fact_id": "fig-13"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-013?",
+      "relevant_keywords": [
+        "FIG-UNIT-013",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_013.pdf",
+      "fact_id": "fig-13"
+    },
+    {
+      "question": "How long does site 14 retain logs?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "What is the log retention period at site 14?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "Site 14 keeps logs for how many days?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "Which retention window applies to site 14?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "How many days of logs does site 14 store?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "What retention policy does site 14 use?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "For site 14, how long are logs kept?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 14.",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "Site 14 log retention duration?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "How long are records retained at site 14?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "Give the retention days used by site 14.",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "What is site 14's log keep period?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "Retention length for logs at site 14?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "How long does site 14 keep operational logs?",
+      "relevant_keywords": [
+        "21 days",
+        "Site 14"
+      ],
+      "category": "text",
+      "document": "site_014.pdf",
+      "fact_id": "site-14-retention"
+    },
+    {
+      "question": "What is the price of SKU-N014?",
+      "relevant_keywords": [
+        "SKU-N014",
+        "24.99"
+      ],
+      "category": "table",
+      "document": "site_014.pdf",
+      "fact_id": "sku-14"
+    },
+    {
+      "question": "How much does SKU-N014 cost?",
+      "relevant_keywords": [
+        "SKU-N014",
+        "24.99"
+      ],
+      "category": "table",
+      "document": "site_014.pdf",
+      "fact_id": "sku-14"
+    },
+    {
+      "question": "Look up SKU-N014 in the price table.",
+      "relevant_keywords": [
+        "SKU-N014",
+        "24.99"
+      ],
+      "category": "table",
+      "document": "site_014.pdf",
+      "fact_id": "sku-14"
+    },
+    {
+      "question": "What does figure FIG-UNIT-014 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-014",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_014.pdf",
+      "fact_id": "fig-14"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-014.",
+      "relevant_keywords": [
+        "FIG-UNIT-014",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_014.pdf",
+      "fact_id": "fig-14"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-014?",
+      "relevant_keywords": [
+        "FIG-UNIT-014",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_014.pdf",
+      "fact_id": "fig-14"
+    },
+    {
+      "question": "How long does site 15 retain logs?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "What is the log retention period at site 15?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "Site 15 keeps logs for how many days?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "Which retention window applies to site 15?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "How many days of logs does site 15 store?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "What retention policy does site 15 use?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "For site 15, how long are logs kept?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 15.",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "Site 15 log retention duration?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "How long are records retained at site 15?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "Give the retention days used by site 15.",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "What is site 15's log keep period?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "Retention length for logs at site 15?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "How long does site 15 keep operational logs?",
+      "relevant_keywords": [
+        "22 days",
+        "Site 15"
+      ],
+      "category": "text",
+      "document": "site_015.pdf",
+      "fact_id": "site-15-retention"
+    },
+    {
+      "question": "What is the price of SKU-N015?",
+      "relevant_keywords": [
+        "SKU-N015",
+        "25.99"
+      ],
+      "category": "table",
+      "document": "site_015.pdf",
+      "fact_id": "sku-15"
+    },
+    {
+      "question": "How much does SKU-N015 cost?",
+      "relevant_keywords": [
+        "SKU-N015",
+        "25.99"
+      ],
+      "category": "table",
+      "document": "site_015.pdf",
+      "fact_id": "sku-15"
+    },
+    {
+      "question": "Look up SKU-N015 in the price table.",
+      "relevant_keywords": [
+        "SKU-N015",
+        "25.99"
+      ],
+      "category": "table",
+      "document": "site_015.pdf",
+      "fact_id": "sku-15"
+    },
+    {
+      "question": "What does figure FIG-UNIT-015 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-015",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_015.pdf",
+      "fact_id": "fig-15"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-015.",
+      "relevant_keywords": [
+        "FIG-UNIT-015",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_015.pdf",
+      "fact_id": "fig-15"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-015?",
+      "relevant_keywords": [
+        "FIG-UNIT-015",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_015.pdf",
+      "fact_id": "fig-15"
+    },
+    {
+      "question": "How long does site 16 retain logs?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "What is the log retention period at site 16?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "Site 16 keeps logs for how many days?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "Which retention window applies to site 16?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "How many days of logs does site 16 store?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "What retention policy does site 16 use?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "For site 16, how long are logs kept?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 16.",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "Site 16 log retention duration?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "How long are records retained at site 16?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "Give the retention days used by site 16.",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "What is site 16's log keep period?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "Retention length for logs at site 16?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "How long does site 16 keep operational logs?",
+      "relevant_keywords": [
+        "23 days",
+        "Site 16"
+      ],
+      "category": "text",
+      "document": "site_016.pdf",
+      "fact_id": "site-16-retention"
+    },
+    {
+      "question": "What is the price of SKU-N016?",
+      "relevant_keywords": [
+        "SKU-N016",
+        "26.99"
+      ],
+      "category": "table",
+      "document": "site_016.pdf",
+      "fact_id": "sku-16"
+    },
+    {
+      "question": "How much does SKU-N016 cost?",
+      "relevant_keywords": [
+        "SKU-N016",
+        "26.99"
+      ],
+      "category": "table",
+      "document": "site_016.pdf",
+      "fact_id": "sku-16"
+    },
+    {
+      "question": "Look up SKU-N016 in the price table.",
+      "relevant_keywords": [
+        "SKU-N016",
+        "26.99"
+      ],
+      "category": "table",
+      "document": "site_016.pdf",
+      "fact_id": "sku-16"
+    },
+    {
+      "question": "What does figure FIG-UNIT-016 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-016",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_016.pdf",
+      "fact_id": "fig-16"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-016.",
+      "relevant_keywords": [
+        "FIG-UNIT-016",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_016.pdf",
+      "fact_id": "fig-16"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-016?",
+      "relevant_keywords": [
+        "FIG-UNIT-016",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_016.pdf",
+      "fact_id": "fig-16"
+    },
+    {
+      "question": "How long does site 17 retain logs?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "What is the log retention period at site 17?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "Site 17 keeps logs for how many days?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "Which retention window applies to site 17?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "How many days of logs does site 17 store?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "What retention policy does site 17 use?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "For site 17, how long are logs kept?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 17.",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "Site 17 log retention duration?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "How long are records retained at site 17?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "Give the retention days used by site 17.",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "What is site 17's log keep period?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "Retention length for logs at site 17?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "How long does site 17 keep operational logs?",
+      "relevant_keywords": [
+        "24 days",
+        "Site 17"
+      ],
+      "category": "text",
+      "document": "site_017.pdf",
+      "fact_id": "site-17-retention"
+    },
+    {
+      "question": "What is the price of SKU-N017?",
+      "relevant_keywords": [
+        "SKU-N017",
+        "27.99"
+      ],
+      "category": "table",
+      "document": "site_017.pdf",
+      "fact_id": "sku-17"
+    },
+    {
+      "question": "How much does SKU-N017 cost?",
+      "relevant_keywords": [
+        "SKU-N017",
+        "27.99"
+      ],
+      "category": "table",
+      "document": "site_017.pdf",
+      "fact_id": "sku-17"
+    },
+    {
+      "question": "Look up SKU-N017 in the price table.",
+      "relevant_keywords": [
+        "SKU-N017",
+        "27.99"
+      ],
+      "category": "table",
+      "document": "site_017.pdf",
+      "fact_id": "sku-17"
+    },
+    {
+      "question": "What does figure FIG-UNIT-017 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-017",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_017.pdf",
+      "fact_id": "fig-17"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-017.",
+      "relevant_keywords": [
+        "FIG-UNIT-017",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_017.pdf",
+      "fact_id": "fig-17"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-017?",
+      "relevant_keywords": [
+        "FIG-UNIT-017",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_017.pdf",
+      "fact_id": "fig-17"
+    },
+    {
+      "question": "How long does site 18 retain logs?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "What is the log retention period at site 18?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "Site 18 keeps logs for how many days?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "Which retention window applies to site 18?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "How many days of logs does site 18 store?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "What retention policy does site 18 use?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "For site 18, how long are logs kept?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 18.",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "Site 18 log retention duration?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "How long are records retained at site 18?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "Give the retention days used by site 18.",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "What is site 18's log keep period?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "Retention length for logs at site 18?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "How long does site 18 keep operational logs?",
+      "relevant_keywords": [
+        "25 days",
+        "Site 18"
+      ],
+      "category": "text",
+      "document": "site_018.pdf",
+      "fact_id": "site-18-retention"
+    },
+    {
+      "question": "What is the price of SKU-N018?",
+      "relevant_keywords": [
+        "SKU-N018",
+        "28.99"
+      ],
+      "category": "table",
+      "document": "site_018.pdf",
+      "fact_id": "sku-18"
+    },
+    {
+      "question": "How much does SKU-N018 cost?",
+      "relevant_keywords": [
+        "SKU-N018",
+        "28.99"
+      ],
+      "category": "table",
+      "document": "site_018.pdf",
+      "fact_id": "sku-18"
+    },
+    {
+      "question": "Look up SKU-N018 in the price table.",
+      "relevant_keywords": [
+        "SKU-N018",
+        "28.99"
+      ],
+      "category": "table",
+      "document": "site_018.pdf",
+      "fact_id": "sku-18"
+    },
+    {
+      "question": "What does figure FIG-UNIT-018 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-018",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_018.pdf",
+      "fact_id": "fig-18"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-018.",
+      "relevant_keywords": [
+        "FIG-UNIT-018",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_018.pdf",
+      "fact_id": "fig-18"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-018?",
+      "relevant_keywords": [
+        "FIG-UNIT-018",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_018.pdf",
+      "fact_id": "fig-18"
+    },
+    {
+      "question": "How long does site 19 retain logs?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "What is the log retention period at site 19?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "Site 19 keeps logs for how many days?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "Which retention window applies to site 19?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "How many days of logs does site 19 store?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "What retention policy does site 19 use?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "For site 19, how long are logs kept?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 19.",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "Site 19 log retention duration?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "How long are records retained at site 19?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "Give the retention days used by site 19.",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "What is site 19's log keep period?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "Retention length for logs at site 19?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "How long does site 19 keep operational logs?",
+      "relevant_keywords": [
+        "26 days",
+        "Site 19"
+      ],
+      "category": "text",
+      "document": "site_019.pdf",
+      "fact_id": "site-19-retention"
+    },
+    {
+      "question": "What is the price of SKU-N019?",
+      "relevant_keywords": [
+        "SKU-N019",
+        "29.99"
+      ],
+      "category": "table",
+      "document": "site_019.pdf",
+      "fact_id": "sku-19"
+    },
+    {
+      "question": "How much does SKU-N019 cost?",
+      "relevant_keywords": [
+        "SKU-N019",
+        "29.99"
+      ],
+      "category": "table",
+      "document": "site_019.pdf",
+      "fact_id": "sku-19"
+    },
+    {
+      "question": "Look up SKU-N019 in the price table.",
+      "relevant_keywords": [
+        "SKU-N019",
+        "29.99"
+      ],
+      "category": "table",
+      "document": "site_019.pdf",
+      "fact_id": "sku-19"
+    },
+    {
+      "question": "What does figure FIG-UNIT-019 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-019",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_019.pdf",
+      "fact_id": "fig-19"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-019.",
+      "relevant_keywords": [
+        "FIG-UNIT-019",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_019.pdf",
+      "fact_id": "fig-19"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-019?",
+      "relevant_keywords": [
+        "FIG-UNIT-019",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_019.pdf",
+      "fact_id": "fig-19"
+    },
+    {
+      "question": "How long does site 20 retain logs?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "What is the log retention period at site 20?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "Site 20 keeps logs for how many days?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "Which retention window applies to site 20?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "How many days of logs does site 20 store?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "What retention policy does site 20 use?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "For site 20, how long are logs kept?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 20.",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "Site 20 log retention duration?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "How long are records retained at site 20?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "Give the retention days used by site 20.",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "What is site 20's log keep period?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "Retention length for logs at site 20?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "How long does site 20 keep operational logs?",
+      "relevant_keywords": [
+        "27 days",
+        "Site 20"
+      ],
+      "category": "text",
+      "document": "site_020.pdf",
+      "fact_id": "site-20-retention"
+    },
+    {
+      "question": "What is the price of SKU-N020?",
+      "relevant_keywords": [
+        "SKU-N020",
+        "30.99"
+      ],
+      "category": "table",
+      "document": "site_020.pdf",
+      "fact_id": "sku-20"
+    },
+    {
+      "question": "How much does SKU-N020 cost?",
+      "relevant_keywords": [
+        "SKU-N020",
+        "30.99"
+      ],
+      "category": "table",
+      "document": "site_020.pdf",
+      "fact_id": "sku-20"
+    },
+    {
+      "question": "Look up SKU-N020 in the price table.",
+      "relevant_keywords": [
+        "SKU-N020",
+        "30.99"
+      ],
+      "category": "table",
+      "document": "site_020.pdf",
+      "fact_id": "sku-20"
+    },
+    {
+      "question": "What does figure FIG-UNIT-020 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-020",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_020.pdf",
+      "fact_id": "fig-20"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-020.",
+      "relevant_keywords": [
+        "FIG-UNIT-020",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_020.pdf",
+      "fact_id": "fig-20"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-020?",
+      "relevant_keywords": [
+        "FIG-UNIT-020",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_020.pdf",
+      "fact_id": "fig-20"
+    },
+    {
+      "question": "How long does site 21 retain logs?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "What is the log retention period at site 21?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "Site 21 keeps logs for how many days?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "Which retention window applies to site 21?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "How many days of logs does site 21 store?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "What retention policy does site 21 use?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "For site 21, how long are logs kept?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 21.",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "Site 21 log retention duration?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "How long are records retained at site 21?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "Give the retention days used by site 21.",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "What is site 21's log keep period?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "Retention length for logs at site 21?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "How long does site 21 keep operational logs?",
+      "relevant_keywords": [
+        "7 days",
+        "Site 21"
+      ],
+      "category": "text",
+      "document": "site_021.pdf",
+      "fact_id": "site-21-retention"
+    },
+    {
+      "question": "What is the price of SKU-N021?",
+      "relevant_keywords": [
+        "SKU-N021",
+        "31.99"
+      ],
+      "category": "table",
+      "document": "site_021.pdf",
+      "fact_id": "sku-21"
+    },
+    {
+      "question": "How much does SKU-N021 cost?",
+      "relevant_keywords": [
+        "SKU-N021",
+        "31.99"
+      ],
+      "category": "table",
+      "document": "site_021.pdf",
+      "fact_id": "sku-21"
+    },
+    {
+      "question": "Look up SKU-N021 in the price table.",
+      "relevant_keywords": [
+        "SKU-N021",
+        "31.99"
+      ],
+      "category": "table",
+      "document": "site_021.pdf",
+      "fact_id": "sku-21"
+    },
+    {
+      "question": "What does figure FIG-UNIT-021 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-021",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_021.pdf",
+      "fact_id": "fig-21"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-021.",
+      "relevant_keywords": [
+        "FIG-UNIT-021",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_021.pdf",
+      "fact_id": "fig-21"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-021?",
+      "relevant_keywords": [
+        "FIG-UNIT-021",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_021.pdf",
+      "fact_id": "fig-21"
+    },
+    {
+      "question": "How long does site 22 retain logs?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "What is the log retention period at site 22?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "Site 22 keeps logs for how many days?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "Which retention window applies to site 22?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "How many days of logs does site 22 store?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "What retention policy does site 22 use?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "For site 22, how long are logs kept?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 22.",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "Site 22 log retention duration?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "How long are records retained at site 22?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "Give the retention days used by site 22.",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "What is site 22's log keep period?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "Retention length for logs at site 22?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "How long does site 22 keep operational logs?",
+      "relevant_keywords": [
+        "8 days",
+        "Site 22"
+      ],
+      "category": "text",
+      "document": "site_022.pdf",
+      "fact_id": "site-22-retention"
+    },
+    {
+      "question": "What is the price of SKU-N022?",
+      "relevant_keywords": [
+        "SKU-N022",
+        "32.99"
+      ],
+      "category": "table",
+      "document": "site_022.pdf",
+      "fact_id": "sku-22"
+    },
+    {
+      "question": "How much does SKU-N022 cost?",
+      "relevant_keywords": [
+        "SKU-N022",
+        "32.99"
+      ],
+      "category": "table",
+      "document": "site_022.pdf",
+      "fact_id": "sku-22"
+    },
+    {
+      "question": "Look up SKU-N022 in the price table.",
+      "relevant_keywords": [
+        "SKU-N022",
+        "32.99"
+      ],
+      "category": "table",
+      "document": "site_022.pdf",
+      "fact_id": "sku-22"
+    },
+    {
+      "question": "What does figure FIG-UNIT-022 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-022",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_022.pdf",
+      "fact_id": "fig-22"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-022.",
+      "relevant_keywords": [
+        "FIG-UNIT-022",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_022.pdf",
+      "fact_id": "fig-22"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-022?",
+      "relevant_keywords": [
+        "FIG-UNIT-022",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_022.pdf",
+      "fact_id": "fig-22"
+    },
+    {
+      "question": "How long does site 23 retain logs?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "What is the log retention period at site 23?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "Site 23 keeps logs for how many days?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "Which retention window applies to site 23?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "How many days of logs does site 23 store?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "What retention policy does site 23 use?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "For site 23, how long are logs kept?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 23.",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "Site 23 log retention duration?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "How long are records retained at site 23?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "Give the retention days used by site 23.",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "What is site 23's log keep period?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "Retention length for logs at site 23?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "How long does site 23 keep operational logs?",
+      "relevant_keywords": [
+        "9 days",
+        "Site 23"
+      ],
+      "category": "text",
+      "document": "site_023.pdf",
+      "fact_id": "site-23-retention"
+    },
+    {
+      "question": "What is the price of SKU-N023?",
+      "relevant_keywords": [
+        "SKU-N023",
+        "33.99"
+      ],
+      "category": "table",
+      "document": "site_023.pdf",
+      "fact_id": "sku-23"
+    },
+    {
+      "question": "How much does SKU-N023 cost?",
+      "relevant_keywords": [
+        "SKU-N023",
+        "33.99"
+      ],
+      "category": "table",
+      "document": "site_023.pdf",
+      "fact_id": "sku-23"
+    },
+    {
+      "question": "Look up SKU-N023 in the price table.",
+      "relevant_keywords": [
+        "SKU-N023",
+        "33.99"
+      ],
+      "category": "table",
+      "document": "site_023.pdf",
+      "fact_id": "sku-23"
+    },
+    {
+      "question": "What does figure FIG-UNIT-023 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-023",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_023.pdf",
+      "fact_id": "fig-23"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-023.",
+      "relevant_keywords": [
+        "FIG-UNIT-023",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_023.pdf",
+      "fact_id": "fig-23"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-023?",
+      "relevant_keywords": [
+        "FIG-UNIT-023",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_023.pdf",
+      "fact_id": "fig-23"
+    },
+    {
+      "question": "How long does site 24 retain logs?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "What is the log retention period at site 24?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "Site 24 keeps logs for how many days?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "Which retention window applies to site 24?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "How many days of logs does site 24 store?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "What retention policy does site 24 use?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "For site 24, how long are logs kept?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "Identify the log retention days for site 24.",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "Site 24 log retention duration?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "How long are records retained at site 24?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "Give the retention days used by site 24.",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "What is site 24's log keep period?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "Retention length for logs at site 24?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "How long does site 24 keep operational logs?",
+      "relevant_keywords": [
+        "10 days",
+        "Site 24"
+      ],
+      "category": "text",
+      "document": "site_024.pdf",
+      "fact_id": "site-24-retention"
+    },
+    {
+      "question": "What is the price of SKU-N024?",
+      "relevant_keywords": [
+        "SKU-N024",
+        "34.99"
+      ],
+      "category": "table",
+      "document": "site_024.pdf",
+      "fact_id": "sku-24"
+    },
+    {
+      "question": "How much does SKU-N024 cost?",
+      "relevant_keywords": [
+        "SKU-N024",
+        "34.99"
+      ],
+      "category": "table",
+      "document": "site_024.pdf",
+      "fact_id": "sku-24"
+    },
+    {
+      "question": "Look up SKU-N024 in the price table.",
+      "relevant_keywords": [
+        "SKU-N024",
+        "34.99"
+      ],
+      "category": "table",
+      "document": "site_024.pdf",
+      "fact_id": "sku-24"
+    },
+    {
+      "question": "What does figure FIG-UNIT-024 show?",
+      "relevant_keywords": [
+        "FIG-UNIT-024",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_024.pdf",
+      "fact_id": "fig-24"
+    },
+    {
+      "question": "Describe the diagram labeled FIG-UNIT-024.",
+      "relevant_keywords": [
+        "FIG-UNIT-024",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_024.pdf",
+      "fact_id": "fig-24"
+    },
+    {
+      "question": "Which assembly is in figure FIG-UNIT-024?",
+      "relevant_keywords": [
+        "FIG-UNIT-024",
+        "assembly"
+      ],
+      "category": "figure",
+      "document": "site_024.pdf",
+      "fact_id": "fig-24"
+    }
+  ]
+}

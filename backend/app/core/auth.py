@@ -124,7 +124,6 @@ async def create_user(db: AsyncSession, email: str, password: str, name: Optiona
         password_hash=hash_password(password),
         name=name,
         is_active=True,
-        is_verified=False,
         created_at=now,
         updated_at=now,
     )

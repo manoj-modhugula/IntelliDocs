@@ -17,7 +17,13 @@ async def test_register_success(monkeypatch):
     monkeypatch.setattr("app.routers.auth.get_user_by_email", AsyncMock(return_value=None))
     monkeypatch.setattr("app.routers.auth.create_user", AsyncMock(return_value=user))
 
-    result = await register(RegisterRequest(email="a@b.com", password="p"), db=db)
+    http_request = MagicMock()
+    http_request.client = MagicMock(host="127.0.0.1")
+    result = await register(
+        RegisterRequest(email="a@b.com", password="password123"),
+        http_request,
+        db=db,
+    )
     assert result.user.email == "a@b.com"
 
 
@@ -39,7 +45,13 @@ async def test_register_existing_user(monkeypatch):
     existing = MagicMock()
     monkeypatch.setattr("app.routers.auth.get_user_by_email", AsyncMock(return_value=existing))
     with pytest.raises(Exception):
-        await register(RegisterRequest(email="a@b.com", password="p"), db=db)
+        http_request = MagicMock()
+        http_request.client = MagicMock(host="127.0.0.1")
+        await register(
+            RegisterRequest(email="a@b.com", password="password123"),
+            http_request,
+            db=db,
+        )
 
 
 @pytest.mark.asyncio

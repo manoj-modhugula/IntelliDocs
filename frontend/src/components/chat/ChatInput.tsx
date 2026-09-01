@@ -2,7 +2,7 @@
 
 import { useState, useRef, useCallback, memo, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { Send, RefreshCw, X, Plus } from 'lucide-react';
+import { Send, X, Plus, Square } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import type { SkillItem } from '@/lib/api';
 
@@ -10,6 +10,7 @@ interface ChatInputProps {
   input: string;
   setInput: (value: string) => void;
   onSubmit: (value: string) => void;
+  onStop?: () => void;
   isLoading: boolean;
   disabled: boolean;
   placeholder?: string;
@@ -25,6 +26,7 @@ export const ChatInput = memo(function ChatInput({
   input,
   setInput,
   onSubmit,
+  onStop,
   isLoading,
   disabled,
   placeholder,
@@ -203,25 +205,33 @@ export const ChatInput = memo(function ChatInput({
               )}
               style={{ maxHeight: '200px' }}
             />
-            <button
-              type="submit"
-              disabled={!input.trim() || isLoading || disabled}
-              aria-label={isLoading ? 'Sending...' : 'Send message'}
-              title="Send message"
-              className={cn(
-                'flex-shrink-0 p-2.5 mr-2 rounded-lg transition-[color,background-color,transform,box-shadow] duration-150 self-center glass',
-                'send-button',
-                input.trim() && !isLoading && !disabled
-                  ? 'text-slate-900 dark:text-slate-100'
-                  : 'opacity-60 cursor-not-allowed text-slate-500 dark:text-slate-400'
-              )}
-            >
-              {isLoading ? (
-                <RefreshCw className="w-5 h-5 animate-spin" aria-hidden />
-              ) : (
+            {isLoading ? (
+              <button
+                type="button"
+                onClick={onStop}
+                aria-label="Stop generating"
+                title="Stop generating"
+                className="flex-shrink-0 p-2.5 mr-2 rounded-lg self-center glass text-slate-900 dark:text-slate-100"
+              >
+                <Square className="w-5 h-5" aria-hidden />
+              </button>
+            ) : (
+              <button
+                type="submit"
+                disabled={!input.trim() || disabled}
+                aria-label="Send message"
+                title="Send message"
+                className={cn(
+                  'flex-shrink-0 p-2.5 mr-2 rounded-lg transition-[color,background-color,transform,box-shadow] duration-150 self-center glass',
+                  'send-button',
+                  input.trim() && !disabled
+                    ? 'text-slate-900 dark:text-slate-100'
+                    : 'opacity-60 cursor-not-allowed text-slate-500 dark:text-slate-400'
+                )}
+              >
                 <Send className="w-5 h-5" aria-hidden />
-              )}
-            </button>
+              </button>
+            )}
           </div>
 
           {showSkillsDropdown && (

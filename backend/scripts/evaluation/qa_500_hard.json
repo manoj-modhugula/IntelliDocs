@@ -1,0 +1,5110 @@
+{
+  "workspace_id": "eval-hard",
+  "mixture": {
+    "text": 200,
+    "table": 175,
+    "figure": 125
+  },
+  "cases": [
+    {
+      "question": "How long does the northern depot in Halifax keep audit trails?",
+      "category": "text",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Halifax"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the northern depot in Halifax?",
+      "category": "text",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Halifax"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Halifax's northern depot retain logs?",
+      "category": "text",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Halifax"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Halifax northern depot?",
+      "category": "text",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Halifax"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the northern depot located in Halifax?",
+      "category": "text",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Halifax"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Halifax northern depot.",
+      "category": "text",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Halifax"
+      ]
+    },
+    {
+      "question": "The northern depot in Halifax archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Halifax"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Halifax's northern depot?",
+      "category": "text",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Halifax"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Halifax plant?",
+      "category": "table",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Halifax seawater pump table use?",
+      "category": "table",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Halifax component table?",
+      "category": "table",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the bronze seawater impeller?",
+      "category": "table",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "18.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the bronze seawater impeller cost in the parts grid?",
+      "category": "table",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "18.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the bronze seawater impeller on the spare parts grid?",
+      "category": "table",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "18.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the bronze seawater impeller in the parts grid?",
+      "category": "table",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "18.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Halifax subsystem overview?",
+      "category": "figure",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Halifax subsystem schematic?",
+      "category": "figure",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Halifax subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Halifax subsystem figure?",
+      "category": "figure",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Halifax subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_00_halifax.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the harbor workshop in Tulsa keep audit trails?",
+      "category": "text",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tulsa"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the harbor workshop in Tulsa?",
+      "category": "text",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tulsa"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Tulsa's harbor workshop retain logs?",
+      "category": "text",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tulsa"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Tulsa harbor workshop?",
+      "category": "text",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tulsa"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the harbor workshop located in Tulsa?",
+      "category": "text",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tulsa"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Tulsa harbor workshop.",
+      "category": "text",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tulsa"
+      ]
+    },
+    {
+      "question": "The harbor workshop in Tulsa archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tulsa"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Tulsa's harbor workshop?",
+      "category": "text",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tulsa"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Tulsa plant?",
+      "category": "table",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Tulsa seawater pump table use?",
+      "category": "table",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Tulsa component table?",
+      "category": "table",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the nitrile hatch gasket?",
+      "category": "table",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.75",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the nitrile hatch gasket cost in the parts grid?",
+      "category": "table",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.75",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the nitrile hatch gasket on the spare parts grid?",
+      "category": "table",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.75",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the nitrile hatch gasket in the parts grid?",
+      "category": "table",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.75",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Tulsa subsystem overview?",
+      "category": "figure",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Tulsa subsystem schematic?",
+      "category": "figure",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Tulsa subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Tulsa subsystem figure?",
+      "category": "figure",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Tulsa subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_01_tulsa.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the ridge plant in Boise keep audit trails?",
+      "category": "text",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Boise"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the ridge plant in Boise?",
+      "category": "text",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Boise"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Boise's ridge plant retain logs?",
+      "category": "text",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Boise"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Boise ridge plant?",
+      "category": "text",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Boise"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the ridge plant located in Boise?",
+      "category": "text",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Boise"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Boise ridge plant.",
+      "category": "text",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Boise"
+      ]
+    },
+    {
+      "question": "The ridge plant in Boise archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Boise"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Boise's ridge plant?",
+      "category": "text",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Boise"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Boise plant?",
+      "category": "table",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Boise seawater pump table use?",
+      "category": "table",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Boise component table?",
+      "category": "table",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the ceramic spindle bearing?",
+      "category": "table",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "33.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the ceramic spindle bearing cost in the parts grid?",
+      "category": "table",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "33.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the ceramic spindle bearing on the spare parts grid?",
+      "category": "table",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "33.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the ceramic spindle bearing in the parts grid?",
+      "category": "table",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "33.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Boise subsystem overview?",
+      "category": "figure",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Boise subsystem schematic?",
+      "category": "figure",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Boise subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Boise subsystem figure?",
+      "category": "figure",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Boise subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_02_boise.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the canyon yard in Tacoma keep audit trails?",
+      "category": "text",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Tacoma"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the canyon yard in Tacoma?",
+      "category": "text",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Tacoma"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Tacoma's canyon yard retain logs?",
+      "category": "text",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Tacoma"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Tacoma canyon yard?",
+      "category": "text",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Tacoma"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the canyon yard located in Tacoma?",
+      "category": "text",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Tacoma"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Tacoma canyon yard.",
+      "category": "text",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Tacoma"
+      ]
+    },
+    {
+      "question": "The canyon yard in Tacoma archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Tacoma"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Tacoma's canyon yard?",
+      "category": "text",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Tacoma"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Tacoma plant?",
+      "category": "table",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Tacoma seawater pump table use?",
+      "category": "table",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Tacoma component table?",
+      "category": "table",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the graphite packing ring?",
+      "category": "table",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the graphite packing ring cost in the parts grid?",
+      "category": "table",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the graphite packing ring on the spare parts grid?",
+      "category": "table",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the graphite packing ring in the parts grid?",
+      "category": "table",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Tacoma subsystem overview?",
+      "category": "figure",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Tacoma subsystem schematic?",
+      "category": "figure",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Tacoma subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Tacoma subsystem figure?",
+      "category": "figure",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Tacoma subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_03_tacoma.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the lakeside shop in Durham keep audit trails?",
+      "category": "text",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Durham"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the lakeside shop in Durham?",
+      "category": "text",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Durham"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Durham's lakeside shop retain logs?",
+      "category": "text",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Durham"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Durham lakeside shop?",
+      "category": "text",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Durham"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the lakeside shop located in Durham?",
+      "category": "text",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Durham"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Durham lakeside shop.",
+      "category": "text",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Durham"
+      ]
+    },
+    {
+      "question": "The lakeside shop in Durham archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Durham"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Durham's lakeside shop?",
+      "category": "text",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Durham"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Durham plant?",
+      "category": "table",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Durham seawater pump table use?",
+      "category": "table",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Durham component table?",
+      "category": "table",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the bronze seawater impeller?",
+      "category": "table",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the bronze seawater impeller cost in the parts grid?",
+      "category": "table",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the bronze seawater impeller on the spare parts grid?",
+      "category": "table",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the bronze seawater impeller in the parts grid?",
+      "category": "table",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Durham subsystem overview?",
+      "category": "figure",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Durham subsystem schematic?",
+      "category": "figure",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Durham subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Durham subsystem figure?",
+      "category": "figure",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Durham subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_04_durham.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the northern depot in Omaha keep audit trails?",
+      "category": "text",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Omaha"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the northern depot in Omaha?",
+      "category": "text",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Omaha"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Omaha's northern depot retain logs?",
+      "category": "text",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Omaha"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Omaha northern depot?",
+      "category": "text",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Omaha"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the northern depot located in Omaha?",
+      "category": "text",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Omaha"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Omaha northern depot.",
+      "category": "text",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Omaha"
+      ]
+    },
+    {
+      "question": "The northern depot in Omaha archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Omaha"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Omaha's northern depot?",
+      "category": "text",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Omaha"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Omaha plant?",
+      "category": "table",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Omaha seawater pump table use?",
+      "category": "table",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Omaha component table?",
+      "category": "table",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the nitrile hatch gasket?",
+      "category": "table",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.50",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the nitrile hatch gasket cost in the parts grid?",
+      "category": "table",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.50",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the nitrile hatch gasket on the spare parts grid?",
+      "category": "table",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.50",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the nitrile hatch gasket in the parts grid?",
+      "category": "table",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.50",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Omaha subsystem overview?",
+      "category": "figure",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Omaha subsystem schematic?",
+      "category": "figure",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Omaha subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Omaha subsystem figure?",
+      "category": "figure",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Omaha subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_05_omaha.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the harbor workshop in Irvine keep audit trails?",
+      "category": "text",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Irvine"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the harbor workshop in Irvine?",
+      "category": "text",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Irvine"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Irvine's harbor workshop retain logs?",
+      "category": "text",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Irvine"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Irvine harbor workshop?",
+      "category": "text",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Irvine"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the harbor workshop located in Irvine?",
+      "category": "text",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Irvine"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Irvine harbor workshop.",
+      "category": "text",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Irvine"
+      ]
+    },
+    {
+      "question": "The harbor workshop in Irvine archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Irvine"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Irvine's harbor workshop?",
+      "category": "text",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Irvine"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Irvine plant?",
+      "category": "table",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Irvine seawater pump table use?",
+      "category": "table",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Irvine component table?",
+      "category": "table",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the ceramic spindle bearing?",
+      "category": "table",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "37.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the ceramic spindle bearing cost in the parts grid?",
+      "category": "table",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "37.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the ceramic spindle bearing on the spare parts grid?",
+      "category": "table",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "37.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the ceramic spindle bearing in the parts grid?",
+      "category": "table",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "37.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Irvine subsystem overview?",
+      "category": "figure",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Irvine subsystem schematic?",
+      "category": "figure",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Irvine subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Irvine subsystem figure?",
+      "category": "figure",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Irvine subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_06_irvine.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the ridge plant in Akron keep audit trails?",
+      "category": "text",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Akron"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the ridge plant in Akron?",
+      "category": "text",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Akron"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Akron's ridge plant retain logs?",
+      "category": "text",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Akron"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Akron ridge plant?",
+      "category": "text",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Akron"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the ridge plant located in Akron?",
+      "category": "text",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Akron"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Akron ridge plant.",
+      "category": "text",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Akron"
+      ]
+    },
+    {
+      "question": "The ridge plant in Akron archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Akron"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Akron's ridge plant?",
+      "category": "text",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Akron"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Akron plant?",
+      "category": "table",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Akron seawater pump table use?",
+      "category": "table",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Akron component table?",
+      "category": "table",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the graphite packing ring?",
+      "category": "table",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the graphite packing ring cost in the parts grid?",
+      "category": "table",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the graphite packing ring on the spare parts grid?",
+      "category": "table",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the graphite packing ring in the parts grid?",
+      "category": "table",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Akron subsystem overview?",
+      "category": "figure",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Akron subsystem schematic?",
+      "category": "figure",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Akron subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Akron subsystem figure?",
+      "category": "figure",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Akron subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_07_akron.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the canyon yard in Tempe keep audit trails?",
+      "category": "text",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tempe"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the canyon yard in Tempe?",
+      "category": "text",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tempe"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Tempe's canyon yard retain logs?",
+      "category": "text",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tempe"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Tempe canyon yard?",
+      "category": "text",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tempe"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the canyon yard located in Tempe?",
+      "category": "text",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tempe"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Tempe canyon yard.",
+      "category": "text",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tempe"
+      ]
+    },
+    {
+      "question": "The canyon yard in Tempe archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tempe"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Tempe's canyon yard?",
+      "category": "text",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Tempe"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Tempe plant?",
+      "category": "table",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Tempe seawater pump table use?",
+      "category": "table",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Tempe component table?",
+      "category": "table",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the bronze seawater impeller?",
+      "category": "table",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "26.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the bronze seawater impeller cost in the parts grid?",
+      "category": "table",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "26.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the bronze seawater impeller on the spare parts grid?",
+      "category": "table",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "26.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the bronze seawater impeller in the parts grid?",
+      "category": "table",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "26.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Tempe subsystem overview?",
+      "category": "figure",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Tempe subsystem schematic?",
+      "category": "figure",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Tempe subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Tempe subsystem figure?",
+      "category": "figure",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Tempe subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_08_tempe.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the lakeside shop in Provo keep audit trails?",
+      "category": "text",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Provo"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the lakeside shop in Provo?",
+      "category": "text",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Provo"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Provo's lakeside shop retain logs?",
+      "category": "text",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Provo"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Provo lakeside shop?",
+      "category": "text",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Provo"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the lakeside shop located in Provo?",
+      "category": "text",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Provo"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Provo lakeside shop.",
+      "category": "text",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Provo"
+      ]
+    },
+    {
+      "question": "The lakeside shop in Provo archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Provo"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Provo's lakeside shop?",
+      "category": "text",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Provo"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Provo plant?",
+      "category": "table",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Provo seawater pump table use?",
+      "category": "table",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Provo component table?",
+      "category": "table",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the nitrile hatch gasket?",
+      "category": "table",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.50",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the nitrile hatch gasket cost in the parts grid?",
+      "category": "table",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.50",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the nitrile hatch gasket on the spare parts grid?",
+      "category": "table",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.50",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the nitrile hatch gasket in the parts grid?",
+      "category": "table",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.50",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Provo subsystem overview?",
+      "category": "figure",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Provo subsystem schematic?",
+      "category": "figure",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Provo subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Provo subsystem figure?",
+      "category": "figure",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Provo subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_09_provo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the northern depot in Eugene keep audit trails?",
+      "category": "text",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Eugene"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the northern depot in Eugene?",
+      "category": "text",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Eugene"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Eugene's northern depot retain logs?",
+      "category": "text",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Eugene"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Eugene northern depot?",
+      "category": "text",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Eugene"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the northern depot located in Eugene?",
+      "category": "text",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Eugene"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Eugene northern depot.",
+      "category": "text",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Eugene"
+      ]
+    },
+    {
+      "question": "The northern depot in Eugene archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Eugene"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Eugene's northern depot?",
+      "category": "text",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Eugene"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Eugene plant?",
+      "category": "table",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Eugene seawater pump table use?",
+      "category": "table",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Eugene component table?",
+      "category": "table",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the ceramic spindle bearing?",
+      "category": "table",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "34.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the ceramic spindle bearing cost in the parts grid?",
+      "category": "table",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "34.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the ceramic spindle bearing on the spare parts grid?",
+      "category": "table",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "34.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the ceramic spindle bearing in the parts grid?",
+      "category": "table",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "34.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Eugene subsystem overview?",
+      "category": "figure",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Eugene subsystem schematic?",
+      "category": "figure",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Eugene subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Eugene subsystem figure?",
+      "category": "figure",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Eugene subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_10_eugene.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the harbor workshop in Mobile keep audit trails?",
+      "category": "text",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Mobile"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the harbor workshop in Mobile?",
+      "category": "text",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Mobile"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Mobile's harbor workshop retain logs?",
+      "category": "text",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Mobile"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Mobile harbor workshop?",
+      "category": "text",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Mobile"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the harbor workshop located in Mobile?",
+      "category": "text",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Mobile"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Mobile harbor workshop.",
+      "category": "text",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Mobile"
+      ]
+    },
+    {
+      "question": "The harbor workshop in Mobile archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Mobile"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Mobile's harbor workshop?",
+      "category": "text",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Mobile"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Mobile plant?",
+      "category": "table",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Mobile seawater pump table use?",
+      "category": "table",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Mobile component table?",
+      "category": "table",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the graphite packing ring?",
+      "category": "table",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the graphite packing ring cost in the parts grid?",
+      "category": "table",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the graphite packing ring on the spare parts grid?",
+      "category": "table",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the graphite packing ring in the parts grid?",
+      "category": "table",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Mobile subsystem overview?",
+      "category": "figure",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Mobile subsystem schematic?",
+      "category": "figure",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Mobile subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Mobile subsystem figure?",
+      "category": "figure",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Mobile subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_11_mobile.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the ridge plant in Reno keep audit trails?",
+      "category": "text",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Reno"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the ridge plant in Reno?",
+      "category": "text",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Reno"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Reno's ridge plant retain logs?",
+      "category": "text",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Reno"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Reno ridge plant?",
+      "category": "text",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Reno"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the ridge plant located in Reno?",
+      "category": "text",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Reno"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Reno ridge plant.",
+      "category": "text",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Reno"
+      ]
+    },
+    {
+      "question": "The ridge plant in Reno archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Reno"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Reno's ridge plant?",
+      "category": "text",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Reno"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Reno plant?",
+      "category": "table",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Reno seawater pump table use?",
+      "category": "table",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Reno component table?",
+      "category": "table",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the bronze seawater impeller?",
+      "category": "table",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "30.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the bronze seawater impeller cost in the parts grid?",
+      "category": "table",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "30.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the bronze seawater impeller on the spare parts grid?",
+      "category": "table",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "30.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the bronze seawater impeller in the parts grid?",
+      "category": "table",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "30.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Reno subsystem overview?",
+      "category": "figure",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Reno subsystem schematic?",
+      "category": "figure",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Reno subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Reno subsystem figure?",
+      "category": "figure",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Reno subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_12_reno.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the canyon yard in Spokane keep audit trails?",
+      "category": "text",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Spokane"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the canyon yard in Spokane?",
+      "category": "text",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Spokane"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Spokane's canyon yard retain logs?",
+      "category": "text",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Spokane"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Spokane canyon yard?",
+      "category": "text",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Spokane"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the canyon yard located in Spokane?",
+      "category": "text",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Spokane"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Spokane canyon yard.",
+      "category": "text",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Spokane"
+      ]
+    },
+    {
+      "question": "The canyon yard in Spokane archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Spokane"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Spokane's canyon yard?",
+      "category": "text",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Spokane"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Spokane plant?",
+      "category": "table",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Spokane seawater pump table use?",
+      "category": "table",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Spokane component table?",
+      "category": "table",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the nitrile hatch gasket?",
+      "category": "table",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.25",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the nitrile hatch gasket cost in the parts grid?",
+      "category": "table",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.25",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the nitrile hatch gasket on the spare parts grid?",
+      "category": "table",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.25",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the nitrile hatch gasket in the parts grid?",
+      "category": "table",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.25",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Spokane subsystem overview?",
+      "category": "figure",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Spokane subsystem schematic?",
+      "category": "figure",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Spokane subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Spokane subsystem figure?",
+      "category": "figure",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Spokane subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_13_spokane.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the lakeside shop in Laredo keep audit trails?",
+      "category": "text",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Laredo"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the lakeside shop in Laredo?",
+      "category": "text",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Laredo"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Laredo's lakeside shop retain logs?",
+      "category": "text",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Laredo"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Laredo lakeside shop?",
+      "category": "text",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Laredo"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the lakeside shop located in Laredo?",
+      "category": "text",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Laredo"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Laredo lakeside shop.",
+      "category": "text",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Laredo"
+      ]
+    },
+    {
+      "question": "The lakeside shop in Laredo archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Laredo"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Laredo's lakeside shop?",
+      "category": "text",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Laredo"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Laredo plant?",
+      "category": "table",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Laredo seawater pump table use?",
+      "category": "table",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Laredo component table?",
+      "category": "table",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the ceramic spindle bearing?",
+      "category": "table",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "31.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the ceramic spindle bearing cost in the parts grid?",
+      "category": "table",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "31.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the ceramic spindle bearing on the spare parts grid?",
+      "category": "table",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "31.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the ceramic spindle bearing in the parts grid?",
+      "category": "table",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "31.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Laredo subsystem overview?",
+      "category": "figure",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Laredo subsystem schematic?",
+      "category": "figure",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Laredo subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Laredo subsystem figure?",
+      "category": "figure",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Laredo subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_14_laredo.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the northern depot in Irving keep audit trails?",
+      "category": "text",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Irving"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the northern depot in Irving?",
+      "category": "text",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Irving"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Irving's northern depot retain logs?",
+      "category": "text",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Irving"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Irving northern depot?",
+      "category": "text",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Irving"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the northern depot located in Irving?",
+      "category": "text",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Irving"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Irving northern depot.",
+      "category": "text",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Irving"
+      ]
+    },
+    {
+      "question": "The northern depot in Irving archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Irving"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Irving's northern depot?",
+      "category": "text",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Irving"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Irving plant?",
+      "category": "table",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Irving seawater pump table use?",
+      "category": "table",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Irving component table?",
+      "category": "table",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the graphite packing ring?",
+      "category": "table",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the graphite packing ring cost in the parts grid?",
+      "category": "table",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the graphite packing ring on the spare parts grid?",
+      "category": "table",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the graphite packing ring in the parts grid?",
+      "category": "table",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Irving subsystem overview?",
+      "category": "figure",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Irving subsystem schematic?",
+      "category": "figure",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Irving subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Irving subsystem figure?",
+      "category": "figure",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Irving subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_15_irving.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the harbor workshop in Hialeah keep audit trails?",
+      "category": "text",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Hialeah"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the harbor workshop in Hialeah?",
+      "category": "text",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Hialeah"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Hialeah's harbor workshop retain logs?",
+      "category": "text",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Hialeah"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Hialeah harbor workshop?",
+      "category": "text",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Hialeah"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the harbor workshop located in Hialeah?",
+      "category": "text",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Hialeah"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Hialeah harbor workshop.",
+      "category": "text",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Hialeah"
+      ]
+    },
+    {
+      "question": "The harbor workshop in Hialeah archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Hialeah"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Hialeah's harbor workshop?",
+      "category": "text",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Hialeah"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Hialeah plant?",
+      "category": "table",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Hialeah seawater pump table use?",
+      "category": "table",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Hialeah component table?",
+      "category": "table",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the bronze seawater impeller?",
+      "category": "table",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "34.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the bronze seawater impeller cost in the parts grid?",
+      "category": "table",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "34.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the bronze seawater impeller on the spare parts grid?",
+      "category": "table",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "34.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the bronze seawater impeller in the parts grid?",
+      "category": "table",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "34.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Hialeah subsystem overview?",
+      "category": "figure",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Hialeah subsystem schematic?",
+      "category": "figure",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Hialeah subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Hialeah subsystem figure?",
+      "category": "figure",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Hialeah subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_16_hialeah.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the ridge plant in Garland keep audit trails?",
+      "category": "text",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Garland"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the ridge plant in Garland?",
+      "category": "text",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Garland"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Garland's ridge plant retain logs?",
+      "category": "text",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Garland"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Garland ridge plant?",
+      "category": "text",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Garland"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the ridge plant located in Garland?",
+      "category": "text",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Garland"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Garland ridge plant.",
+      "category": "text",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Garland"
+      ]
+    },
+    {
+      "question": "The ridge plant in Garland archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Garland"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Garland's ridge plant?",
+      "category": "text",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Garland"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Garland plant?",
+      "category": "table",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Garland seawater pump table use?",
+      "category": "table",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Garland component table?",
+      "category": "table",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the nitrile hatch gasket?",
+      "category": "table",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.00",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the nitrile hatch gasket cost in the parts grid?",
+      "category": "table",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.00",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the nitrile hatch gasket on the spare parts grid?",
+      "category": "table",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.00",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the nitrile hatch gasket in the parts grid?",
+      "category": "table",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "5.00",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Garland subsystem overview?",
+      "category": "figure",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Garland subsystem schematic?",
+      "category": "figure",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Garland subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Garland subsystem figure?",
+      "category": "figure",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Garland subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_17_garland.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the canyon yard in Scottsdale keep audit trails?",
+      "category": "text",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Scottsdale"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the canyon yard in Scottsdale?",
+      "category": "text",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Scottsdale"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Scottsdale's canyon yard retain logs?",
+      "category": "text",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Scottsdale"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Scottsdale canyon yard?",
+      "category": "text",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Scottsdale"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the canyon yard located in Scottsdale?",
+      "category": "text",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Scottsdale"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Scottsdale canyon yard.",
+      "category": "text",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Scottsdale"
+      ]
+    },
+    {
+      "question": "The canyon yard in Scottsdale archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Scottsdale"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Scottsdale's canyon yard?",
+      "category": "text",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 days",
+        "Scottsdale"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Scottsdale plant?",
+      "category": "table",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Scottsdale seawater pump table use?",
+      "category": "table",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Scottsdale component table?",
+      "category": "table",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the ceramic spindle bearing?",
+      "category": "table",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "35.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the ceramic spindle bearing cost in the parts grid?",
+      "category": "table",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "35.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the ceramic spindle bearing on the spare parts grid?",
+      "category": "table",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "35.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the ceramic spindle bearing in the parts grid?",
+      "category": "table",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "35.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Scottsdale subsystem overview?",
+      "category": "figure",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Scottsdale subsystem schematic?",
+      "category": "figure",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Scottsdale subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Scottsdale subsystem figure?",
+      "category": "figure",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Scottsdale subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_18_scottsdale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the lakeside shop in Gilbert keep audit trails?",
+      "category": "text",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Gilbert"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the lakeside shop in Gilbert?",
+      "category": "text",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Gilbert"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Gilbert's lakeside shop retain logs?",
+      "category": "text",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Gilbert"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Gilbert lakeside shop?",
+      "category": "text",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Gilbert"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the lakeside shop located in Gilbert?",
+      "category": "text",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Gilbert"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Gilbert lakeside shop.",
+      "category": "text",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Gilbert"
+      ]
+    },
+    {
+      "question": "The lakeside shop in Gilbert archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Gilbert"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Gilbert's lakeside shop?",
+      "category": "text",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "22 days",
+        "Gilbert"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Gilbert plant?",
+      "category": "table",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Gilbert seawater pump table use?",
+      "category": "table",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Gilbert component table?",
+      "category": "table",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the graphite packing ring?",
+      "category": "table",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the graphite packing ring cost in the parts grid?",
+      "category": "table",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the graphite packing ring on the spare parts grid?",
+      "category": "table",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the graphite packing ring in the parts grid?",
+      "category": "table",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Gilbert subsystem overview?",
+      "category": "figure",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Gilbert subsystem schematic?",
+      "category": "figure",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Gilbert subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Gilbert subsystem figure?",
+      "category": "figure",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Gilbert subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_19_gilbert.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the northern depot in Glendale keep audit trails?",
+      "category": "text",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Glendale"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the northern depot in Glendale?",
+      "category": "text",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Glendale"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Glendale's northern depot retain logs?",
+      "category": "text",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Glendale"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Glendale northern depot?",
+      "category": "text",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Glendale"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the northern depot located in Glendale?",
+      "category": "text",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Glendale"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Glendale northern depot.",
+      "category": "text",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Glendale"
+      ]
+    },
+    {
+      "question": "The northern depot in Glendale archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Glendale"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Glendale's northern depot?",
+      "category": "text",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "25 days",
+        "Glendale"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Glendale plant?",
+      "category": "table",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Glendale seawater pump table use?",
+      "category": "table",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Glendale component table?",
+      "category": "table",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the bronze seawater impeller?",
+      "category": "table",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "38.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the bronze seawater impeller cost in the parts grid?",
+      "category": "table",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "38.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the bronze seawater impeller on the spare parts grid?",
+      "category": "table",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "38.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the bronze seawater impeller in the parts grid?",
+      "category": "table",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "38.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Glendale subsystem overview?",
+      "category": "figure",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Glendale subsystem schematic?",
+      "category": "figure",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Glendale subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Glendale subsystem figure?",
+      "category": "figure",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Glendale subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_20_glendale.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the harbor workshop in Chandler keep audit trails?",
+      "category": "text",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Chandler"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the harbor workshop in Chandler?",
+      "category": "text",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Chandler"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Chandler's harbor workshop retain logs?",
+      "category": "text",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Chandler"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Chandler harbor workshop?",
+      "category": "text",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Chandler"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the harbor workshop located in Chandler?",
+      "category": "text",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Chandler"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Chandler harbor workshop.",
+      "category": "text",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Chandler"
+      ]
+    },
+    {
+      "question": "The harbor workshop in Chandler archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Chandler"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Chandler's harbor workshop?",
+      "category": "text",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "7 days",
+        "Chandler"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Chandler plant?",
+      "category": "table",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Chandler seawater pump table use?",
+      "category": "table",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Chandler component table?",
+      "category": "table",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the nitrile hatch gasket?",
+      "category": "table",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.75",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the nitrile hatch gasket cost in the parts grid?",
+      "category": "table",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.75",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the nitrile hatch gasket on the spare parts grid?",
+      "category": "table",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.75",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the nitrile hatch gasket in the parts grid?",
+      "category": "table",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "4.75",
+        "nitrile"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Chandler subsystem overview?",
+      "category": "figure",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Chandler subsystem schematic?",
+      "category": "figure",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Chandler subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Chandler subsystem figure?",
+      "category": "figure",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Chandler subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_21_chandler.pdf",
+      "page": 1,
+      "answer_contains": [
+        "west to east"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the ridge plant in Norfolk keep audit trails?",
+      "category": "text",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Norfolk"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the ridge plant in Norfolk?",
+      "category": "text",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Norfolk"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Norfolk's ridge plant retain logs?",
+      "category": "text",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Norfolk"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Norfolk ridge plant?",
+      "category": "text",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Norfolk"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the ridge plant located in Norfolk?",
+      "category": "text",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Norfolk"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Norfolk ridge plant.",
+      "category": "text",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Norfolk"
+      ]
+    },
+    {
+      "question": "The ridge plant in Norfolk archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Norfolk"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Norfolk's ridge plant?",
+      "category": "text",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "10 days",
+        "Norfolk"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Norfolk plant?",
+      "category": "table",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Norfolk seawater pump table use?",
+      "category": "table",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Norfolk component table?",
+      "category": "table",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the ceramic spindle bearing?",
+      "category": "table",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "32.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the ceramic spindle bearing cost in the parts grid?",
+      "category": "table",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "32.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the ceramic spindle bearing on the spare parts grid?",
+      "category": "table",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "32.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the ceramic spindle bearing in the parts grid?",
+      "category": "table",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "32.00",
+        "ceramic"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Norfolk subsystem overview?",
+      "category": "figure",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Norfolk subsystem schematic?",
+      "category": "figure",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Norfolk subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Norfolk subsystem figure?",
+      "category": "figure",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Norfolk subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_22_norfolk.pdf",
+      "page": 1,
+      "answer_contains": [
+        "north to south"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the canyon yard in Orlando keep audit trails?",
+      "category": "text",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Orlando"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the canyon yard in Orlando?",
+      "category": "text",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Orlando"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Orlando's canyon yard retain logs?",
+      "category": "text",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Orlando"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Orlando canyon yard?",
+      "category": "text",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Orlando"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the canyon yard located in Orlando?",
+      "category": "text",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Orlando"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Orlando canyon yard.",
+      "category": "text",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Orlando"
+      ]
+    },
+    {
+      "question": "The canyon yard in Orlando archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Orlando"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Orlando's canyon yard?",
+      "category": "text",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "13 days",
+        "Orlando"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Orlando plant?",
+      "category": "table",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Orlando seawater pump table use?",
+      "category": "table",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Orlando component table?",
+      "category": "table",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the graphite packing ring?",
+      "category": "table",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the graphite packing ring cost in the parts grid?",
+      "category": "table",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the graphite packing ring on the spare parts grid?",
+      "category": "table",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the graphite packing ring in the parts grid?",
+      "category": "table",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "3.50",
+        "graphite"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Orlando subsystem overview?",
+      "category": "figure",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Orlando subsystem schematic?",
+      "category": "figure",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Orlando subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Orlando subsystem figure?",
+      "category": "figure",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Orlando subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_23_orlando.pdf",
+      "page": 1,
+      "answer_contains": [
+        "south to north"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How long does the lakeside shop in Pittsburgh keep audit trails?",
+      "category": "text",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Pittsburgh"
+      ]
+    },
+    {
+      "question": "What is the audit-trail retention at the lakeside shop in Pittsburgh?",
+      "category": "text",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Pittsburgh"
+      ]
+    },
+    {
+      "question": "After a shift, how many days does Pittsburgh's lakeside shop retain logs?",
+      "category": "text",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Pittsburgh"
+      ]
+    },
+    {
+      "question": "Retention window for shift logs at the Pittsburgh lakeside shop?",
+      "category": "text",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Pittsburgh"
+      ]
+    },
+    {
+      "question": "How long are audit trails stored by the lakeside shop located in Pittsburgh?",
+      "category": "text",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Pittsburgh"
+      ]
+    },
+    {
+      "question": "Give the log-keeping period used at the Pittsburgh lakeside shop.",
+      "category": "text",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Pittsburgh"
+      ]
+    },
+    {
+      "question": "The lakeside shop in Pittsburgh archives shift logs for how long?",
+      "category": "text",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Pittsburgh"
+      ]
+    },
+    {
+      "question": "What retention applies to audit trails at Pittsburgh's lakeside shop?",
+      "category": "text",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "16 days",
+        "Pittsburgh"
+      ]
+    },
+    {
+      "question": "What speed rating is listed for the seawater pump at the Pittsburgh plant?",
+      "category": "table",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Which knot rating does the Pittsburgh seawater pump table use?",
+      "category": "table",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "Hours aside, what is the seawater pump rating in the Pittsburgh component table?",
+      "category": "table",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "19 knots",
+        "seawater pump"
+      ]
+    },
+    {
+      "question": "What is the spare-parts grid price of the bronze seawater impeller?",
+      "category": "table",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "42.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "How much does the bronze seawater impeller cost in the parts grid?",
+      "category": "table",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "42.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "List price of the bronze seawater impeller on the spare parts grid?",
+      "category": "table",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "42.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "USD amount shown for the bronze seawater impeller in the parts grid?",
+      "category": "table",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "42.00",
+        "bronze"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Which way does coolant flow in the Pittsburgh subsystem overview?",
+      "category": "figure",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Coolant flow direction on the Pittsburgh subsystem schematic?",
+      "category": "figure",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "In the Pittsburgh subsystem overview, coolant moves how?",
+      "category": "figure",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "What flow direction is painted on the Pittsburgh subsystem figure?",
+      "category": "figure",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    },
+    {
+      "question": "Does the Pittsburgh subsystem overview show eastward or westward coolant flow?",
+      "category": "figure",
+      "document": "plant_24_pittsburgh.pdf",
+      "page": 1,
+      "answer_contains": [
+        "east to west"
+      ],
+      "pixels_only": true
+    }
+  ]
+}

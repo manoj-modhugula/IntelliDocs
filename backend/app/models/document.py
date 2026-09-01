@@ -7,7 +7,7 @@ from datetime import datetime
 from app.core.utils import utc_now_naive
 from enum import Enum
 from typing import Optional, List
-from sqlalchemy import String, Text, Integer, DateTime, ForeignKey, Index
+from sqlalchemy import String, Text, Integer, Float, DateTime, ForeignKey, Index
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from pgvector.sqlalchemy import Vector
 
@@ -73,9 +73,20 @@ class Chunk(Base):
     content: Mapped[str] = mapped_column(Text, nullable=False)
     page_number: Mapped[Optional[int]] = mapped_column(Integer, nullable=True)
     chunk_index: Mapped[int] = mapped_column(Integer, nullable=False)
+
+    # text | table | figure
+    chunk_type: Mapped[str] = mapped_column(String(16), default="text")
+    bbox_x0: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    bbox_y0: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    bbox_x1: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    bbox_y1: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    image_key: Mapped[Optional[str]] = mapped_column(String(500), nullable=True)
+    caption: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     
     # Vector embedding (1024 dimensions for Titan)
     embedding: Mapped[List[float]] = mapped_column(Vector(1024), nullable=True)
+    # CLIP visual embedding (512-d, figures and table screenshots)
+    clip_embedding: Mapped[Optional[List[float]]] = mapped_column(Vector(512), nullable=True)
 
     # Content hash for dedupe/reuse
     content_hash: Mapped[Optional[str]] = mapped_column(String(64), nullable=True)
@@ -94,8 +105,10 @@ class Chunk(Base):
         Index("idx_chunk_document", "document_id"),
         Index("idx_chunk_workspace", "workspace_id"),
         Index("idx_chunk_embedding", "embedding", postgresql_using="ivfflat", postgresql_with={"lists": 100}, postgresql_ops={"embedding": "vector_cosine_ops"}),
+        Index("idx_chunk_clip_embedding", "clip_embedding", postgresql_using="ivfflat", postgresql_with={"lists": 100}, postgresql_ops={"clip_embedding": "vector_cosine_ops"}),
         Index("idx_chunk_content_trgm", "content", postgresql_using="gin", postgresql_ops={"content": "gin_trgm_ops"}),
         Index("idx_chunk_content_hash", "content_hash"),
+        Index("idx_chunk_type", "chunk_type"),
     )
 
 

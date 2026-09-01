@@ -13,7 +13,7 @@ class TestStorageServiceInit:
         with patch('boto3.client'):
             from app.services.storage import StorageService
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             
             assert service.client is not None
             assert service.bucket_name is not None
@@ -23,7 +23,7 @@ class TestStorageServiceInit:
         with patch('boto3.client'):
             from app.services.storage import StorageService
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             
             assert service.bucket_name is not None
 
@@ -37,7 +37,7 @@ class TestUploadDocument:
         with patch('boto3.client') as mock_client:
             from app.services.storage import StorageService
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             service.client.upload_fileobj = MagicMock()
             
             file = BytesIO(b"test content")
@@ -57,7 +57,7 @@ class TestUploadDocument:
         with patch('boto3.client') as mock_client:
             from app.services.storage import StorageService
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             service.client.upload_fileobj = MagicMock()
             
             file = BytesIO(b"content")
@@ -80,7 +80,7 @@ class TestDownloadDocument:
         with patch('boto3.client') as mock_boto:
             from app.services.storage import StorageService
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             
             # Mock S3 response
             mock_body = MagicMock()
@@ -97,7 +97,7 @@ class TestDownloadDocument:
         with patch('boto3.client') as mock_boto:
             from app.services.storage import StorageService
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             
             mock_body = MagicMock()
             mock_body.read.return_value = b"content"
@@ -117,7 +117,7 @@ class TestDeleteDocument:
         with patch('boto3.client') as mock_boto:
             from app.services.storage import StorageService
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             service.client.delete_object = MagicMock()
             
             result = await service.delete_document("test-key")
@@ -130,7 +130,7 @@ class TestDeleteDocument:
         with patch('boto3.client') as mock_boto:
             from app.services.storage import StorageService
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             service.client.delete_object = MagicMock()
             
             await service.delete_document("test-key")
@@ -147,7 +147,7 @@ class TestGetPresignedUrl:
         with patch('boto3.client') as mock_boto:
             from app.services.storage import StorageService
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             service.client.generate_presigned_url = MagicMock(
                 return_value="https://s3.amazonaws.com/bucket/key?sig=xxx"
             )
@@ -162,7 +162,7 @@ class TestGetPresignedUrl:
         with patch('boto3.client') as mock_boto:
             from app.services.storage import StorageService
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             service.client.generate_presigned_url = MagicMock(
                 return_value="https://example.com/file"
             )
@@ -180,7 +180,7 @@ class TestEnsureBucketExists:
         with patch('boto3.client') as mock_boto:
             from app.services.storage import StorageService
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             service.client.head_bucket = MagicMock()
             
             result = service.ensure_bucket_exists()

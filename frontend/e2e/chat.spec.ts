@@ -51,7 +51,25 @@ test.describe('Chat Page', () => {
         },
         currentConversationId: 'conv-1',
       };
-      localStorage.setItem('intellidocs-conversations', JSON.stringify(store));
+      localStorage.setItem('intellidocs-chat', JSON.stringify({
+        state: {
+          conversations: [{
+            id: 'conv-1',
+            title: 'Test Chat',
+            messages: store.conversations['conv-1'].messages.map((m) => ({
+              ...m,
+              createdAt: new Date().toISOString(),
+            })),
+            pinnedMessageIds: [],
+            isPinned: false,
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString(),
+            workspaceId: '',
+          }],
+          currentConversationIdByWorkspace: { '': 'conv-1' },
+        },
+        version: 0,
+      }));
     });
     await page.reload();
     await page.waitForTimeout(500);
@@ -80,7 +98,25 @@ test.describe('Chat Page', () => {
         },
         currentConversationId: 'conv-1',
       };
-      localStorage.setItem('intellidocs-conversations', JSON.stringify(store));
+      localStorage.setItem('intellidocs-chat', JSON.stringify({
+        state: {
+          conversations: [{
+            id: 'conv-1',
+            title: 'Test Chat',
+            messages: store.conversations['conv-1'].messages.map((m) => ({
+              ...m,
+              createdAt: new Date().toISOString(),
+            })),
+            pinnedMessageIds: [],
+            isPinned: false,
+            createdAt: new Date().toISOString(),
+            updatedAt: new Date().toISOString(),
+            workspaceId: '',
+          }],
+          currentConversationIdByWorkspace: { '': 'conv-1' },
+        },
+        version: 0,
+      }));
     });
     await page.reload();
     await page.waitForTimeout(500);
@@ -106,9 +142,7 @@ test.describe('Chat Page', () => {
       await sidebarToggle.click();
     }
 
-    const newChatBtn = page.getByRole('button', { name: /new chat/i }).or(
-      page.getByText(/new chat/i).first()
-    );
+    const newChatBtn = page.getByRole('button', { name: 'Start new chat' });
     await expect(newChatBtn).toBeVisible();
   });
 

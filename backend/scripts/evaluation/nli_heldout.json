@@ -1,0 +1,2404 @@
+{
+  "items": [
+    {
+      "claim": "The northern depot in Halifax retains audit trails for 7 days.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "Shift logs at the Halifax northern depot are kept for 7 days.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "The bronze seawater impeller is listed at 18.00 USD on the spare parts grid.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "Coolant flow on the Halifax subsystem overview is east to west.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "Operators at the Halifax northern depot must archive the shift log before the window closes.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "The Halifax plant documents a 7-day audit-trail window.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "The spare-parts price for the bronze seawater impeller is 18.00.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "The Halifax schematic indicates coolant moving east to west.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "Halifax's northern depot keeps audit trails for 7 days after each shift.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "The Halifax spare-parts grid prices the bronze seawater impeller at 18.00 USD.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "Audit trails at the northern depot in Halifax expire after 7 days.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "The painted coolant direction at Halifax is east to west.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "The Halifax northern depot archives the shift log within a 7-day window.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "List price 18.00 applies to the bronze seawater impeller at Halifax.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "The northern depot in Halifax retains audit trails for 18 days.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "The Halifax plant offers same-day on-site nuclear certification.",
+      "evidence": "The northern depot in Halifax retains audit trails for 7 days after each shift. Spare parts grid lists the bronze seawater impeller at 18.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Halifax"
+    },
+    {
+      "claim": "The harbor workshop in Tulsa retains audit trails for 10 days.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "Shift logs at the Tulsa harbor workshop are kept for 10 days.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "The nitrile hatch gasket is listed at 19.00 USD on the spare parts grid.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "Coolant flow on the Tulsa subsystem overview is west to east.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "Operators at the Tulsa harbor workshop must archive the shift log before the window closes.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "The Tulsa plant documents a 10-day audit-trail window.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "The spare-parts price for the nitrile hatch gasket is 19.00.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "The Tulsa schematic indicates coolant moving west to east.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "Tulsa's harbor workshop keeps audit trails for 10 days after each shift.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "The Tulsa spare-parts grid prices the nitrile hatch gasket at 19.00 USD.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "Audit trails at the harbor workshop in Tulsa expire after 10 days.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "The painted coolant direction at Tulsa is west to east.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "The Tulsa harbor workshop archives the shift log within a 10-day window.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "List price 19.00 applies to the nitrile hatch gasket at Tulsa.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "The harbor workshop in Tulsa retains audit trails for 21 days.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "The Tulsa plant offers same-day on-site nuclear certification.",
+      "evidence": "The harbor workshop in Tulsa retains audit trails for 10 days after each shift. Spare parts grid lists the nitrile hatch gasket at 19.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Tulsa"
+    },
+    {
+      "claim": "The ridge plant in Boise retains audit trails for 13 days.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "Shift logs at the Boise ridge plant are kept for 13 days.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "The ceramic spindle bearing is listed at 20.00 USD on the spare parts grid.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "Coolant flow on the Boise subsystem overview is north to south.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "Operators at the Boise ridge plant must archive the shift log before the window closes.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "The Boise plant documents a 13-day audit-trail window.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "The spare-parts price for the ceramic spindle bearing is 20.00.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "The Boise schematic indicates coolant moving north to south.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "Boise's ridge plant keeps audit trails for 13 days after each shift.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "The Boise spare-parts grid prices the ceramic spindle bearing at 20.00 USD.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "Audit trails at the ridge plant in Boise expire after 13 days.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "The painted coolant direction at Boise is north to south.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "The Boise ridge plant archives the shift log within a 13-day window.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "List price 20.00 applies to the ceramic spindle bearing at Boise.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Boise"
+    },
+    {
+      "claim": "The ridge plant in Boise retains audit trails for 24 days.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Boise"
+    },
+    {
+      "claim": "The Boise plant offers same-day on-site nuclear certification.",
+      "evidence": "The ridge plant in Boise retains audit trails for 13 days after each shift. Spare parts grid lists the ceramic spindle bearing at 20.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Boise"
+    },
+    {
+      "claim": "The canyon yard in Tacoma retains audit trails for 16 days.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "Shift logs at the Tacoma canyon yard are kept for 16 days.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "The graphite packing ring is listed at 21.00 USD on the spare parts grid.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "Coolant flow on the Tacoma subsystem overview is south to north.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "Operators at the Tacoma canyon yard must archive the shift log before the window closes.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "The Tacoma plant documents a 16-day audit-trail window.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "The spare-parts price for the graphite packing ring is 21.00.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "The Tacoma schematic indicates coolant moving south to north.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "Tacoma's canyon yard keeps audit trails for 16 days after each shift.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "The Tacoma spare-parts grid prices the graphite packing ring at 21.00 USD.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "Audit trails at the canyon yard in Tacoma expire after 16 days.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "The painted coolant direction at Tacoma is south to north.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "The Tacoma canyon yard archives the shift log within a 16-day window.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "List price 21.00 applies to the graphite packing ring at Tacoma.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "The canyon yard in Tacoma retains audit trails for 27 days.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "The Tacoma plant offers same-day on-site nuclear certification.",
+      "evidence": "The canyon yard in Tacoma retains audit trails for 16 days after each shift. Spare parts grid lists the graphite packing ring at 21.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Tacoma"
+    },
+    {
+      "claim": "The lakeside shop in Durham retains audit trails for 19 days.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "Shift logs at the Durham lakeside shop are kept for 19 days.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "The bronze seawater impeller is listed at 22.00 USD on the spare parts grid.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "Coolant flow on the Durham subsystem overview is east to west.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "Operators at the Durham lakeside shop must archive the shift log before the window closes.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "The Durham plant documents a 19-day audit-trail window.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "The spare-parts price for the bronze seawater impeller is 22.00.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "The Durham schematic indicates coolant moving east to west.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "Durham's lakeside shop keeps audit trails for 19 days after each shift.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "The Durham spare-parts grid prices the bronze seawater impeller at 22.00 USD.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "Audit trails at the lakeside shop in Durham expire after 19 days.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "The painted coolant direction at Durham is east to west.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "The Durham lakeside shop archives the shift log within a 19-day window.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "List price 22.00 applies to the bronze seawater impeller at Durham.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Durham"
+    },
+    {
+      "claim": "The lakeside shop in Durham retains audit trails for 30 days.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Durham"
+    },
+    {
+      "claim": "The Durham plant offers same-day on-site nuclear certification.",
+      "evidence": "The lakeside shop in Durham retains audit trails for 19 days after each shift. Spare parts grid lists the bronze seawater impeller at 22.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Durham"
+    },
+    {
+      "claim": "The northern depot in Omaha retains audit trails for 22 days.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "Shift logs at the Omaha northern depot are kept for 22 days.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "The nitrile hatch gasket is listed at 23.00 USD on the spare parts grid.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "Coolant flow on the Omaha subsystem overview is west to east.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "Operators at the Omaha northern depot must archive the shift log before the window closes.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "The Omaha plant documents a 22-day audit-trail window.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "The spare-parts price for the nitrile hatch gasket is 23.00.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "The Omaha schematic indicates coolant moving west to east.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "Omaha's northern depot keeps audit trails for 22 days after each shift.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "The Omaha spare-parts grid prices the nitrile hatch gasket at 23.00 USD.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "Audit trails at the northern depot in Omaha expire after 22 days.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "The painted coolant direction at Omaha is west to east.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "The Omaha northern depot archives the shift log within a 22-day window.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "List price 23.00 applies to the nitrile hatch gasket at Omaha.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "The northern depot in Omaha retains audit trails for 33 days.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "The Omaha plant offers same-day on-site nuclear certification.",
+      "evidence": "The northern depot in Omaha retains audit trails for 22 days after each shift. Spare parts grid lists the nitrile hatch gasket at 23.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Omaha"
+    },
+    {
+      "claim": "The harbor workshop in Irvine retains audit trails for 25 days.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "Shift logs at the Irvine harbor workshop are kept for 25 days.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "The ceramic spindle bearing is listed at 24.00 USD on the spare parts grid.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "Coolant flow on the Irvine subsystem overview is north to south.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "Operators at the Irvine harbor workshop must archive the shift log before the window closes.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "The Irvine plant documents a 25-day audit-trail window.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "The spare-parts price for the ceramic spindle bearing is 24.00.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "The Irvine schematic indicates coolant moving north to south.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "Irvine's harbor workshop keeps audit trails for 25 days after each shift.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "The Irvine spare-parts grid prices the ceramic spindle bearing at 24.00 USD.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "Audit trails at the harbor workshop in Irvine expire after 25 days.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "The painted coolant direction at Irvine is north to south.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "The Irvine harbor workshop archives the shift log within a 25-day window.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "List price 24.00 applies to the ceramic spindle bearing at Irvine.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "The harbor workshop in Irvine retains audit trails for 36 days.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "The Irvine plant offers same-day on-site nuclear certification.",
+      "evidence": "The harbor workshop in Irvine retains audit trails for 25 days after each shift. Spare parts grid lists the ceramic spindle bearing at 24.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Irvine"
+    },
+    {
+      "claim": "The ridge plant in Akron retains audit trails for 7 days.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "Shift logs at the Akron ridge plant are kept for 7 days.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "The graphite packing ring is listed at 25.00 USD on the spare parts grid.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "Coolant flow on the Akron subsystem overview is south to north.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "Operators at the Akron ridge plant must archive the shift log before the window closes.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "The Akron plant documents a 7-day audit-trail window.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "The spare-parts price for the graphite packing ring is 25.00.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "The Akron schematic indicates coolant moving south to north.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "Akron's ridge plant keeps audit trails for 7 days after each shift.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "The Akron spare-parts grid prices the graphite packing ring at 25.00 USD.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "Audit trails at the ridge plant in Akron expire after 7 days.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "The painted coolant direction at Akron is south to north.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "The Akron ridge plant archives the shift log within a 7-day window.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "List price 25.00 applies to the graphite packing ring at Akron.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Akron"
+    },
+    {
+      "claim": "The ridge plant in Akron retains audit trails for 18 days.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Akron"
+    },
+    {
+      "claim": "The Akron plant offers same-day on-site nuclear certification.",
+      "evidence": "The ridge plant in Akron retains audit trails for 7 days after each shift. Spare parts grid lists the graphite packing ring at 25.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Akron"
+    },
+    {
+      "claim": "The canyon yard in Tempe retains audit trails for 10 days.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "Shift logs at the Tempe canyon yard are kept for 10 days.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "The bronze seawater impeller is listed at 26.00 USD on the spare parts grid.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "Coolant flow on the Tempe subsystem overview is east to west.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "Operators at the Tempe canyon yard must archive the shift log before the window closes.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "The Tempe plant documents a 10-day audit-trail window.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "The spare-parts price for the bronze seawater impeller is 26.00.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "The Tempe schematic indicates coolant moving east to west.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "Tempe's canyon yard keeps audit trails for 10 days after each shift.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "The Tempe spare-parts grid prices the bronze seawater impeller at 26.00 USD.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "Audit trails at the canyon yard in Tempe expire after 10 days.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "The painted coolant direction at Tempe is east to west.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "The Tempe canyon yard archives the shift log within a 10-day window.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "List price 26.00 applies to the bronze seawater impeller at Tempe.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "The canyon yard in Tempe retains audit trails for 21 days.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "The Tempe plant offers same-day on-site nuclear certification.",
+      "evidence": "The canyon yard in Tempe retains audit trails for 10 days after each shift. Spare parts grid lists the bronze seawater impeller at 26.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Tempe"
+    },
+    {
+      "claim": "The lakeside shop in Provo retains audit trails for 13 days.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "Shift logs at the Provo lakeside shop are kept for 13 days.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "The nitrile hatch gasket is listed at 27.00 USD on the spare parts grid.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "Coolant flow on the Provo subsystem overview is west to east.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "Operators at the Provo lakeside shop must archive the shift log before the window closes.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "The Provo plant documents a 13-day audit-trail window.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "The spare-parts price for the nitrile hatch gasket is 27.00.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "The Provo schematic indicates coolant moving west to east.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "Provo's lakeside shop keeps audit trails for 13 days after each shift.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "The Provo spare-parts grid prices the nitrile hatch gasket at 27.00 USD.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "Audit trails at the lakeside shop in Provo expire after 13 days.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "The painted coolant direction at Provo is west to east.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "The Provo lakeside shop archives the shift log within a 13-day window.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "List price 27.00 applies to the nitrile hatch gasket at Provo.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Provo"
+    },
+    {
+      "claim": "The lakeside shop in Provo retains audit trails for 24 days.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Provo"
+    },
+    {
+      "claim": "The Provo plant offers same-day on-site nuclear certification.",
+      "evidence": "The lakeside shop in Provo retains audit trails for 13 days after each shift. Spare parts grid lists the nitrile hatch gasket at 27.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Provo"
+    },
+    {
+      "claim": "The northern depot in Eugene retains audit trails for 16 days.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "Shift logs at the Eugene northern depot are kept for 16 days.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "The ceramic spindle bearing is listed at 28.00 USD on the spare parts grid.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "Coolant flow on the Eugene subsystem overview is north to south.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "Operators at the Eugene northern depot must archive the shift log before the window closes.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "The Eugene plant documents a 16-day audit-trail window.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "The spare-parts price for the ceramic spindle bearing is 28.00.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "The Eugene schematic indicates coolant moving north to south.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "Eugene's northern depot keeps audit trails for 16 days after each shift.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "The Eugene spare-parts grid prices the ceramic spindle bearing at 28.00 USD.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "Audit trails at the northern depot in Eugene expire after 16 days.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "The painted coolant direction at Eugene is north to south.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "The Eugene northern depot archives the shift log within a 16-day window.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "List price 28.00 applies to the ceramic spindle bearing at Eugene.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "The northern depot in Eugene retains audit trails for 27 days.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "The Eugene plant offers same-day on-site nuclear certification.",
+      "evidence": "The northern depot in Eugene retains audit trails for 16 days after each shift. Spare parts grid lists the ceramic spindle bearing at 28.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Eugene"
+    },
+    {
+      "claim": "The harbor workshop in Mobile retains audit trails for 19 days.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "Shift logs at the Mobile harbor workshop are kept for 19 days.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "The graphite packing ring is listed at 29.00 USD on the spare parts grid.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "Coolant flow on the Mobile subsystem overview is south to north.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "Operators at the Mobile harbor workshop must archive the shift log before the window closes.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "The Mobile plant documents a 19-day audit-trail window.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "The spare-parts price for the graphite packing ring is 29.00.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "The Mobile schematic indicates coolant moving south to north.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "Mobile's harbor workshop keeps audit trails for 19 days after each shift.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "The Mobile spare-parts grid prices the graphite packing ring at 29.00 USD.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "Audit trails at the harbor workshop in Mobile expire after 19 days.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "The painted coolant direction at Mobile is south to north.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "The Mobile harbor workshop archives the shift log within a 19-day window.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "List price 29.00 applies to the graphite packing ring at Mobile.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "The harbor workshop in Mobile retains audit trails for 30 days.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "The Mobile plant offers same-day on-site nuclear certification.",
+      "evidence": "The harbor workshop in Mobile retains audit trails for 19 days after each shift. Spare parts grid lists the graphite packing ring at 29.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Mobile"
+    },
+    {
+      "claim": "The ridge plant in Reno retains audit trails for 22 days.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "Shift logs at the Reno ridge plant are kept for 22 days.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "The bronze seawater impeller is listed at 30.00 USD on the spare parts grid.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "Coolant flow on the Reno subsystem overview is east to west.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "Operators at the Reno ridge plant must archive the shift log before the window closes.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "The Reno plant documents a 22-day audit-trail window.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "The spare-parts price for the bronze seawater impeller is 30.00.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "The Reno schematic indicates coolant moving east to west.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "Reno's ridge plant keeps audit trails for 22 days after each shift.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "The Reno spare-parts grid prices the bronze seawater impeller at 30.00 USD.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "Audit trails at the ridge plant in Reno expire after 22 days.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "The painted coolant direction at Reno is east to west.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "The Reno ridge plant archives the shift log within a 22-day window.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "List price 30.00 applies to the bronze seawater impeller at Reno.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Reno"
+    },
+    {
+      "claim": "The ridge plant in Reno retains audit trails for 33 days.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Reno"
+    },
+    {
+      "claim": "The Reno plant offers same-day on-site nuclear certification.",
+      "evidence": "The ridge plant in Reno retains audit trails for 22 days after each shift. Spare parts grid lists the bronze seawater impeller at 30.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Reno"
+    },
+    {
+      "claim": "The canyon yard in Spokane retains audit trails for 25 days.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "Shift logs at the Spokane canyon yard are kept for 25 days.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "The nitrile hatch gasket is listed at 31.00 USD on the spare parts grid.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "Coolant flow on the Spokane subsystem overview is west to east.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "Operators at the Spokane canyon yard must archive the shift log before the window closes.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "The Spokane plant documents a 25-day audit-trail window.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "The spare-parts price for the nitrile hatch gasket is 31.00.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "The Spokane schematic indicates coolant moving west to east.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "Spokane's canyon yard keeps audit trails for 25 days after each shift.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "The Spokane spare-parts grid prices the nitrile hatch gasket at 31.00 USD.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "Audit trails at the canyon yard in Spokane expire after 25 days.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "The painted coolant direction at Spokane is west to east.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "The Spokane canyon yard archives the shift log within a 25-day window.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "List price 31.00 applies to the nitrile hatch gasket at Spokane.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "The canyon yard in Spokane retains audit trails for 36 days.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "The Spokane plant offers same-day on-site nuclear certification.",
+      "evidence": "The canyon yard in Spokane retains audit trails for 25 days after each shift. Spare parts grid lists the nitrile hatch gasket at 31.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Spokane"
+    },
+    {
+      "claim": "The lakeside shop in Laredo retains audit trails for 7 days.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "Shift logs at the Laredo lakeside shop are kept for 7 days.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "The ceramic spindle bearing is listed at 32.00 USD on the spare parts grid.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "Coolant flow on the Laredo subsystem overview is north to south.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "Operators at the Laredo lakeside shop must archive the shift log before the window closes.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "The Laredo plant documents a 7-day audit-trail window.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "The spare-parts price for the ceramic spindle bearing is 32.00.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "The Laredo schematic indicates coolant moving north to south.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "Laredo's lakeside shop keeps audit trails for 7 days after each shift.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "The Laredo spare-parts grid prices the ceramic spindle bearing at 32.00 USD.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "Audit trails at the lakeside shop in Laredo expire after 7 days.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "The painted coolant direction at Laredo is north to south.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "The Laredo lakeside shop archives the shift log within a 7-day window.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "List price 32.00 applies to the ceramic spindle bearing at Laredo.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "The lakeside shop in Laredo retains audit trails for 18 days.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "The Laredo plant offers same-day on-site nuclear certification.",
+      "evidence": "The lakeside shop in Laredo retains audit trails for 7 days after each shift. Spare parts grid lists the ceramic spindle bearing at 32.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Laredo"
+    },
+    {
+      "claim": "The northern depot in Irving retains audit trails for 10 days.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "Shift logs at the Irving northern depot are kept for 10 days.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "The graphite packing ring is listed at 33.00 USD on the spare parts grid.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "Coolant flow on the Irving subsystem overview is south to north.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "Operators at the Irving northern depot must archive the shift log before the window closes.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "The Irving plant documents a 10-day audit-trail window.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "The spare-parts price for the graphite packing ring is 33.00.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "The Irving schematic indicates coolant moving south to north.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "Irving's northern depot keeps audit trails for 10 days after each shift.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "The Irving spare-parts grid prices the graphite packing ring at 33.00 USD.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "Audit trails at the northern depot in Irving expire after 10 days.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "The painted coolant direction at Irving is south to north.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "The Irving northern depot archives the shift log within a 10-day window.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "List price 33.00 applies to the graphite packing ring at Irving.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Irving"
+    },
+    {
+      "claim": "The northern depot in Irving retains audit trails for 21 days.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Irving"
+    },
+    {
+      "claim": "The Irving plant offers same-day on-site nuclear certification.",
+      "evidence": "The northern depot in Irving retains audit trails for 10 days after each shift. Spare parts grid lists the graphite packing ring at 33.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Irving"
+    },
+    {
+      "claim": "The harbor workshop in Hialeah retains audit trails for 13 days.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "Shift logs at the Hialeah harbor workshop are kept for 13 days.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "The bronze seawater impeller is listed at 34.00 USD on the spare parts grid.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "Coolant flow on the Hialeah subsystem overview is east to west.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "Operators at the Hialeah harbor workshop must archive the shift log before the window closes.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "The Hialeah plant documents a 13-day audit-trail window.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "The spare-parts price for the bronze seawater impeller is 34.00.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "The Hialeah schematic indicates coolant moving east to west.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "Hialeah's harbor workshop keeps audit trails for 13 days after each shift.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "The Hialeah spare-parts grid prices the bronze seawater impeller at 34.00 USD.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "Audit trails at the harbor workshop in Hialeah expire after 13 days.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "The painted coolant direction at Hialeah is east to west.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "The Hialeah harbor workshop archives the shift log within a 13-day window.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "List price 34.00 applies to the bronze seawater impeller at Hialeah.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "The harbor workshop in Hialeah retains audit trails for 24 days.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "The Hialeah plant offers same-day on-site nuclear certification.",
+      "evidence": "The harbor workshop in Hialeah retains audit trails for 13 days after each shift. Spare parts grid lists the bronze seawater impeller at 34.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Hialeah"
+    },
+    {
+      "claim": "The ridge plant in Garland retains audit trails for 16 days.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "Shift logs at the Garland ridge plant are kept for 16 days.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "The nitrile hatch gasket is listed at 35.00 USD on the spare parts grid.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "Coolant flow on the Garland subsystem overview is west to east.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "Operators at the Garland ridge plant must archive the shift log before the window closes.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "The Garland plant documents a 16-day audit-trail window.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "The spare-parts price for the nitrile hatch gasket is 35.00.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "The Garland schematic indicates coolant moving west to east.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "Garland's ridge plant keeps audit trails for 16 days after each shift.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "The Garland spare-parts grid prices the nitrile hatch gasket at 35.00 USD.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "Audit trails at the ridge plant in Garland expire after 16 days.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "The painted coolant direction at Garland is west to east.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "The Garland ridge plant archives the shift log within a 16-day window.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "List price 35.00 applies to the nitrile hatch gasket at Garland.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Garland"
+    },
+    {
+      "claim": "The ridge plant in Garland retains audit trails for 27 days.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Garland"
+    },
+    {
+      "claim": "The Garland plant offers same-day on-site nuclear certification.",
+      "evidence": "The ridge plant in Garland retains audit trails for 16 days after each shift. Spare parts grid lists the nitrile hatch gasket at 35.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Garland"
+    },
+    {
+      "claim": "The canyon yard in Scottsdale retains audit trails for 19 days.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "Shift logs at the Scottsdale canyon yard are kept for 19 days.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "The ceramic spindle bearing is listed at 36.00 USD on the spare parts grid.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "Coolant flow on the Scottsdale subsystem overview is north to south.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "Operators at the Scottsdale canyon yard must archive the shift log before the window closes.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "The Scottsdale plant documents a 19-day audit-trail window.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "The spare-parts price for the ceramic spindle bearing is 36.00.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "The Scottsdale schematic indicates coolant moving north to south.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "Scottsdale's canyon yard keeps audit trails for 19 days after each shift.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "The Scottsdale spare-parts grid prices the ceramic spindle bearing at 36.00 USD.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "Audit trails at the canyon yard in Scottsdale expire after 19 days.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "The painted coolant direction at Scottsdale is north to south.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "The Scottsdale canyon yard archives the shift log within a 19-day window.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "List price 36.00 applies to the ceramic spindle bearing at Scottsdale.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "The canyon yard in Scottsdale retains audit trails for 30 days.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "The Scottsdale plant offers same-day on-site nuclear certification.",
+      "evidence": "The canyon yard in Scottsdale retains audit trails for 19 days after each shift. Spare parts grid lists the ceramic spindle bearing at 36.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Scottsdale"
+    },
+    {
+      "claim": "The lakeside shop in Gilbert retains audit trails for 22 days.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "Shift logs at the Gilbert lakeside shop are kept for 22 days.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "The graphite packing ring is listed at 37.00 USD on the spare parts grid.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "Coolant flow on the Gilbert subsystem overview is south to north.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "Operators at the Gilbert lakeside shop must archive the shift log before the window closes.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "The Gilbert plant documents a 22-day audit-trail window.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "The spare-parts price for the graphite packing ring is 37.00.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "The Gilbert schematic indicates coolant moving south to north.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "Gilbert's lakeside shop keeps audit trails for 22 days after each shift.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "The Gilbert spare-parts grid prices the graphite packing ring at 37.00 USD.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "Audit trails at the lakeside shop in Gilbert expire after 22 days.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "The painted coolant direction at Gilbert is south to north.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "The Gilbert lakeside shop archives the shift log within a 22-day window.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "List price 37.00 applies to the graphite packing ring at Gilbert.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "The lakeside shop in Gilbert retains audit trails for 33 days.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "The Gilbert plant offers same-day on-site nuclear certification.",
+      "evidence": "The lakeside shop in Gilbert retains audit trails for 22 days after each shift. Spare parts grid lists the graphite packing ring at 37.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Gilbert"
+    },
+    {
+      "claim": "The northern depot in Glendale retains audit trails for 25 days.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "Shift logs at the Glendale northern depot are kept for 25 days.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "The bronze seawater impeller is listed at 38.00 USD on the spare parts grid.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "Coolant flow on the Glendale subsystem overview is east to west.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "Operators at the Glendale northern depot must archive the shift log before the window closes.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "The Glendale plant documents a 25-day audit-trail window.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "The spare-parts price for the bronze seawater impeller is 38.00.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "The Glendale schematic indicates coolant moving east to west.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "Glendale's northern depot keeps audit trails for 25 days after each shift.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "The Glendale spare-parts grid prices the bronze seawater impeller at 38.00 USD.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "Audit trails at the northern depot in Glendale expire after 25 days.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "The painted coolant direction at Glendale is east to west.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "The Glendale northern depot archives the shift log within a 25-day window.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "List price 38.00 applies to the bronze seawater impeller at Glendale.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "The northern depot in Glendale retains audit trails for 36 days.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "The Glendale plant offers same-day on-site nuclear certification.",
+      "evidence": "The northern depot in Glendale retains audit trails for 25 days after each shift. Spare parts grid lists the bronze seawater impeller at 38.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Glendale"
+    },
+    {
+      "claim": "The harbor workshop in Chandler retains audit trails for 7 days.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "Shift logs at the Chandler harbor workshop are kept for 7 days.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "The nitrile hatch gasket is listed at 39.00 USD on the spare parts grid.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "Coolant flow on the Chandler subsystem overview is west to east.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "Operators at the Chandler harbor workshop must archive the shift log before the window closes.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "The Chandler plant documents a 7-day audit-trail window.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "The spare-parts price for the nitrile hatch gasket is 39.00.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "The Chandler schematic indicates coolant moving west to east.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "Chandler's harbor workshop keeps audit trails for 7 days after each shift.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "The Chandler spare-parts grid prices the nitrile hatch gasket at 39.00 USD.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "Audit trails at the harbor workshop in Chandler expire after 7 days.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "The painted coolant direction at Chandler is west to east.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "The Chandler harbor workshop archives the shift log within a 7-day window.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "List price 39.00 applies to the nitrile hatch gasket at Chandler.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "entailment",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "The harbor workshop in Chandler retains audit trails for 18 days.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "The Chandler plant offers same-day on-site nuclear certification.",
+      "evidence": "The harbor workshop in Chandler retains audit trails for 7 days after each shift. Spare parts grid lists the nitrile hatch gasket at 39.00 USD. The subsystem overview paints coolant flow west to east.",
+      "label": "neutral",
+      "plant": "Chandler"
+    },
+    {
+      "claim": "The ridge plant in Norfolk retains audit trails for 10 days.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "Shift logs at the Norfolk ridge plant are kept for 10 days.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "The ceramic spindle bearing is listed at 40.00 USD on the spare parts grid.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "Coolant flow on the Norfolk subsystem overview is north to south.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "Operators at the Norfolk ridge plant must archive the shift log before the window closes.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "The Norfolk plant documents a 10-day audit-trail window.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "The spare-parts price for the ceramic spindle bearing is 40.00.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "The Norfolk schematic indicates coolant moving north to south.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "Norfolk's ridge plant keeps audit trails for 10 days after each shift.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "The Norfolk spare-parts grid prices the ceramic spindle bearing at 40.00 USD.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "Audit trails at the ridge plant in Norfolk expire after 10 days.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "The painted coolant direction at Norfolk is north to south.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "The Norfolk ridge plant archives the shift log within a 10-day window.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "List price 40.00 applies to the ceramic spindle bearing at Norfolk.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "entailment",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "The ridge plant in Norfolk retains audit trails for 21 days.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "The Norfolk plant offers same-day on-site nuclear certification.",
+      "evidence": "The ridge plant in Norfolk retains audit trails for 10 days after each shift. Spare parts grid lists the ceramic spindle bearing at 40.00 USD. The subsystem overview paints coolant flow north to south.",
+      "label": "neutral",
+      "plant": "Norfolk"
+    },
+    {
+      "claim": "The canyon yard in Orlando retains audit trails for 13 days.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "Shift logs at the Orlando canyon yard are kept for 13 days.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "The graphite packing ring is listed at 41.00 USD on the spare parts grid.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "Coolant flow on the Orlando subsystem overview is south to north.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "Operators at the Orlando canyon yard must archive the shift log before the window closes.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "The Orlando plant documents a 13-day audit-trail window.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "The spare-parts price for the graphite packing ring is 41.00.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "The Orlando schematic indicates coolant moving south to north.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "Orlando's canyon yard keeps audit trails for 13 days after each shift.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "The Orlando spare-parts grid prices the graphite packing ring at 41.00 USD.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "Audit trails at the canyon yard in Orlando expire after 13 days.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "The painted coolant direction at Orlando is south to north.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "The Orlando canyon yard archives the shift log within a 13-day window.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "List price 41.00 applies to the graphite packing ring at Orlando.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "entailment",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "The canyon yard in Orlando retains audit trails for 24 days.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "The Orlando plant offers same-day on-site nuclear certification.",
+      "evidence": "The canyon yard in Orlando retains audit trails for 13 days after each shift. Spare parts grid lists the graphite packing ring at 41.00 USD. The subsystem overview paints coolant flow south to north.",
+      "label": "neutral",
+      "plant": "Orlando"
+    },
+    {
+      "claim": "The lakeside shop in Pittsburgh retains audit trails for 16 days.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "Shift logs at the Pittsburgh lakeside shop are kept for 16 days.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "The bronze seawater impeller is listed at 42.00 USD on the spare parts grid.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "Coolant flow on the Pittsburgh subsystem overview is east to west.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "Operators at the Pittsburgh lakeside shop must archive the shift log before the window closes.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "The Pittsburgh plant documents a 16-day audit-trail window.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "The spare-parts price for the bronze seawater impeller is 42.00.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "The Pittsburgh schematic indicates coolant moving east to west.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "Pittsburgh's lakeside shop keeps audit trails for 16 days after each shift.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "The Pittsburgh spare-parts grid prices the bronze seawater impeller at 42.00 USD.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "Audit trails at the lakeside shop in Pittsburgh expire after 16 days.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "The painted coolant direction at Pittsburgh is east to west.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "The Pittsburgh lakeside shop archives the shift log within a 16-day window.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "List price 42.00 applies to the bronze seawater impeller at Pittsburgh.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "entailment",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "The lakeside shop in Pittsburgh retains audit trails for 27 days.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Pittsburgh"
+    },
+    {
+      "claim": "The Pittsburgh plant offers same-day on-site nuclear certification.",
+      "evidence": "The lakeside shop in Pittsburgh retains audit trails for 16 days after each shift. Spare parts grid lists the bronze seawater impeller at 42.00 USD. The subsystem overview paints coolant flow east to west.",
+      "label": "neutral",
+      "plant": "Pittsburgh"
+    }
+  ]
+}

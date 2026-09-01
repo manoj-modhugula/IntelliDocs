@@ -12,7 +12,7 @@ class TestStorageUpload:
     @pytest.mark.asyncio
     async def test_upload_generates_s3_key(self):
         """Test that upload generates proper S3 key."""
-        service = StorageService()
+        service = StorageService(backend="s3")
         
         with patch.object(service, "client") as mock_client:
             mock_client.put_object = MagicMock()
@@ -28,7 +28,7 @@ class TestStorageUpload:
     @pytest.mark.asyncio
     async def test_upload_uses_s3_client(self):
         """Test that upload uses S3 client."""
-        service = StorageService()
+        service = StorageService(backend="s3")
         
         # Just verify service has client attribute
         assert hasattr(service, "client")
@@ -41,7 +41,7 @@ class TestStorageDownload:
     @pytest.mark.asyncio
     async def test_download_returns_bytes(self):
         """Test that download returns file bytes."""
-        service = StorageService()
+        service = StorageService(backend="s3")
         
         with patch.object(service, "client") as mock_client:
             mock_body = MagicMock()
@@ -55,7 +55,7 @@ class TestStorageDownload:
     @pytest.mark.asyncio
     async def test_download_calls_get_object(self):
         """Test that download calls S3 get_object."""
-        service = StorageService()
+        service = StorageService(backend="s3")
         
         with patch.object(service, "client") as mock_client:
             mock_body = MagicMock()
@@ -73,7 +73,7 @@ class TestStorageDelete:
     @pytest.mark.asyncio
     async def test_delete_returns_true(self):
         """Test that delete returns True on success."""
-        service = StorageService()
+        service = StorageService(backend="s3")
         
         with patch.object(service, "client") as mock_client:
             mock_client.delete_object = MagicMock()
@@ -85,7 +85,7 @@ class TestStorageDelete:
     @pytest.mark.asyncio
     async def test_delete_calls_delete_object(self):
         """Test that delete calls S3 delete_object."""
-        service = StorageService()
+        service = StorageService(backend="s3")
         
         with patch.object(service, "client") as mock_client:
             mock_client.delete_object = MagicMock()
@@ -101,7 +101,7 @@ class TestStoragePresignedUrl:
     @pytest.mark.asyncio
     async def test_presigned_url_returns_string(self):
         """Test that presigned URL returns a string."""
-        service = StorageService()
+        service = StorageService(backend="s3")
         
         with patch.object(service, "client") as mock_client:
             mock_client.generate_presigned_url = MagicMock(
@@ -115,7 +115,7 @@ class TestStoragePresignedUrl:
     @pytest.mark.asyncio
     async def test_presigned_url_custom_expiration(self):
         """Test presigned URL with custom expiration."""
-        service = StorageService()
+        service = StorageService(backend="s3")
         
         with patch.object(service, "client") as mock_client:
             mock_client.generate_presigned_url = MagicMock(return_value="url")
@@ -131,7 +131,7 @@ class TestBucketManagement:
 
     def test_ensure_bucket_method_exists(self):
         """Test ensure_bucket_exists method exists."""
-        service = StorageService()
+        service = StorageService(backend="s3")
         
         # Method should exist
         assert hasattr(service, "ensure_bucket_exists")
@@ -139,7 +139,7 @@ class TestBucketManagement:
 
     def test_ensure_bucket_exists_returns_true(self):
         """Test returns True when bucket exists."""
-        service = StorageService()
+        service = StorageService(backend="s3")
         
         with patch.object(service, "client") as mock_client:
             mock_client.head_bucket = MagicMock()  # No exception = exists

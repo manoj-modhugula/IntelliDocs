@@ -82,6 +82,14 @@ class TestAuthEndpoints:
         response = client.post("/auth/refresh")
         assert response.status_code in [401, 403, 422]
 
+    def test_register_rejects_short_password(self):
+        """UI promises ≥8 characters; backend must reject shorter passwords."""
+        response = client.post(
+            "/auth/register",
+            json={"email": "shortpass@example.com", "password": "short"},
+        )
+        assert response.status_code == 422
+
 
 class TestTokenOperations:
     """Tests for JWT token operations."""
