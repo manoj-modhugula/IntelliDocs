@@ -15,7 +15,7 @@ class TestStorageService:
     def test_init_creates_s3_client(self):
         """Test initialization creates S3 client."""
         with patch("boto3.client") as mock_client:
-            service = StorageService()
+            service = StorageService(backend="s3")
             
             mock_client.assert_called_once()
             call_args = mock_client.call_args
@@ -28,7 +28,7 @@ class TestStorageService:
             mock_client = MagicMock()
             mock_boto.return_value = mock_client
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             file = BytesIO(b"test content")
             
             result = await service.upload_document(
@@ -49,7 +49,7 @@ class TestStorageService:
             mock_client = MagicMock()
             mock_boto.return_value = mock_client
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             file = BytesIO(b"test content")
             
             await service.upload_document(
@@ -74,7 +74,7 @@ class TestStorageService:
             mock_response["Body"].read.return_value = b"file content"
             mock_client.get_object.return_value = mock_response
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             result = await service.download_document("documents/test.pdf")
             
             assert result == b"file content"
@@ -86,7 +86,7 @@ class TestStorageService:
             mock_client = MagicMock()
             mock_boto.return_value = mock_client
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             result = await service.delete_document("documents/test.pdf")
             
             assert result == True
@@ -100,7 +100,7 @@ class TestStorageService:
             mock_boto.return_value = mock_client
             mock_client.generate_presigned_url.return_value = "https://s3.amazonaws.com/..."
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             result = await service.get_presigned_url("documents/test.pdf")
             
             assert result.startswith("https://")
@@ -116,7 +116,7 @@ class TestBucketManagement:
             mock_client = MagicMock()
             mock_boto.return_value = mock_client
             
-            service = StorageService()
+            service = StorageService(backend="s3")
             result = service.ensure_bucket_exists()
             
             assert result == True

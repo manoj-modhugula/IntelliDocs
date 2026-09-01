@@ -2,6 +2,7 @@
 
 import { useCallback, useRef } from 'react';
 import { Citation } from '@/store/chatStore';
+import { handleUnauthorized } from '@/lib/authFailure';
 
 export type ChatStatus = 'searching' | 'thinking' | 'streaming' | 'complete' | 'error';
 
@@ -21,6 +22,7 @@ interface UseSSEStreamOptions {
 
 export function useSSEStream({ token }: UseSSEStreamOptions) {
   const isStreamingRef = useRef(false);
+  const abortRef = useRef<AbortController | null>(null);
 
   const resetStreamingState = useCallback(() => {
     // no-op - content state is owned by the caller via onContent + scheduleFlush
@@ -39,24 +41,40 @@ export function useSSEStream({ token }: UseSSEStreamOptions) {
     ) => {
       resetStreamingState();
       isStreamingRef.current = true;
+      abortRef.current?.abort();
+      abortRef.current = new AbortController();
 
       const headers: HeadersInit = { 'Content-Type': 'application/json' };
       if (token) headers['Authorization'] = `Bearer ${token}`;
 
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers,
-        body: JSON.stringify({
-          message: message.trim(),
-          conversationId,
-          workspaceId: workspaceId ?? undefined,
-          documentIds: documentIds ?? undefined,
-          contextChunkId: contextChunkId ?? undefined,
-          skill: skill ?? undefined,
-        }),
-      });
+      let response: Response;
+      try {
+        response = await fetch('/api/chat', {
+          method: 'POST',
+          headers,
+          signal: abortRef.current.signal,
+          body: JSON.stringify({
+            message: message.trim(),
+            conversationId,
+            workspaceId: workspaceId ?? undefined,
+            documentIds: documentIds ?? undefined,
+            contextChunkId: contextChunkId ?? undefined,
+            skill: skill ?? undefined,
+          }),
+        });
+      } catch (err) {
+        if (err instanceof DOMException && err.name === 'AbortError') {
+          callbacks.onDone();
+          return;
+        }
+        throw err;
+      }
 
       if (!response.ok) {
+        if (handleUnauthorized(response.status)) {
+          callbacks.onDone();
+          return;
+        }
         const errorData = await response.json().catch(() => ({}));
         throw new Error(errorData.error || `Server error: ${response.status}`);
       }
@@ -137,6 +155,8 @@ export function useSSEStream({ token }: UseSSEStreamOptions) {
 
   const abortStreaming = useCallback(() => {
     isStreamingRef.current = false;
+    abortRef.current?.abort();
+    abortRef.current = null;
     resetStreamingState();
   }, [resetStreamingState]);
 

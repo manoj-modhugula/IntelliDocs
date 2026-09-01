@@ -9,8 +9,9 @@ import { useDocumentStore } from '@/store/documentStore';
 import { useAuthStore } from '@/store/authStore';
 import { useWorkspaceStore } from '@/store/workspaceStore';
 import { cn } from '@/lib/utils';
-import { fetchWorkspaces, fetchSkills, createSkill, type SkillItem } from '@/lib/api';
+import { fetchWorkspaces, fetchSkills, createSkill, syncConversationMessages, type SkillItem } from '@/lib/api';
 import { ApiError } from '@/lib/api';
+import { handleUnauthorized } from '@/lib/authFailure';
 import { toast } from '@/components/ui/Toaster';
 
 import { ChatMessage, DEFAULT_FOLLOW_UP_SUGGESTIONS } from '@/components/chat/ChatMessage';
@@ -24,6 +25,7 @@ import { useChatKeyboard } from '@/hooks/useChatKeyboard';
 import { ChatMessageSkeleton } from '@/components/ui/Skeleton';
 import { DragDropOverlay } from '@/components/ui/DragDropOverlay';
 import { exportConversationToMarkdown } from '@/lib/exportConversation';
+import { SourceViewer, type SourceViewerTarget } from '@/components/documents/SourceViewer';
 
 const BUILT_IN_SKILLS = [{ id: 'short', name: 'Short' }] as const;
 const BUILT_IN_SKILL_IDS = new Set<string>(BUILT_IN_SKILLS.map((s) => s.id));
@@ -68,6 +70,8 @@ export default function ChatPage() {
   const [newSkillAction, setNewSkillAction] = useState('');
   const [creatingSkill, setCreatingSkill] = useState(false);
   const [initialLoading, setInitialLoading] = useState(true);
+  const [sourceTarget, setSourceTarget] = useState<SourceViewerTarget | null>(null);
+  const [showShortcuts, setShowShortcuts] = useState(false);
 
   // Sync persisted UI prefs from localStorage after mount (avoids hydration mismatch)
   useEffect(() => {
@@ -107,6 +111,7 @@ export default function ChatPage() {
     conversations,
     getCurrentConversationId,
     createConversation,
+    createConversationOnBackend,
     addMessage,
     updateMessage,
     setMessageStreaming,
@@ -157,7 +162,10 @@ export default function ChatPage() {
   // This eliminates the 4+ simultaneous requests that were firing on mount
   const { syncFromBackend } = useChatStore();
   useEffect(() => {
-    if (!token) return;
+    if (!token) {
+      setInitialLoading(false);
+      return;
+    }
     // Seed from cache immediately for instant UI
     if (cachedWorkspaces.length > 0) {
       setWorkspaces(cachedWorkspaces);
@@ -222,7 +230,13 @@ export default function ChatPage() {
 
   // --- Callbacks ---------------------------------------------------------------─
 
-  const { createConversationOnBackend, deleteConversationOnBackend, renameConversation } = useChatStore();
+  const { deleteConversationOnBackend, renameConversation } = useChatStore();
+
+  useEffect(() => {
+    const onShow = () => setShowShortcuts(true);
+    window.addEventListener('intellidocs:show-shortcuts', onShow);
+    return () => window.removeEventListener('intellidocs:show-shortcuts', onShow);
+  }, []);
 
   const handleNewChat = useCallback(async () => {
     const newId = await createConversationOnBackend(effectiveWorkspaceId);
@@ -434,7 +448,7 @@ export default function ChatPage() {
 
   // --- Chat streaming ---------------------------------------------------------
 
-  const { streamChat } = useSSEStream({ token });
+  const { streamChat, abortStreaming } = useSSEStream({ token });
 
   const sendMessage = useCallback(
     async (userMessage: string, contextChunkId?: string) => {
@@ -452,7 +466,10 @@ export default function ChatPage() {
 
       let convId = currentConversationId;
       if (!convId) {
-        convId = createConversation(workspaceKey);
+        convId = token
+          ? await createConversationOnBackend(effectiveWorkspaceId)
+          : createConversation(workspaceKey);
+        setCurrentConversation(convId, workspaceKey);
       }
 
       addMessage(convId, { role: 'user', content: userMessage.trim() });
@@ -496,14 +513,40 @@ export default function ChatPage() {
             onDone: () => {
               setMessageStreaming(convId, assistantMessageId, false);
               setStreamingStatus('complete');
-              // Auto-rename the conversation to be descriptive after first AI response
+              const conv = useChatStore.getState().conversations.find((c) => c.id === convId);
+              if (token && conv) {
+                const lastUser = [...conv.messages].reverse().find((m) => m.role === 'user');
+                const assistant = conv.messages.find((m) => m.id === assistantMessageId);
+                const turn = [lastUser, assistant].filter(Boolean) as typeof conv.messages;
+                void syncConversationMessages(
+                  token,
+                  convId,
+                  turn.map((m) => ({
+                    id: m.id,
+                    role: m.role,
+                    content: m.content,
+                    citations: m.citations,
+                    followUpSuggestions: m.followUpSuggestions,
+                    createdAt:
+                      m.createdAt instanceof Date ? m.createdAt.toISOString() : String(m.createdAt),
+                  }))
+                );
+              }
               renameConversation(convId);
             },
             scheduleFlush: scheduleStreamFlush,
           }
         );
       } catch (err) {
+        if (err instanceof DOMException && err.name === 'AbortError') {
+          setMessageStreaming(convId, assistantMessageId, false);
+          setStreamingStatus('complete');
+          return;
+        }
         const errorMessage = err instanceof Error ? err.message : 'An unexpected error occurred';
+        if (/\b401\b/.test(errorMessage) || /unauthorized/i.test(errorMessage)) {
+          handleUnauthorized(401);
+        }
         setError(errorMessage);
         updateMessage(convId, assistantMessageId, 'Sorry, I encountered an error. Please try again.');
         setMessageStreaming(convId, assistantMessageId, false);
@@ -520,6 +563,10 @@ export default function ChatPage() {
       isLoading,
       currentConversationId,
       createConversation,
+      createConversationOnBackend,
+      token,
+      effectiveWorkspaceId,
+      setCurrentConversation,
       workspaceKey,
       addMessage,
       updateMessage,
@@ -686,6 +733,16 @@ export default function ChatPage() {
                           onAskAboutChunk={(citation) => {
                             sendMessage('Explain this passage in more detail.', citation.chunkId);
                           }}
+                          onOpenSource={(citation) => {
+                            setSourceTarget({
+                              documentId: citation.documentId,
+                              documentName: citation.documentName,
+                              pageNumber: citation.pageNumber,
+                              chunkText: citation.chunkText,
+                              bbox: citation.bbox,
+                              chunkType: citation.chunkType,
+                            });
+                          }}
                         />
                       ))}
                     </div>
@@ -705,6 +762,16 @@ export default function ChatPage() {
                     onFollowUpClick={sendMessage}
                     onAskAboutChunk={(citation) => {
                       sendMessage('Explain this passage in more detail.', citation.chunkId);
+                    }}
+                    onOpenSource={(citation) => {
+                      setSourceTarget({
+                        documentId: citation.documentId,
+                        documentName: citation.documentName,
+                        pageNumber: citation.pageNumber,
+                        chunkText: citation.chunkText,
+                        bbox: citation.bbox,
+                        chunkType: citation.chunkType,
+                      });
                     }}
                   />
                 ))}
@@ -734,6 +801,7 @@ export default function ChatPage() {
           input={input}
           setInput={setInput}
           onSubmit={handleSubmit}
+          onStop={abortStreaming}
           isLoading={isLoading}
           disabled={readyDocuments.length === 0}
           placeholder={
@@ -755,6 +823,46 @@ export default function ChatPage() {
           disabled={isUploading}
         />
       </div>
+      {sourceTarget && (
+        <SourceViewer
+          target={sourceTarget}
+          token={token}
+          onClose={() => setSourceTarget(null)}
+        />
+      )}
+      {showShortcuts && (
+        <div
+          className="fixed inset-0 z-[80] flex items-center justify-center p-4 bg-slate-900/40 dark:bg-black/60"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="shortcuts-title"
+          onClick={() => setShowShortcuts(false)}
+        >
+          <div
+            className="w-full max-w-md rounded-xl glass-modal border border-white/20 dark:border-white/10 p-5 shadow-xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h2 id="shortcuts-title" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+              Keyboard shortcuts
+            </h2>
+            <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-300">
+              <li><kbd className="font-mono text-xs">⌘/Ctrl + N</kbd> New chat</li>
+              <li><kbd className="font-mono text-xs">⌘/Ctrl + K</kbd> Toggle sidebar</li>
+              <li><kbd className="font-mono text-xs">⌘/Ctrl + Shift + K</kbd> Full focus</li>
+              <li><kbd className="font-mono text-xs">⌘/Ctrl + M</kbd> Chats / documents panel</li>
+              <li><kbd className="font-mono text-xs">⌘/Ctrl + /</kbd> This help</li>
+              <li><kbd className="font-mono text-xs">Esc</kbd> Close</li>
+            </ul>
+            <button
+              type="button"
+              className="mt-4 rounded-lg px-3 py-1.5 text-sm glass"
+              onClick={() => setShowShortcuts(false)}
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

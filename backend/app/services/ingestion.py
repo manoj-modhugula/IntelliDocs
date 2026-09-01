@@ -384,6 +384,9 @@ class IngestionService:
         for chunk in chunks:
             content = chunk.get("content", "")
             token_count = chunk.get("token_count", 0)
+            if chunk.get("chunk_type") in ("table", "figure"):
+                pruned.append(chunk)
+                continue
             if token_count < settings.PRUNE_MIN_TOKENS or token_count > settings.PRUNE_MAX_TOKENS:
                 continue
             if not content:
@@ -449,9 +452,13 @@ class IngestionService:
         return token_count * alnum_ratio * unique_ratio
 
     def _select_chunks_for_embedding(self, chunks: List[dict]) -> tuple[list[dict], list[dict]]:
+        forced = [c for c in chunks if c.get("chunk_type") in ("table", "figure")]
+        rest = [c for c in chunks if c.get("chunk_type") not in ("table", "figure")]
         if not settings.ENABLE_SELECTIVE_EMBEDDING:
-            return chunks, []
-        scored = [(self._score_chunk(c), c) for c in chunks]
+            return forced + rest, []
+        if not rest:
+            return forced, []
+        scored = [(self._score_chunk(c), c) for c in rest]
         scored.sort(key=lambda x: x[0], reverse=True)
         max_count = max(1, int(len(scored) * settings.EMBEDDING_TOP_PCT))
         total_doc_tokens = sum(c.get("token_count", 0) for _, c in scored)
@@ -467,7 +474,7 @@ class IngestionService:
                 total_tokens += token_count
             else:
                 skipped.append(chunk)
-        return selected, skipped
+        return forced + selected, skipped
 
     async def _fetch_existing_embeddings(
         self, db: AsyncSession, hashes: List[str]
@@ -515,6 +522,15 @@ class IngestionService:
             for page in pages:
                 chunks = self.chunk_text(page["content"], page["page_number"])
                 all_chunks.extend(chunks)
+
+            if "pdf" in file_type.lower() and getattr(settings, "ENABLE_STRUCTURED_CHUNKS", True):
+                from app.services.structured_extract import extract_structured
+
+                structured = extract_structured(file_bytes, document_id)
+                start_index = len(all_chunks)
+                for i, item in enumerate(structured):
+                    item["chunk_index"] = start_index + i
+                    all_chunks.append(item)
             
             # Prune low-value chunks before embedding
             if settings.ENABLE_CHUNK_PRUNING:
@@ -562,40 +578,27 @@ class IngestionService:
                 for chunk_data, embedding in zip(batch, embeddings):
                     chunk_data["embedding"] = embedding
 
-            # Store chunks for all embedded items (including reused)
+            persisted: List[Chunk] = []
             for chunk_data in selected_chunks:
                 embedding = chunk_data.get("embedding")
                 if embedding is None:
                     embedding = [0.0] * embedding_service.embedding_dim
                 else:
                     embedding = self._normalize_embedding(embedding)
-                chunk = Chunk(
-                    id=str(uuid.uuid4()),
-                    document_id=document_id,
-                    content=chunk_data["content"],
-                    page_number=chunk_data["page_number"],
-                    chunk_index=chunk_data["chunk_index"],
-                    token_count=chunk_data["token_count"],
-                    embedding=embedding,
-                    content_hash=chunk_data.get("content_hash"),
-                    workspace_id=document.workspace_id,
+                chunk = self._chunk_from_data(
+                    document_id, document.workspace_id, chunk_data, embedding
                 )
+                persisted.append(chunk)
                 db.add(chunk)
 
-            # Store skipped chunks without embeddings (keyword/BM25 only)
             for chunk_data in skipped_chunks:
-                chunk = Chunk(
-                    id=str(uuid.uuid4()),
-                    document_id=document_id,
-                    content=chunk_data["content"],
-                    page_number=chunk_data["page_number"],
-                    chunk_index=chunk_data["chunk_index"],
-                    token_count=chunk_data["token_count"],
-                    embedding=None,
-                    content_hash=chunk_data.get("content_hash"),
-                    workspace_id=document.workspace_id,
+                chunk = self._chunk_from_data(
+                    document_id, document.workspace_id, chunk_data, None
                 )
+                persisted.append(chunk)
                 db.add(chunk)
+
+            await self._attach_clip_embeddings(persisted)
             
             document.status = DocumentStatus.READY.value
             document.chunk_count = len(all_chunks)
@@ -610,7 +613,60 @@ class IngestionService:
                 document.error_message = str(e)[:500]
                 await db.commit()
             raise
-    
+
+    def _chunk_from_data(
+        self,
+        document_id: str,
+        workspace_id: Optional[str],
+        chunk_data: dict,
+        embedding: Optional[List[float]],
+    ) -> Chunk:
+        return Chunk(
+            id=str(uuid.uuid4()),
+            document_id=document_id,
+            content=chunk_data["content"],
+            page_number=chunk_data["page_number"],
+            chunk_index=chunk_data["chunk_index"],
+            token_count=chunk_data["token_count"],
+            embedding=embedding,
+            content_hash=chunk_data.get("content_hash"),
+            workspace_id=workspace_id,
+            chunk_type=chunk_data.get("chunk_type") or "text",
+            bbox_x0=chunk_data.get("bbox_x0"),
+            bbox_y0=chunk_data.get("bbox_y0"),
+            bbox_x1=chunk_data.get("bbox_x1"),
+            bbox_y1=chunk_data.get("bbox_y1"),
+            image_key=chunk_data.get("image_key"),
+            caption=chunk_data.get("caption"),
+        )
+
+    async def _attach_clip_embeddings(self, chunks: List[Chunk]) -> None:
+        if not getattr(settings, "ENABLE_CLIP", True):
+            return
+        visual_items = [c for c in chunks if c.image_key]
+        if not visual_items:
+            return
+        from app.services.visual_embedding import visual_embedding_service
+        from app.services.storage import storage_service
+
+        for chunk in visual_items:
+            try:
+                path = storage_service.local_abs_path(chunk.image_key)
+                source: object = path if path.exists() else b""
+                if source == b"":
+                    chunk.clip_embedding = visual_embedding_service.embed_query(
+                        chunk.caption or chunk.content or ""
+                    )
+                else:
+                    hint = " ".join(
+                        p for p in (chunk.caption, chunk.content) if p
+                    )
+                    chunk.clip_embedding = visual_embedding_service.embed_image(
+                        source, caption=hint
+                    )
+            except Exception as e:
+                logger.warning("CLIP embed failed for %s: %s", chunk.id, e)
+
     def get_stats(self) -> dict:
         total = self.parse_successes + self.parse_failures
         success_rate = (self.parse_successes / total * 100) if total > 0 else 0

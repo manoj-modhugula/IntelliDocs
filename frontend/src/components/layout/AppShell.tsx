@@ -6,7 +6,10 @@ import { Sidebar } from './Sidebar';
 import { Menu } from 'lucide-react';
 import { useThemeStore } from '@/store/themeStore';
 import { useWorkspaceStore } from '@/store/workspaceStore';
+import { useAuthStore } from '@/store/authStore';
 import { ConversationQuickSwitcher } from '@/components/chat/ConversationQuickSwitcher';
+
+const TOKEN_REFRESH_MS = 50 * 60 * 1000;
 
 const AUTH_PATHS = ['/login', '/register'];
 
@@ -20,6 +23,15 @@ export const AppShell = memo(function AppShell({ children }: { children: React.R
   const isAuthPage = AUTH_PATHS.includes(pathname ?? '');
   const theme = useThemeStore((s) => s.theme);
   const { cachedWorkspaces, setSelectedWorkspaceId } = useWorkspaceStore();
+  const token = useAuthStore((s) => s.token);
+
+  useEffect(() => {
+    if (!token) return;
+    const id = window.setInterval(() => {
+      void useAuthStore.getState().refreshToken();
+    }, TOKEN_REFRESH_MS);
+    return () => window.clearInterval(id);
+  }, [token]);
 
   useEffect(() => {
     const root = document.documentElement;

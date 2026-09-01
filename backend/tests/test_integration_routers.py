@@ -193,7 +193,7 @@ class TestStorageService:
         """Test storage service can be imported."""
         from app.services.storage import StorageService
         
-        storage = StorageService()
+        storage = StorageService(backend="s3")
         assert storage is not None
         assert hasattr(storage, 'upload_document')
 
@@ -201,7 +201,7 @@ class TestStorageService:
         """Test storage service has expected methods."""
         from app.services.storage import StorageService
         
-        storage = StorageService()
+        storage = StorageService(backend="s3")
         # Check for S3 operation methods
         assert hasattr(storage, 'upload_document')
         assert hasattr(storage, 'download_document')

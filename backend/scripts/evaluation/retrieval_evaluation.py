@@ -15,6 +15,7 @@ import asyncio
 import json
 import os
 import sys
+from pathlib import Path
 from typing import List, Tuple, Dict, Optional
 from dataclasses import dataclass
 
@@ -35,8 +36,37 @@ class RetrievalTestCase:
     category: str  # e.g., "transformer", "python", "ml"
 
 
-# Harder test cases to stress keyword/structured retrieval
-TEST_CASES = [
+_EVAL_DIR = Path(__file__).resolve().parent
+_GROUND_TRUTH_PATH = _EVAL_DIR / "qa_ground_truth.json"
+
+
+_QA500_PATH = _EVAL_DIR / "qa_500.json"
+
+
+def load_test_cases(path: Optional[Path] = None) -> List["RetrievalTestCase"]:
+    """Prefer the checked-in labeled set; fall back to the built-in paper questions."""
+    if path is None:
+        env_path = os.environ.get("RETRIEVAL_EVAL_SET")
+        if env_path:
+            path = Path(env_path)
+        elif _QA500_PATH.exists() and os.environ.get("USE_QA500") == "1":
+            path = _QA500_PATH
+    target = path or _GROUND_TRUTH_PATH
+    if target.exists():
+        data = json.loads(target.read_text())
+        return [
+            RetrievalTestCase(
+                question=case["question"],
+                relevant_keywords=list(case["relevant_keywords"]),
+                category=case.get("category", "general"),
+            )
+            for case in data.get("cases", [])
+        ]
+    return PAPER_TEST_CASES
+
+
+# Harder test cases to stress keyword/structured retrieval (used if no JSON)
+PAPER_TEST_CASES = [
     # Attention Is All You Need paper (first 12 pages)
     RetrievalTestCase(
         question="What BLEU score did the Transformer achieve on WMT 2014 English-German?",
@@ -108,9 +138,10 @@ def chunk_contains_keywords(
 
 
 async def evaluate_retrieval(
-    workspace_id: str = "benchmark-workspace",
+    workspace_id: str = "eval-workspace",
     top_k: int = 5,
-    use_naive: bool = False
+    use_naive: bool = False,
+    cases: Optional[List[RetrievalTestCase]] = None,
 ) -> Dict:
     """
     Evaluate retrieval quality using Recall@K and MRR.
@@ -124,11 +155,12 @@ async def evaluate_retrieval(
         Dictionary with evaluation metrics
     """
     retrieval = RetrievalService()
+    test_cases = cases if cases is not None else load_test_cases()
     
     results = {
         "mode": "naive" if use_naive else "advanced",
         "top_k": top_k,
-        "test_cases": len(TEST_CASES),
+        "test_cases": len(test_cases),
         "recall_at_k": 0.0,
         "mrr": 0.0,
         "precision_at_k": 0.0,
@@ -140,7 +172,7 @@ async def evaluate_retrieval(
     total_precision = 0.0
     
     async with async_session() as db:
-        for test_case in TEST_CASES:
+        for test_case in test_cases:
             print(f"\nQ: {test_case.question}")
             
             # Retrieve chunks
@@ -216,7 +248,7 @@ async def evaluate_retrieval(
             })
     
     # Aggregate metrics
-    n = len(TEST_CASES)
+    n = len(test_cases)
     results["recall_at_k"] = total_recall / n if n > 0 else 0
     results["mrr"] = total_mrr / n if n > 0 else 0
     results["precision_at_k"] = total_precision / n if n > 0 else 0
@@ -228,8 +260,9 @@ async def main():
     print("=" * 70)
     print("RETRIEVAL EVALUATION - Recall@5, MRR, Precision@5")
     print("=" * 70)
-    print(f"Test cases: {len(TEST_CASES)}")
-    print(f"Source: Real PDFs (Transformer paper, ML Yearning, Python Tutorial)")
+    cases = load_test_cases()
+    print(f"Test cases: {len(cases)}")
+    print(f"Source: { _GROUND_TRUTH_PATH if _GROUND_TRUTH_PATH.exists() else 'built-in paper questions' }")
     
     # Evaluate naive mode
     print("\n" + "=" * 70)

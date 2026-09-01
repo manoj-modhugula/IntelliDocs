@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "playwright test",
-    "test:ui": "playwright test --ui"
+    "test": "node ./node_modules/@playwright/test/cli.js test",
+    "test:ui": "node ./node_modules/@playwright/test/cli.js test --ui"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -19,6 +19,7 @@
     "katex": "^0.16.28",
     "lucide-react": "^0.468.0",
     "next": "14.2.21",
+    "pdfjs-dist": "^4.8.69",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-dropzone": "^14.3.5",
@@ -34,7 +35,6 @@
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.17",
     "@types/react-dom": "^18.3.5",
-
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.21",

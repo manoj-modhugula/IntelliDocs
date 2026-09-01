@@ -54,6 +54,11 @@ class Settings(BaseSettings):
     AWS_SECRET_ACCESS_KEY: str = ""
     AWS_REGION: str = "us-east-1"
     
+    # File storage: "local" keeps originals on disk for the source viewer.
+    # "s3" uses S3_BUCKET_NAME. Default local so preview works without AWS.
+    STORAGE_BACKEND: str = "local"
+    LOCAL_STORAGE_DIR: str = "data/documents"
+
     # S3
     S3_BUCKET_NAME: str = "intellidocs-documents"
     
@@ -103,6 +108,20 @@ class Settings(BaseSettings):
     ENABLE_SELECTIVE_EMBEDDING: bool = True
     SEMANTIC_CHUNKING: bool = False  # If True, split by paragraph/section boundaries instead of sentences
     EMBEDDING_TOP_PCT: float = 0.4  # Embed top 40% scored chunks
+    # Multimodal ingest / retrieval / grounding
+    ENABLE_STRUCTURED_CHUNKS: bool = True  # Extract tables and figures with page bboxes
+    ENABLE_CLIP: bool = True  # CLIP visual retrieval fused via RRF
+    ENABLE_NLI_FILTER: bool = True  # Drop generated claims not entailed by evidence
+    ENABLE_IDENTIFIER_SEARCH: bool = True  # Exact SKU/FIG/site ILIKE; disable for metric runs
+    VISUAL_RRF_WEIGHT: float = 0.7  # Visual list weight vs a text list in RRF
+    CLIP_MODEL_ID: str = "clip-ViT-B-32"
+    NLI_MODEL_ID: str = "cross-encoder/nli-deberta-v3-small"
+    NLI_BACKEND: str = "auto"  # auto|minicheck|mnli|mock
+    CLIP_DIM: int = 512
+    MIN_FIGURE_PX: int = 40
+    EVAL_REAL_ENCODERS: bool = False
+    EVAL_DENSE_MODEL: str = "BAAI/bge-small-en-v1.5"
+    EVAL_VISION_MODEL: str = "clip-ViT-B-32"
     EMBEDDING_TOKEN_BUDGET_PCT: float = 0.5  # Embed up to 50% of doc tokens
     EMBEDDING_TOKEN_BUDGET_MIN: int = 12000
     EMBEDDING_TOKEN_BUDGET_MAX: int = 30000

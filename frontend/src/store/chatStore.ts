@@ -3,6 +3,13 @@ import { persist, createJSONStorage } from 'zustand/middleware';
 import { generateId } from '@/lib/utils';
 import { useAuthStore } from '@/store/authStore';
 
+export interface CitationBBox {
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+}
+
 export interface Citation {
   id: string;
   chunkId?: string;
@@ -11,6 +18,8 @@ export interface Citation {
   pageNumber?: number;
   chunkText: string;
   relevanceScore: number;
+  chunkType?: string;
+  bbox?: CitationBBox | null;
 }
 
 export interface Message {
@@ -301,6 +310,15 @@ export const useChatStore = create<ChatState>()(
             return { ...conv, pinnedMessageIds: nextPinned };
           }),
         }));
+        const token = useAuthStore.getState().token;
+        const conv = get().conversations.find((c) => c.id === conversationId);
+        if (token && conv) {
+          void import('@/lib/api').then(({ updateConversation }) =>
+            updateConversation(token, conversationId, {
+              pinnedMessageIds: conv.pinnedMessageIds ?? [],
+            }).catch(() => undefined)
+          );
+        }
       },
 
       togglePinConversation: (conversationId) => {
@@ -311,6 +329,15 @@ export const useChatStore = create<ChatState>()(
               : conv
           ),
         }));
+        const token = useAuthStore.getState().token;
+        const conv = get().conversations.find((c) => c.id === conversationId);
+        if (token && conv) {
+          void import('@/lib/api').then(({ updateConversation }) =>
+            updateConversation(token, conversationId, {
+              isPinned: conv.isPinned ?? false,
+            }).catch(() => undefined)
+          );
+        }
       },
 
       syncFromBackend: async (token: string, workspaceId?: string | null) => {
@@ -380,6 +407,10 @@ export const useChatStore = create<ChatState>()(
           const newTitle = await generateConversationTitle(token, apiMessages);
           if (newTitle) {
             get().updateConversationTitle(conversationId, newTitle);
+            const { updateConversation } = await import('@/lib/api');
+            await updateConversation(token, conversationId, { title: newTitle }).catch(
+              () => undefined
+            );
           }
         } catch {
           // Keep the existing title if generation fails.

@@ -53,6 +53,9 @@ class TestChunkModel:
     def test_chunk_has_embedding_field(self):
         """Test Chunk has embedding vector field."""
         assert hasattr(Chunk, "embedding")
+        assert hasattr(Chunk, "clip_embedding")
+        assert hasattr(Chunk, "chunk_type")
+        assert hasattr(Chunk, "bbox_x0")
 
     def test_chunk_has_optional_fields(self):
         """Test Chunk has optional metadata fields."""

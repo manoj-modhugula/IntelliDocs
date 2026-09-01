@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { generateId } from '@/lib/utils';
 import { fetchWorkspaces } from '@/lib/api';
+import { handleUnauthorized } from '@/lib/authFailure';
 import { useAuthStore } from '@/store/authStore';
 import { useWorkspaceStore } from '@/store/workspaceStore';
 
@@ -134,6 +135,7 @@ export const useDocumentStore = create<DocumentState>()((set, get) => ({
       });
 
       if (!response.ok) {
+        handleUnauthorized(response.status);
         const err = await response.json().catch(() => ({}));
         throw new Error(err?.error || err?.detail || 'Upload failed');
       }

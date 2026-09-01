@@ -143,7 +143,13 @@ def rerank_chunks(
         return chunks[:top_k]
 
     try:
-        pairs = [(query, (c[0].content or "")[:800]) for c in chunks]
+        pairs = [
+            (
+                query,
+                ((getattr(c[0], "caption", None) or "") + " " + (c[0].content or "")).strip()[:800],
+            )
+            for c in chunks
+        ]
         ce_scores = reranker.predict(pairs)
 
         ce_min = ce_scores.min()

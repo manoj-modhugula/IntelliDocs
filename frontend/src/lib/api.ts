@@ -25,6 +25,26 @@ export class ApiError extends Error {
   }
 }
 
+export async function fetchDocumentFile(
+  token: string | null,
+  documentId: string
+): Promise<{ blob: Blob; contentType: string }> {
+  const headers: HeadersInit = {};
+  if (token) headers.Authorization = `Bearer ${token}`;
+  const res = await fetch(`/api/documents/${documentId}/file`, {
+    headers,
+    cache: 'no-store',
+  });
+  if (!res.ok) {
+    const body = await res.json().catch(() => ({}));
+    const message =
+      typeof body?.error === 'string' ? body.error : 'Original file is not available';
+    throw new ApiError(message, res.status);
+  }
+  const contentType = res.headers.get('Content-Type') || 'application/octet-stream';
+  return { blob: await res.blob(), contentType };
+}
+
 export async function fetchWorkspaces(token: string | null): Promise<WorkspaceItem[]> {
   if (!token) return [];
   const headers: HeadersInit = { Authorization: `Bearer ${token}` };
@@ -143,6 +163,8 @@ export interface CitationItem {
   pageNumber?: number;
   chunkText: string;
   relevanceScore: number;
+  chunkType?: string;
+  bbox?: { x0: number; y0: number; x1: number; y1: number } | null;
 }
 
 const CONVERSATIONS_KEY = (wid?: string | null) => `conversations:${wid ?? 'all'}`;

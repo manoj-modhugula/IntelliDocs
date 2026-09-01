@@ -5,6 +5,7 @@ Supports multi-granularity retrieval (small + large chunks).
 """
 
 import logging
+import re
 from typing import List, Tuple, Optional, Set
 from sqlalchemy import text, bindparam
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -12,6 +13,36 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.models import Chunk
 from app.services.embedding import embedding_service
 from app.core.config import settings
+
+_CHUNK_COLS = (
+    "c.id, c.document_id, c.content, c.page_number, c.chunk_index, "
+    "c.token_count, c.chunk_type, c.bbox_x0, c.bbox_y0, c.bbox_x1, c.bbox_y1, "
+    "c.caption, c.image_key"
+)
+
+
+def _row_to_chunk(row) -> Chunk:
+    def _num(val):
+        return val if isinstance(val, (int, float)) else None
+
+    chunk_type = getattr(row, "chunk_type", None)
+    if not isinstance(chunk_type, str) or not chunk_type:
+        chunk_type = "text"
+    return Chunk(
+        id=row.id,
+        document_id=row.document_id,
+        content=row.content,
+        page_number=row.page_number,
+        chunk_index=row.chunk_index,
+        token_count=getattr(row, "token_count", 0) or 0,
+        chunk_type=chunk_type,
+        bbox_x0=_num(getattr(row, "bbox_x0", None)),
+        bbox_y0=_num(getattr(row, "bbox_y0", None)),
+        bbox_x1=_num(getattr(row, "bbox_x1", None)),
+        bbox_y1=_num(getattr(row, "bbox_y1", None)),
+        caption=getattr(row, "caption", None) if isinstance(getattr(row, "caption", None), str) else None,
+        image_key=getattr(row, "image_key", None) if isinstance(getattr(row, "image_key", None), str) else None,
+    )
 
 logger = logging.getLogger(__name__)
 
@@ -43,6 +74,19 @@ def _classify_query_for_hybrid(query: str) -> str:
     if sem_score > kw_score:
         return "semantic_heavy"
     return "balanced"
+
+
+_IDENT = re.compile(r"\b(?:SKU-[A-Z0-9-]+|FIG-[A-Z0-9-]+|site\s+\d+)\b", re.I)
+
+_VISUAL_TRIGGERS = (
+    "figure", "diagram", "image", "photo", "chart", "plot", "picture",
+    "illustration", "fig-", "fig ", "what does fig", "screenshot", "visual",
+)
+
+
+def query_wants_visual(query: str) -> bool:
+    q = (query or "").lower()
+    return any(t in q for t in _VISUAL_TRIGGERS)
 
 
 def _get_adaptive_semantic_weight(query: str, fallback: float) -> float:
@@ -86,11 +130,11 @@ class RetrievalService:
                 where_extra += " AND d.id IN :document_ids"
                 params["document_ids"] = document_ids
             sql = text(f"""
-                SELECT c.id, c.document_id, c.content, c.page_number, c.chunk_index,
+                SELECT {_CHUNK_COLS},
                        1 - (c.embedding <=> CAST(:embedding AS vector)) as similarity
                 FROM chunks c
                 JOIN documents d ON c.document_id = d.id
-                WHERE d.status = 'ready'{where_extra}
+                WHERE d.status = 'ready' AND c.embedding IS NOT NULL{where_extra}
                 ORDER BY c.embedding <=> CAST(:embedding AS vector)
                 LIMIT :top_k
             """)
@@ -100,11 +144,7 @@ class RetrievalService:
             rows = result.fetchall()
             chunks = []
             for row in rows:
-                chunk = Chunk(
-                    id=row.id, document_id=row.document_id, content=row.content,
-                    page_number=row.page_number, chunk_index=row.chunk_index,
-                )
-                chunks.append((chunk, float(row.similarity) if row.similarity else 0.0))
+                chunks.append((_row_to_chunk(row), float(row.similarity) if row.similarity else 0.0))
             return chunks
         except Exception as e:
             logger.error(f"Semantic search by embedding failed: {e}")
@@ -136,11 +176,11 @@ class RetrievalService:
                 where_extra += " AND d.id IN :document_ids"
                 params["document_ids"] = document_ids
             sql = text(f"""
-                SELECT c.id, c.document_id, c.content, c.page_number, c.chunk_index,
+                SELECT {_CHUNK_COLS},
                        1 - (c.embedding <=> CAST(:embedding AS vector)) as similarity
                 FROM chunks c
                 JOIN documents d ON c.document_id = d.id
-                WHERE d.status = 'ready'{where_extra}
+                WHERE d.status = 'ready' AND c.embedding IS NOT NULL{where_extra}
                 ORDER BY c.embedding <=> CAST(:embedding AS vector)
                 LIMIT :top_k
             """)
@@ -151,14 +191,7 @@ class RetrievalService:
             
             chunks = []
             for row in rows:
-                chunk = Chunk(
-                    id=row.id,
-                    document_id=row.document_id,
-                    content=row.content,
-                    page_number=row.page_number,
-                    chunk_index=row.chunk_index,
-                )
-                chunks.append((chunk, float(row.similarity) if row.similarity else 0.0))
+                chunks.append((_row_to_chunk(row), float(row.similarity) if row.similarity else 0.0))
             
             logger.debug(f"Semantic search returned {len(chunks)} results")
             return chunks
@@ -204,13 +237,16 @@ class RetrievalService:
                 where_extra += " AND d.id IN :document_ids"
                 params["document_ids"] = document_ids
             sql = text(f"""
-                SELECT c.id, c.document_id, c.content, c.page_number, c.chunk_index,
-                       ts_rank_cd(to_tsvector('english', c.content),
-                                  plainto_tsquery('english', :query)) as rank_score
+                SELECT {_CHUNK_COLS},
+                       ts_rank_cd(
+                           to_tsvector('english', c.content || ' ' || coalesce(c.caption, '')),
+                           plainto_tsquery('english', :query)
+                       ) as rank_score
                 FROM chunks c
                 JOIN documents d ON c.document_id = d.id
                 WHERE d.status = 'ready'{where_extra}
-                AND to_tsvector('english', c.content) @@ plainto_tsquery('english', :query)
+                AND to_tsvector('english', c.content || ' ' || coalesce(c.caption, ''))
+                    @@ plainto_tsquery('english', :query)
                 ORDER BY rank_score DESC
                 LIMIT :top_k
             """)
@@ -221,16 +257,8 @@ class RetrievalService:
             
             chunks = []
             for row in rows:
-                chunk = Chunk(
-                    id=row.id,
-                    document_id=row.document_id,
-                    content=row.content,
-                    page_number=row.page_number,
-                    chunk_index=row.chunk_index,
-                )
-                # Normalize rank score to 0-1 range (ts_rank can be > 1)
                 normalized_score = min(float(row.rank_score), 1.0) if row.rank_score else 0.0
-                chunks.append((chunk, normalized_score))
+                chunks.append((_row_to_chunk(row), normalized_score))
             
             logger.debug(f"BM25 search returned {len(chunks)} results")
             return chunks
@@ -238,6 +266,109 @@ class RetrievalService:
         except Exception as e:
             logger.error(f"BM25 search failed: {e}")
             raise
+
+    async def visual_search(
+        self,
+        db: AsyncSession,
+        query: str,
+        top_k: int = 5,
+        workspace_id: Optional[str] = None,
+        user_id: Optional[str] = None,
+        document_ids: Optional[List[str]] = None,
+    ) -> List[Tuple[Chunk, float]]:
+        """CLIP cosine search over figure/table screenshot embeddings."""
+        if not getattr(settings, "ENABLE_CLIP", True):
+            return []
+        try:
+            from app.services.visual_embedding import visual_embedding_service
+
+            query_clip = visual_embedding_service.embed_query(query)
+            params: dict = {
+                "embedding": self._format_embedding(query_clip),
+                "top_k": top_k,
+            }
+            where_extra = ""
+            if workspace_id:
+                where_extra = " AND d.workspace_id = :workspace_id"
+                params["workspace_id"] = workspace_id
+            if user_id:
+                where_extra += " AND d.user_id = :user_id"
+                params["user_id"] = user_id
+            if document_ids:
+                where_extra += " AND d.id IN :document_ids"
+                params["document_ids"] = document_ids
+            sql = text(f"""
+                SELECT {_CHUNK_COLS},
+                       1 - (c.clip_embedding <=> CAST(:embedding AS vector)) as similarity
+                FROM chunks c
+                JOIN documents d ON c.document_id = d.id
+                WHERE d.status = 'ready' AND c.clip_embedding IS NOT NULL{where_extra}
+                ORDER BY c.clip_embedding <=> CAST(:embedding AS vector)
+                LIMIT :top_k
+            """)
+            if document_ids:
+                sql = sql.bindparams(bindparam("document_ids", expanding=True))
+            result = await db.execute(sql, params)
+            rows = result.fetchall()
+            chunks = []
+            for row in rows:
+                chunks.append((_row_to_chunk(row), float(row.similarity) if row.similarity else 0.0))
+            logger.debug(f"CLIP search returned {len(chunks)} results")
+            return chunks
+        except Exception as e:
+            logger.warning(f"CLIP visual search skipped: {e}")
+            return []
+
+    async def identifier_search(
+        self,
+        db: AsyncSession,
+        query: str,
+        top_k: int = 5,
+        workspace_id: Optional[str] = None,
+        user_id: Optional[str] = None,
+        document_ids: Optional[List[str]] = None,
+    ) -> List[Tuple[Chunk, float]]:
+        """Exact lexical hits for SKUs, figure ids, and 'site N' mentions."""
+        if not getattr(settings, "ENABLE_IDENTIFIER_SEARCH", True):
+            return []
+        idents = _IDENT.findall(query or "")
+        if not idents:
+            return []
+        try:
+            params: dict = {"top_k": top_k}
+            where_extra = ""
+            if workspace_id:
+                where_extra += " AND d.workspace_id = :workspace_id"
+                params["workspace_id"] = workspace_id
+            if user_id:
+                where_extra += " AND d.user_id = :user_id"
+                params["user_id"] = user_id
+            if document_ids:
+                where_extra += " AND d.id IN :document_ids"
+                params["document_ids"] = document_ids
+            ident_clauses = []
+            for i, ident in enumerate(idents[:4]):
+                key = f"ident{i}"
+                params[key] = f"%{ident}%"
+                ident_clauses.append(
+                    f"(c.content ILIKE :{key} OR coalesce(c.caption,'') ILIKE :{key})"
+                )
+            sql = text(f"""
+                SELECT {_CHUNK_COLS}
+                FROM chunks c
+                JOIN documents d ON c.document_id = d.id
+                WHERE d.status = 'ready'{where_extra}
+                AND ({' OR '.join(ident_clauses)})
+                LIMIT :top_k
+            """)
+            if document_ids:
+                sql = sql.bindparams(bindparam("document_ids", expanding=True))
+            result = await db.execute(sql, params)
+            chunks = [(_row_to_chunk(row), 1.0) for row in result.fetchall()]
+            return chunks
+        except Exception as e:
+            logger.debug("identifier_search skipped: %s", e)
+            return []
     
     async def hybrid_search(
         self,
@@ -265,6 +396,34 @@ class RetrievalService:
             bm25_results = await self.bm25_search(
                 db, query, top_k * 2, workspace_id, user_id, document_ids=document_ids
             )
+            ident_results = await self.identifier_search(
+                db, query, top_k, workspace_id, user_id, document_ids=document_ids
+            )
+            visual_results: List[Tuple[Chunk, float]] = []
+            if getattr(settings, "ENABLE_CLIP", True):
+                try:
+                    visual_results = await self.visual_search(
+                        db, query, top_k * 2, workspace_id, user_id, document_ids=document_ids
+                    )
+                except Exception as e:
+                    logger.debug("visual_search skipped: %s", e)
+
+            lists = [semantic_results, bm25_results, ident_results]
+            weights = [1.0, 1.0, 1.0]
+            if visual_results:
+                lists.append(visual_results)
+                weights.append(float(getattr(settings, "VISUAL_RRF_WEIGHT", 0.7)))
+            if ident_results or visual_results:
+                merged = self._rrf_merge_lists(lists, top_k, weights=weights)
+                logger.debug(
+                    "Hybrid RRF lists semantic=%s bm25=%s ident=%s visual=%s -> %s",
+                    len(semantic_results),
+                    len(bm25_results),
+                    len(ident_results),
+                    len(visual_results),
+                    len(merged),
+                )
+                return merged
 
             k = 60
             chunk_scores: dict = {}
@@ -338,9 +497,24 @@ class RetrievalService:
                 bm25_results = await self.bm25_search(
                     db, query, top_k, workspace_id, user_id, document_ids=document_ids
                 )
+            ident_results = await self.identifier_search(
+                db, query, top_k, workspace_id, user_id, document_ids=document_ids
+            )
+            visual_results: List[Tuple[Chunk, float]] = []
+            if getattr(settings, "ENABLE_CLIP", True):
+                try:
+                    visual_results = await self.visual_search(
+                        db, query, top_k, workspace_id, user_id, document_ids=document_ids
+                    )
+                except Exception as e:
+                    logger.debug("visual_search skipped: %s", e)
             
-            # Merge with RRF (semantic small + semantic large + optional bm25)
-            merged = self._rrf_merge_lists([small_results, large_results, bm25_results], top_k)
+            vw = float(getattr(settings, "VISUAL_RRF_WEIGHT", 0.7))
+            merged = self._rrf_merge_lists(
+                [small_results, large_results, bm25_results, ident_results, visual_results],
+                top_k,
+                weights=[1.0, 1.0, 1.0, 1.0, vw],
+            )
             
             logger.debug(f"Multi-granularity search: {len(small_results)} small, {len(large_results)} large, {len(merged)} merged")
             return merged
@@ -381,7 +555,7 @@ class RetrievalService:
             params["max_tokens"] = max_tokens
             
         sql = text(f"""
-            SELECT c.id, c.document_id, c.content, c.page_number, c.chunk_index, c.token_count,
+            SELECT {_CHUNK_COLS},
                    1 - (c.embedding <=> CAST(:embedding AS vector)) as similarity
             FROM chunks c
             JOIN documents d ON c.document_id = d.id
@@ -396,12 +570,7 @@ class RetrievalService:
         
         chunks = []
         for row in rows:
-            chunk = Chunk(
-                id=row.id, document_id=row.document_id, content=row.content,
-                page_number=row.page_number, chunk_index=row.chunk_index,
-                token_count=row.token_count,
-            )
-            chunks.append((chunk, float(row.similarity) if row.similarity else 0.0))
+            chunks.append((_row_to_chunk(row), float(row.similarity) if row.similarity else 0.0))
         return chunks
     
     def _merge_granularity_results(
@@ -465,15 +634,17 @@ class RetrievalService:
         result_lists: List[List[Tuple[Chunk, float]]],
         top_k: int,
         k: int = 60,
+        weights: Optional[List[float]] = None,
     ) -> List[Tuple[Chunk, float]]:
         chunk_scores: dict = {}
         chunk_map: dict = {}
-        for results in result_lists:
+        for i, results in enumerate(result_lists):
             if not results:
                 continue
+            w = 1.0 if not weights or i >= len(weights) else float(weights[i])
             for rank, (chunk, _) in enumerate(results):
                 chunk_map[chunk.id] = chunk
-                chunk_scores[chunk.id] = chunk_scores.get(chunk.id, 0) + 1 / (k + rank + 1)
+                chunk_scores[chunk.id] = chunk_scores.get(chunk.id, 0) + w / (k + rank + 1)
         sorted_chunks = sorted(chunk_scores.items(), key=lambda x: x[1], reverse=True)
         return [(chunk_map[cid], score) for cid, score in sorted_chunks[:top_k]]
 

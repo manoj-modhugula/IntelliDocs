@@ -29,7 +29,8 @@ from app.routers import (
 setup_logging(level="INFO", structured=True)
 logger = logging.getLogger(__name__)
 
-_MAX_BODY_BYTES = 10 * 1024 * 1024
+_MAX_JSON_BYTES = 10 * 1024 * 1024
+_MAX_UPLOAD_BYTES = 50 * 1024 * 1024
 
 
 def _setup_tracing(app: FastAPI) -> None:
@@ -124,10 +125,12 @@ async def validate_request(request: Request, call_next):
                 content={"detail": "Content-Type must be application/json or multipart/form-data"},
             )
 
-        if content_length and int(content_length) > _MAX_BODY_BYTES:
+        limit = _MAX_UPLOAD_BYTES if "multipart/form-data" in content_type else _MAX_JSON_BYTES
+        if content_length and int(content_length) > limit:
+            max_mb = limit // (1024 * 1024)
             return JSONResponse(
                 status_code=status.HTTP_413_REQUEST_ENTITY_TOO_LARGE,
-                content={"detail": "Request body too large (max 10MB)"},
+                content={"detail": f"Request body too large (max {max_mb}MB)"},
             )
 
     return await call_next(request)
