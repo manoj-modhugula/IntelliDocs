@@ -1,45 +1,66 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 
-type Theme = 'light' | 'dark';
+export type ThemePreference = 'light' | 'dark' | 'system';
+export type ResolvedTheme = 'light' | 'dark';
 
 interface ThemeState {
-  theme: Theme;
-  setTheme: (theme: Theme) => void;
-  toggleTheme: () => void;
+  preference: ThemePreference;
+  resolved: ResolvedTheme;
+  setPreference: (preference: ThemePreference) => void;
 }
 
-function applyTheme(theme: Theme) {
+export function resolveTheme(preference: ThemePreference): ResolvedTheme {
+  if (preference === 'light' || preference === 'dark') return preference;
+  if (typeof window === 'undefined') return 'light';
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+export function applyResolvedTheme(resolved: ResolvedTheme) {
   if (typeof document === 'undefined') return;
   const root = document.documentElement;
-  if (theme === 'dark') {
-    root.classList.add('dark');
-  } else {
-    root.classList.remove('dark');
+  root.dataset.theme = resolved;
+  root.classList.toggle('dark', resolved === 'dark');
+  root.style.colorScheme = resolved;
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) {
+    meta.setAttribute('content', resolved === 'dark' ? '#0b0d12' : '#eef1f6');
   }
 }
 
 export const useThemeStore = create<ThemeState>()(
   persist(
-    (set, get) => ({
-      theme: 'light',
-      setTheme: (theme) => {
-        applyTheme(theme);
-        set({ theme });
-      },
-      toggleTheme: () => {
-        const next = get().theme === 'light' ? 'dark' : 'light';
-        applyTheme(next);
-        set({ theme: next });
+    (set) => ({
+      preference: 'system',
+      resolved: 'light',
+      setPreference: (preference) => {
+        const resolved = resolveTheme(preference);
+        applyResolvedTheme(resolved);
+        set({ preference, resolved });
       },
     }),
     {
       name: 'intellidocs-theme',
       storage: createJSONStorage(() => localStorage),
+      partialize: (state) => ({ preference: state.preference }),
+      merge: (persisted, current) => {
+        const raw = (persisted ?? {}) as {
+          preference?: ThemePreference;
+          theme?: 'light' | 'dark';
+        };
+        const preference: ThemePreference =
+          raw.preference === 'light' || raw.preference === 'dark' || raw.preference === 'system'
+            ? raw.preference
+            : raw.theme === 'light' || raw.theme === 'dark'
+              ? raw.theme
+              : current.preference;
+        return { ...current, preference };
+      },
       onRehydrateStorage: () => (state) => {
-        if (state) {
-          applyTheme(state.theme);
-        }
+        if (!state) return;
+        const resolved = resolveTheme(state.preference);
+        applyResolvedTheme(resolved);
+        state.resolved = resolved;
       },
     }
   )

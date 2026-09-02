@@ -74,48 +74,35 @@ export const ConfirmDialog = memo(function ConfirmDialog({
       className="fixed inset-0 z-50 flex items-center justify-center p-4"
     >
       <div
-        className="fixed inset-0 bg-slate-900/20 dark:bg-black/40 backdrop-blur-sm"
+        className="fixed inset-0 bg-[rgba(15,23,42,0.32)] backdrop-blur-sm"
         onClick={onCancel}
         aria-hidden
       />
-      <div
-        ref={dialogRef}
-        className="relative w-full max-w-md rounded-xl glass p-6 shadow-xl"
-      >
+      <div ref={dialogRef} className="card relative w-full max-w-md p-6">
         <div className="flex gap-4">
           <div
             className={cn(
-              'flex h-10 w-10 shrink-0 items-center justify-center rounded-lg',
-              variant === 'danger' && 'bg-red-500/20 text-red-400'
+              'flex h-10 w-10 shrink-0 items-center justify-center rounded-full',
+              variant === 'danger' ? 'logo-mark icon-btn-danger !h-10 !w-10' : 'logo-mark'
             )}
           >
             <AlertTriangle className="h-5 w-5" />
           </div>
           <div className="min-w-0 flex-1">
-            <h2 id="confirm-dialog-title" className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+            <h2 id="confirm-dialog-title" className="card-title text-lg">
               {title}
             </h2>
-            <p id="confirm-dialog-desc" className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+            <p id="confirm-dialog-desc" className="mt-1 text-sm text-muted">
               {message}
             </p>
             <div className="mt-4 flex gap-2">
-              <button
-                ref={cancelRef}
-                type="button"
-                onClick={onCancel}
-                className="rounded-lg glass px-4 py-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:bg-black/5 dark:hover:bg-white/8 transition-colors"
-              >
+              <button ref={cancelRef} type="button" onClick={onCancel} className="btn btn-secondary !py-2 !px-4 text-sm">
                 {cancelLabel}
               </button>
               <button
                 type="button"
                 onClick={onConfirm}
-                className={cn(
-                  'rounded-lg px-4 py-2 text-sm font-medium transition-colors',
-                  variant === 'danger'
-                    ? 'bg-red-600 text-white hover:bg-red-500'
-                    : 'glass text-slate-900 dark:text-slate-100 hover:bg-black/5 dark:hover:bg-white/8'
-                )}
+                className={cn('btn !py-2 !px-4 text-sm', variant === 'danger' ? 'btn-danger' : 'btn-primary')}
               >
                 {confirmLabel}
               </button>

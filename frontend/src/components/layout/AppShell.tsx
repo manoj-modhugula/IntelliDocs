@@ -4,7 +4,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { memo, useState, useEffect } from 'react';
 import { Sidebar } from './Sidebar';
 import { Menu } from 'lucide-react';
-import { useThemeStore } from '@/store/themeStore';
+import { useThemeStore, applyResolvedTheme, resolveTheme } from '@/store/themeStore';
 import { useWorkspaceStore } from '@/store/workspaceStore';
 import { useAuthStore } from '@/store/authStore';
 import { ConversationQuickSwitcher } from '@/components/chat/ConversationQuickSwitcher';
@@ -15,13 +15,31 @@ const AUTH_PATHS = ['/login', '/register'];
 
 const NAV_ROUTES = ['/', '/chat', '/documents', '/workspaces', '/settings'] as const;
 
+function ThemeSync() {
+  const preference = useThemeStore((s) => s.preference);
+
+  useEffect(() => {
+    const apply = () => {
+      const resolved = resolveTheme(preference);
+      applyResolvedTheme(resolved);
+      useThemeStore.setState({ resolved });
+    };
+    apply();
+    if (preference !== 'system') return;
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    mq.addEventListener('change', apply);
+    return () => mq.removeEventListener('change', apply);
+  }, [preference]);
+
+  return null;
+}
+
 export const AppShell = memo(function AppShell({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [quickSwitcherOpen, setQuickSwitcherOpen] = useState(false);
   const isAuthPage = AUTH_PATHS.includes(pathname ?? '');
-  const theme = useThemeStore((s) => s.theme);
   const { cachedWorkspaces, setSelectedWorkspaceId } = useWorkspaceStore();
   const token = useAuthStore((s) => s.token);
 
@@ -32,15 +50,6 @@ export const AppShell = memo(function AppShell({ children }: { children: React.R
     }, TOKEN_REFRESH_MS);
     return () => window.clearInterval(id);
   }, [token]);
-
-  useEffect(() => {
-    const root = document.documentElement;
-    if (theme === 'dark') {
-      root.classList.add('dark');
-    } else {
-      root.classList.remove('dark');
-    }
-  }, [theme]);
 
   useEffect(() => {
     if (isAuthPage) return;
@@ -85,6 +94,7 @@ export const AppShell = memo(function AppShell({ children }: { children: React.R
   if (isAuthPage) {
     return (
       <div className="flex min-h-screen overflow-hidden">
+        <ThemeSync />
         <main id="main-content" className="flex-1 overflow-auto min-h-0" role="main">
           {children}
         </main>
@@ -94,6 +104,7 @@ export const AppShell = memo(function AppShell({ children }: { children: React.R
 
   return (
     <div className="flex h-screen overflow-hidden min-h-0">
+      <ThemeSync />
       <ConversationQuickSwitcher
         open={quickSwitcherOpen}
         onClose={() => setQuickSwitcherOpen(false)}
@@ -107,16 +118,16 @@ export const AppShell = memo(function AppShell({ children }: { children: React.R
         className="flex-1 flex flex-col overflow-hidden min-w-0 min-h-0"
         role="main"
       >
-        <div className="lg:hidden flex-shrink-0 flex items-center gap-3 px-4 py-3 glass border-b border-black/[0.06] dark:border-white/[0.08]">
+        <div className="lg:hidden flex-shrink-0 flex items-center gap-3 px-4 py-3 glass">
           <button
             type="button"
             onClick={() => setMobileSidebarOpen(true)}
             aria-label="Open menu"
-            className="p-2 rounded-xl text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-black/[0.05] dark:hover:bg-white/[0.08] transition-[color,background-color] duration-150"
+            className="icon-btn"
           >
             <Menu className="w-5 h-5" />
           </button>
-          <span className="font-semibold text-slate-900 dark:text-slate-100">IntelliDocs</span>
+          <span className="brand-wordmark">IntelliDocs</span>
         </div>
         <div className="flex-1 overflow-hidden flex flex-col min-h-0 min-w-0">
           {children}

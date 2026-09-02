@@ -219,11 +219,7 @@ export const ChatMessage = memo(function ChatMessage({
     <div className={cn('flex gap-3 mb-4 animate-slide-up', isUser ? 'flex-row-reverse' : '')}>
       {/* Avatar - plain div with CSS transition, no JS motion overhead */}
       <div
-        className={cn(
-          'glass-interactive w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 glass',
-          'text-slate-900 dark:text-slate-100',
-          'transition-transform duration-150'
-        )}
+        className="logo-mark !h-8 !w-8 flex-shrink-0"
       >
         {isUser ? (
           <User className="w-4 h-4" />
@@ -236,10 +232,8 @@ export const ChatMessage = memo(function ChatMessage({
         {/* Message bubble - plain div, no Framer Motion */}
         <div
           className={cn(
-            'inline-block max-w-full overflow-hidden transition-transform duration-200',
-            isUser
-              ? 'rounded-2xl px-4 py-3 glass-card text-slate-900 dark:text-slate-100'
-              : 'glass-interactive rounded-2xl px-5 py-4 glass-card text-slate-900 dark:text-slate-100'
+            'card inline-block max-w-full overflow-hidden',
+            isUser ? 'px-4 py-3' : 'px-5 py-4'
           )}
         >
           {message.isStreaming && !message.content ? (
@@ -427,7 +421,7 @@ const CitationCard = memo(function CitationCard({
   return (
     <div
       className={cn(
-        'citation-card p-3 rounded-xl glass-card cursor-pointer'
+        'citation-card item-row p-3 cursor-pointer'
       )}
       onClick={() => setExpanded(!expanded)}
     >
