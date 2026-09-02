@@ -193,10 +193,10 @@ export default function DocumentsPage() {
   return (
     <div className="h-full flex flex-col min-h-0">
       {/* Header - F-pattern: title left, status right */}
-      <div className="flex-shrink-0 border-b border-white/20 dark:border-white/10 px-4 sm:px-6 py-3 sm:py-4 glass">
+      <div className="flex-shrink-0 px-4 sm:px-6 py-4 glass">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-1">
-            <h1 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Documents</h1>
+            <h1 className="page-title text-[1.45rem] sm:text-[1.65rem]">Documents</h1>
             <div className="flex items-center gap-3 text-sm">
               {readyCount > 0 && (
                 <span className="flex items-center gap-1.5 text-slate-900 dark:text-slate-100">
@@ -222,7 +222,7 @@ export default function DocumentsPage() {
               <select
                 value={effectiveWorkspaceId ?? ''}
                 onChange={(e) => setSelectedWorkspaceId(e.target.value || null)}
-                className="rounded-lg glass-input text-slate-900 dark:text-slate-100 text-sm px-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-slate-400/50 dark:focus:ring-slate-500/50"
+                className="field text-sm !py-2 !px-3 max-w-xs"
                 aria-label="Filter documents by workspace"
                 title="Only docs in this workspace are shown. Uploads go here."
               >
@@ -249,10 +249,7 @@ export default function DocumentsPage() {
               'aria-label': 'Upload documents: drag files here or click to browse. PDF, DOCX, TXT, MD up to 50MB.',
             })}
             className={cn(
-              'relative border-2 border-dashed rounded-xl p-8 text-center cursor-pointer transition-all duration-200 glass-card',
-              isDragActive && !isDragReject && 'border-white/50 dark:border-white/30',
-              isDragReject && 'border-white/40 dark:border-white/20',
-              !isDragActive && 'border-white/30 dark:border-white/15 hover:border-white/40 dark:hover:border-white/25',
+              'card relative p-8 text-center cursor-pointer',
               isUploading && 'pointer-events-none opacity-60'
             )}
           >
@@ -260,7 +257,7 @@ export default function DocumentsPage() {
             
             <div className="space-y-3">
               <div className={cn(
-                'w-12 h-12 mx-auto rounded-xl flex items-center justify-center transition-colors glass',
+                'logo-mark !h-12 !w-12 mx-auto',
                 isDragActive ? 'text-slate-900 dark:text-slate-100' : 'text-slate-500 dark:text-slate-400'
               )}>
                 {isUploading ? (
@@ -291,7 +288,7 @@ export default function DocumentsPage() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 aria-label="Search documents by name"
-                className="w-full pl-10 pr-4 py-2.5 rounded-lg glass-input text-slate-900 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-slate-400/50 dark:focus:ring-slate-500/50 text-sm"
+                className="field w-full pl-10 pr-4 py-2.5 text-sm"
               />
               {searchQuery && (
                 <button
@@ -400,10 +397,7 @@ const DocumentRow = memo(function DocumentRow({ document, workspaceName, isDelet
   return (
     <motion.div
       {...motionProps}
-      className={cn(
-        'group flex items-center gap-4 p-4 rounded-xl glass-card',
-        'hover:bg-black/5 dark:hover:bg-white/8 transition-all'
-      )}
+      className="group flex items-center gap-4 p-4 item-row"
     >
       {/* Icon */}
       <span className="text-2xl">{getFileEmoji(document.type)}</span>

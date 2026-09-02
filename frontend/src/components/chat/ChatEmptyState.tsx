@@ -72,13 +72,11 @@ export const ChatEmptyState = memo(function ChatEmptyState({
         transition={{ type: 'spring', stiffness: 320, damping: 28 }}
         className="text-center max-w-2xl w-full"
       >
-        <div className="spring-fade-up w-16 h-16 mx-auto mb-6 rounded-2xl glass flex items-center justify-center">
-          <Sparkles className="w-7 h-7 text-sky-600 dark:text-sky-400" strokeWidth={1.5} />
-        </div>
-        <h2 className="text-[1.65rem] font-semibold tracking-tight text-slate-900 dark:text-slate-100 mb-2">
-          Ask with context.
-        </h2>
-        <p className="text-slate-500 dark:text-slate-400 text-sm sm:text-base mb-8 max-w-xl mx-auto leading-relaxed">
+        <span className="logo-mark mx-auto mb-6 !h-16 !w-16">
+          <Sparkles className="w-7 h-7" strokeWidth={1.5} />
+        </span>
+        <h2 className="page-title mb-2">Ask with context.</h2>
+        <p className="text-muted text-sm sm:text-base mb-8 max-w-xl mx-auto leading-relaxed">
           {readyDocumentsCount > 0
             ? "Turn your documents into a live conversation with grounded answers and citations."
             : "Upload a document to start a cleaner, source-grounded conversation."}
@@ -86,37 +84,34 @@ export const ChatEmptyState = memo(function ChatEmptyState({
 
         {readyDocumentsCount > 0 ? (
           <>
-            <div className="flex flex-wrap items-center justify-center gap-2 mb-7 text-xs text-slate-500 dark:text-slate-400">
-              <span className="rounded-full px-3 py-1.5 glass-chip">{readyDocumentsCount} doc{readyDocumentsCount > 1 ? 's' : ''} ready</span>
-              <span className="rounded-full px-3 py-1.5 glass-chip">/short</span>
+            <div className="flex flex-wrap items-center justify-center gap-2 mb-7 text-xs text-muted">
+              <span className="chip">{readyDocumentsCount} doc{readyDocumentsCount > 1 ? 's' : ''} ready</span>
+              <span className="chip">/short</span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
+            <div className="card-grid w-full">
             {questionSet.map((question) => (
               <button
                 key={question}
                 type="button"
                 onClick={() => onSuggestionClick(question)}
-                className="suggestion-btn glass-interactive text-left p-4 rounded-2xl glass-card text-sm text-slate-600 dark:text-slate-300 flex items-center gap-2 group"
+                className="card suggestion-btn text-left p-4 text-sm text-ink-soft flex items-center gap-2 group"
               >
                 <span className="flex-1">{question}</span>
                 <ArrowRight className="w-4 h-4 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-[opacity,transform] duration-150 shrink-0" />
               </button>
             ))}
             </div>
-            <p className="mt-6 text-xs text-slate-500 dark:text-slate-500">
-              More controls in <Link href="/settings" className="text-sky-600 dark:text-sky-400 hover:underline">Settings</Link>.
+            <p className="mt-6 text-xs text-muted">
+              More controls in <Link href="/settings" className="text-accent">Settings</Link>.
             </p>
           </>
         ) : (
           <div className="flex flex-col items-center gap-4">
-            <div className="upload-float w-16 h-16 rounded-2xl glass flex items-center justify-center">
-              <Upload className="w-7 h-7 text-sky-500 dark:text-sky-400" strokeWidth={1.5} />
-            </div>
-            <p className="text-slate-500 dark:text-slate-400 text-sm">No documents yet</p>
-            <Link
-              href="/documents"
-              className="glass-interactive inline-flex items-center gap-2 px-5 py-3 glass-card text-slate-900 dark:text-slate-100 rounded-xl text-sm font-medium hover:bg-black/[0.07] dark:hover:bg-white/[0.1]"
-            >
+            <span className="logo-mark !h-16 !w-16">
+              <Upload className="w-7 h-7" strokeWidth={1.5} />
+            </span>
+            <p className="text-muted text-sm">No documents yet</p>
+            <Link href="/documents" className="btn btn-primary">
               <FileText className="w-4 h-4" />
               Upload documents
             </Link>
