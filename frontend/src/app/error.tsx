@@ -20,10 +20,7 @@ export default function Error({
         <div className="w-16 h-16 mx-auto mb-6 rounded-full border border-slate-200 dark:border-slate-700 bg-rose-50 dark:bg-rose-950/50 flex items-center justify-center">
           <AlertCircle className="w-8 h-8 text-rose-600 dark:text-rose-400" />
         </div>
-        <h2 className="text-xl font-semibold mb-2 text-slate-900 dark:text-slate-100">Something went wrong</h2>
-        <p className="text-slate-600 dark:text-slate-400 mb-6 text-sm">
-          An unexpected error occurred. Please try again.
-        </p>
+        <h2 className="text-xl font-semibold mb-6 text-slate-900 dark:text-slate-100">Something went wrong</h2>
         <button
           type="button"
           onClick={reset}

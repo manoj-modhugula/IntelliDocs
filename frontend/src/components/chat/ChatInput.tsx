@@ -297,15 +297,12 @@ export const ChatInput = memo(function ChatInput({
             <h2 id="create-skill-title" className="text-lg font-semibold text-slate-950 dark:text-white">
               Create new skill
             </h2>
-            <p className="text-sm text-slate-900 dark:text-slate-100 leading-relaxed">
-              Add a slash command (e.g. /short) and an instruction for the model. You cannot duplicate built-in names (short, dark, light).
-            </p>
             <form onSubmit={handleCreateSkillSubmit} className="space-y-3">
               <input
                 type="text"
                 value={newSkillName}
                 onChange={(e) => setNewSkillName(e.target.value)}
-                placeholder="Name (e.g. short)"
+                placeholder="Name"
                 aria-label="Skill name (slash command)"
                 className="w-full px-3 py-2 rounded-xl glass-input text-sm text-slate-950 dark:text-white placeholder-slate-700 dark:placeholder-slate-300 focus:outline-none focus:ring-1 focus:ring-slate-400/50 dark:focus:ring-slate-400/40 focus:border-slate-400 dark:focus:border-white/40"
                 autoFocus
@@ -314,7 +311,7 @@ export const ChatInput = memo(function ChatInput({
                 type="text"
                 value={newSkillAction}
                 onChange={(e) => setNewSkillAction(e.target.value)}
-                placeholder="LLM instruction (e.g. Give a short response)"
+                placeholder="Instruction"
                 aria-label="Skill instruction"
                 className="w-full px-3 py-2 rounded-xl glass-input text-sm text-slate-950 dark:text-white placeholder-slate-700 dark:placeholder-slate-300 focus:outline-none focus:ring-1 focus:ring-slate-400/50 dark:focus:ring-slate-400/40 focus:border-slate-400 dark:focus:border-white/40"
               />

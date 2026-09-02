@@ -212,10 +212,6 @@ export default function DocumentsPage() {
               )}
             </div>
           </div>
-          <p className="text-sm text-slate-600 dark:text-slate-400">
-            Upload documents to ask questions about them
-          </p>
-          {/* Workspace filter */}
           {workspaces.length > 0 && (
             <div className="mt-3 flex flex-col sm:flex-row sm:items-center gap-2">
               <FolderOpen className="w-4 h-4 text-slate-500 dark:text-slate-400" />
@@ -224,7 +220,6 @@ export default function DocumentsPage() {
                 onChange={(e) => setSelectedWorkspaceId(e.target.value || null)}
                 className="field text-sm !py-2 !px-3 max-w-xs"
                 aria-label="Filter documents by workspace"
-                title="Only docs in this workspace are shown. Uploads go here."
               >
                 {workspaces.map((w) => (
                   <option key={w.id} value={w.id}>
@@ -232,9 +227,6 @@ export default function DocumentsPage() {
                   </option>
                 ))}
               </select>
-              <span className="text-xs text-slate-500 dark:text-slate-400 hidden sm:inline">
-                Only docs in &quot;{selectedWorkspaceName ?? 'workspace'}&quot; are shown. Uploads go here.
-              </span>
             </div>
           )}
         </div>
@@ -317,11 +309,6 @@ export default function DocumentsPage() {
                     ? `No documents in "${selectedWorkspaceName}" yet`
                     : 'No documents uploaded yet'}
               </p>
-              {!isSearching && selectedWorkspaceName && (
-                <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
-                  Upload while this workspace is selected to keep documents grouped.
-                </p>
-              )}
             </div>
           ) : (
             <div className="space-y-2">
@@ -346,7 +333,7 @@ export default function DocumentsPage() {
         title="Delete document"
         message={
           deleteConfirm
-            ? `Are you sure you want to delete "${deleteConfirm.name}"? This cannot be undone.`
+            ? `Delete "${deleteConfirm.name}"?`
             : ''
         }
         confirmLabel="Delete"
@@ -390,8 +377,8 @@ const DocumentRow = memo(function DocumentRow({ document, workspaceName, isDelet
         layout: true,
         initial: { opacity: 0, y: 6 },
         animate: { opacity: 1, y: 0 },
-        transition: { duration: 0.12 },
-        exit: { opacity: 0, x: -20 },
+        transition: { duration: 0.34, ease: [0.22, 1, 0.36, 1] },
+        exit: { opacity: 0, x: -20, transition: { duration: 0.3, ease: [0.4, 0, 1, 1] } },
       };
 
   return (
@@ -420,12 +407,7 @@ const DocumentRow = memo(function DocumentRow({ document, workspaceName, isDelet
               </span>
             </>
           )}
-          {document.chunkCount && (
-            <>
-              <span>•</span>
-              <span>{document.chunkCount} chunks</span>
-            </>
-          )}
+
         </div>
         {document.status === 'error' && document.errorMessage && (
           <p className="mt-1 text-xs text-rose-600 dark:text-rose-400 truncate" title={document.errorMessage}>

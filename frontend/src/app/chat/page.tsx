@@ -806,8 +806,8 @@ export default function ChatPage() {
           disabled={readyDocuments.length === 0}
           placeholder={
             readyDocuments.length > 0
-              ? "Ask a question. Type /short for a concise answer."
-              : "Upload documents first to start chatting..."
+              ? 'Ask…'
+              : 'Upload documents first'
           }
           chatSkills={chatSkills}
           selectedSkill={selectedSkill}

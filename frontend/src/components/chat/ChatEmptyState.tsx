@@ -1,8 +1,7 @@
 'use client';
 
 import { memo, useMemo } from 'react';
-import { motion } from 'framer-motion';
-import { Sparkles, FileText, ArrowRight, Upload } from 'lucide-react';
+import { FileText, ArrowRight, Upload } from 'lucide-react';
 import Link from 'next/link';
 
 interface ChatEmptyStateProps {
@@ -66,29 +65,9 @@ export const ChatEmptyState = memo(function ChatEmptyState({
 
   return (
     <div className="h-full flex flex-col items-center justify-center px-6 py-12">
-      <motion.div
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ type: 'spring', stiffness: 320, damping: 28 }}
-        className="text-center max-w-2xl w-full"
-      >
-        <span className="logo-mark mx-auto mb-6 !h-16 !w-16">
-          <Sparkles className="w-7 h-7" strokeWidth={1.5} />
-        </span>
-        <h2 className="page-title mb-2">Ask with context.</h2>
-        <p className="text-muted text-sm sm:text-base mb-8 max-w-xl mx-auto leading-relaxed">
-          {readyDocumentsCount > 0
-            ? "Turn your documents into a live conversation with grounded answers and citations."
-            : "Upload a document to start a cleaner, source-grounded conversation."}
-        </p>
-
+      <div className="page-enter text-center max-w-2xl w-full">
         {readyDocumentsCount > 0 ? (
-          <>
-            <div className="flex flex-wrap items-center justify-center gap-2 mb-7 text-xs text-muted">
-              <span className="chip">{readyDocumentsCount} doc{readyDocumentsCount > 1 ? 's' : ''} ready</span>
-              <span className="chip">/short</span>
-            </div>
-            <div className="card-grid w-full">
+          <div className="card-grid w-full">
             {questionSet.map((question) => (
               <button
                 key={question}
@@ -97,14 +76,10 @@ export const ChatEmptyState = memo(function ChatEmptyState({
                 className="card suggestion-btn text-left p-4 text-sm text-ink-soft flex items-center gap-2 group"
               >
                 <span className="flex-1">{question}</span>
-                <ArrowRight className="w-4 h-4 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-[opacity,transform] duration-150 shrink-0" />
+                <ArrowRight className="w-4 h-4 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-[opacity,transform] duration-hover ease-out shrink-0" />
               </button>
             ))}
-            </div>
-            <p className="mt-6 text-xs text-muted">
-              More controls in <Link href="/settings" className="text-accent">Settings</Link>.
-            </p>
-          </>
+          </div>
         ) : (
           <div className="flex flex-col items-center gap-4">
             <span className="logo-mark !h-16 !w-16">
@@ -117,7 +92,7 @@ export const ChatEmptyState = memo(function ChatEmptyState({
             </Link>
           </div>
         )}
-      </motion.div>
+      </div>
     </div>
   );
 });

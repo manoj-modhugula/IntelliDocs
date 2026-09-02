@@ -2,7 +2,6 @@
 
 import { memo, useState, useRef, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Download, FileText, Braces } from 'lucide-react';
-import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import type { Conversation } from '@/store/chatStore';
 
@@ -68,7 +67,7 @@ export const ChatHeader = memo(function ChatHeader({
             className="glass-interactive px-3 py-1.5 rounded-lg glass text-xs text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-black/[0.07] dark:hover:bg-white/[0.1]"
             title="Exit full focus (⌘⇧K)"
           >
-            Exit focus (⌘⇧K)
+            Exit
           </button>
         </div>
       )}
@@ -92,11 +91,6 @@ export const ChatHeader = memo(function ChatHeader({
               </button>
               <div className="min-w-0">
                 <h1 className="text-lg font-semibold text-slate-900 dark:text-slate-100 truncate">Chat</h1>
-                <p className="text-sm text-slate-500 dark:text-slate-400 truncate">
-                  {readyDocuments.length > 0
-                    ? `${readyDocuments.length} doc${readyDocuments.length > 1 ? 's' : ''} ready`
-                    : 'Upload documents to start'}
-                </p>
               </div>
             </div>
 

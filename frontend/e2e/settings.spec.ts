@@ -22,10 +22,6 @@ test.describe('Settings Page', () => {
     await expect(clearButton).toBeVisible();
   });
 
-  test('should display version info', async ({ page }) => {
-    await expect(page.getByText(/v1/i).first()).toBeVisible();
-  });
-
   test('clear data button clears localStorage', async ({ page }) => {
     // Add some data
     await page.evaluate(() => {

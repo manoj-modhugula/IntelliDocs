@@ -216,7 +216,7 @@ export const ChatMessage = memo(function ChatMessage({
   }, [message.content]);
 
   return (
-    <div className={cn('flex gap-3 mb-4 animate-slide-up', isUser ? 'flex-row-reverse' : '')}>
+    <div className={cn('flex gap-3 mb-4', isUser ? 'flex-row-reverse' : '')}>
       {/* Avatar - plain div with CSS transition, no JS motion overhead */}
       <div
         className="logo-mark !h-8 !w-8 flex-shrink-0"
@@ -350,10 +350,8 @@ export const ChatMessage = memo(function ChatMessage({
                 height: 'auto',
                 y: 0,
                 transition: {
-                  type: 'spring',
-                  stiffness: 320,
-                  damping: 28,
-                  mass: 0.8,
+                  duration: 0.34,
+                  ease: [0.22, 1, 0.36, 1],
                   staggerChildren: 0.04,
                   delayChildren: 0.02,
                 },
@@ -362,7 +360,7 @@ export const ChatMessage = memo(function ChatMessage({
                 opacity: 0,
                 height: 0,
                 y: -6,
-                transition: { type: 'spring', stiffness: 320, damping: 30, mass: 0.8 },
+                transition: { duration: 0.3, ease: [0.4, 0, 1, 1] },
               }}
             >
               {message.citations!.map((citation, index) => (
@@ -371,7 +369,7 @@ export const ChatMessage = memo(function ChatMessage({
                   initial={{ opacity: 0, y: 8, scale: 0.98 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: -4, scale: 0.98 }}
-                  transition={{ type: 'spring', stiffness: 380, damping: 28 }}
+                  transition={{ duration: 0.34, ease: [0.22, 1, 0.36, 1] }}
                 >
                   <CitationCard
                     citation={citation}
@@ -437,9 +435,6 @@ const CitationCard = memo(function CitationCard({
             {citation.pageNumber && (
               <span className="text-xs text-slate-500 card-bg px-1.5 py-0.5 rounded border border-white/20 dark:border-white/10">p.{citation.pageNumber}</span>
             )}
-            <span className="text-xs px-1.5 py-0.5 rounded-full card-bg text-emerald-700 dark:text-emerald-400 border border-white/20 dark:border-white/10 font-medium">
-              {Math.round(citation.relevanceScore * 100)}% match
-            </span>
           </div>
           <p className={cn(
             'text-xs text-slate-600 dark:text-slate-400 leading-relaxed',
