@@ -53,7 +53,7 @@ export const DragDropOverlay = memo(function DragDropOverlay({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.15 }}
+            transition={{ duration: 0.34 }}
             className="absolute inset-0 flex items-center justify-center"
           >
             {/* Backdrop */}
@@ -64,7 +64,7 @@ export const DragDropOverlay = memo(function DragDropOverlay({
               initial={{ scale: 0.88, y: 16 }}
               animate={{ scale: 1, y: 0 }}
               exit={{ scale: 0.92, y: 8 }}
-              transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+              transition={{ type: 'spring', stiffness: 240, damping: 32 }}
               className={cn(
                 'relative z-10 flex flex-col items-center gap-4 px-10 py-10 rounded-3xl glass border-2 shadow-2xl max-w-sm text-center',
                 isDragReject

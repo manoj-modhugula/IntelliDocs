@@ -192,9 +192,6 @@ export default function WorkspacesPage() {
         <div className="flex items-center justify-between mb-6">
           <div>
             <h1 className="page-title text-[1.45rem] sm:text-[1.65rem]">Workspaces</h1>
-            <p className="text-sm text-slate-600 dark:text-slate-400">
-              Organize documents into separate workspaces
-            </p>
           </div>
           {!authReady ? (
             <div className="h-10 w-40 rounded-lg glass opacity-50" aria-hidden="true" />
@@ -211,7 +208,7 @@ export default function WorkspacesPage() {
               href="/login"
               className="btn btn-secondary !py-2 !px-4 text-sm"
             >
-              Sign in to create workspaces
+              Sign in
             </Link>
           )}
         </div>
@@ -236,7 +233,7 @@ export default function WorkspacesPage() {
                     autoFocus
                   />
                   <textarea
-                    placeholder="Optional: what this workspace is for"
+                    placeholder="Description (optional)"
                     value={newDescription}
                     onChange={(e) => setNewDescription(e.target.value)}
                     className="field resize-none"
@@ -301,7 +298,6 @@ export default function WorkspacesPage() {
               </div>
             ) : (
               <>
-                <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">If this keeps happening, try signing out and signing in again.</p>
                 <button
                   type="button"
                   onClick={() => loadWorkspaces()}
@@ -316,12 +312,7 @@ export default function WorkspacesPage() {
           <div className="text-center py-12">
             <FolderOpen className="w-12 h-12 mx-auto text-slate-400 dark:text-slate-600 mb-3" />
             <p className="text-slate-600 dark:text-slate-400">
-              {authReady && isAuthenticated ? 'No workspaces yet' : 'Sign in to create and manage workspaces'}
-            </p>
-            <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
-              {authReady && isAuthenticated
-                ? 'Create a workspace to organize your documents'
-                : 'Workspaces let you organize documents into separate collections'}
+              {authReady && isAuthenticated ? 'No workspaces yet' : 'Sign in to manage workspaces'}
             </p>
             {authReady && !isAuthenticated && (
               <Link
@@ -357,7 +348,7 @@ export default function WorkspacesPage() {
           title="Delete workspace"
           message={
             deleteConfirm
-              ? `Are you sure you want to delete "${deleteConfirm.name}"? Documents in this workspace will remain but will be unassigned.`
+              ? `Documents in "${deleteConfirm.name}" stay, unassigned.`
               : ''
           }
           confirmLabel="Delete"
@@ -410,7 +401,7 @@ const WorkspaceCard = memo(function WorkspaceCard({
       initial={{ opacity: 0, scale: 0.98 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.98 }}
-      transition={{ duration: 0.15 }}
+      transition={{ duration: 0.34, ease: [0.22, 1, 0.36, 1] }}
       onClick={onOpen}
       role="button"
       tabIndex={0}

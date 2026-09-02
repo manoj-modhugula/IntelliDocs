@@ -44,7 +44,6 @@ export default function LoginPage() {
             <Sparkles className="w-7 h-7" />
           </span>
           <h1 className="page-title mt-4">IntelliDocs</h1>
-          <p className="text-muted mt-2">Sign in to your account</p>
         </div>
 
         <Card className="p-8">
@@ -52,7 +51,7 @@ export default function LoginPage() {
             {error && <div className="alert alert-bad">{error}</div>}
 
             <div>
-              <Label htmlFor="email">Email address</Label>
+              <Label htmlFor="email">Email</Label>
               <Field
                 id="email"
                 type="email"
@@ -91,13 +90,10 @@ export default function LoginPage() {
             </p>
           </div>
 
-          <div className="mt-6 pt-6" style={{ borderTop: '1px solid var(--line)' }}>
-            <p className="text-muted text-xs text-center">
-              Continue without an account?{' '}
-              <Link href="/chat" className="text-ink-soft">
-                Browse as guest
-              </Link>
-            </p>
+          <div className="mt-6 pt-6 text-center" style={{ borderTop: '1px solid var(--line)' }}>
+            <Link href="/chat" className="text-ink-soft text-sm">
+              Continue as guest
+            </Link>
           </div>
         </Card>
       </div>

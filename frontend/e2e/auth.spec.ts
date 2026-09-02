@@ -14,7 +14,7 @@ test('register and redirect to chat', async ({ page }) => {
   await page.goto('/register');
 
   await page.getByLabel('Name (optional)').fill('Test User');
-  await page.getByLabel('Email address').fill(email);
+  await page.getByLabel('Email').fill(email);
   await page.getByLabel('Password', { exact: true }).fill(password);
   await page.getByLabel('Confirm password', { exact: true }).fill(password);
 

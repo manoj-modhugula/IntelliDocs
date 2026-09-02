@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, memo, useEffect } from 'react';
+import { useState, memo, useEffect, useLayoutEffect, useRef, useCallback } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
@@ -32,6 +32,98 @@ const navItems = [
 ];
 
 const NAV_BASE = 'nav-item';
+
+function PrimaryNav({
+  expanded,
+  pathname,
+  onNavClick,
+}: {
+  expanded: boolean;
+  pathname: string | null;
+  onNavClick: () => void;
+}) {
+  const navRef = useRef<HTMLElement>(null);
+  const indicatorRef = useRef<HTMLSpanElement>(null);
+  const pendingHrefRef = useRef<string | null>(null);
+
+  const paintIndicator = useCallback((href?: string) => {
+    const nav = navRef.current;
+    const indicator = indicatorRef.current;
+    if (!nav || !indicator) return;
+    const targetHref = href ?? pendingHrefRef.current;
+    const item = (
+      targetHref
+        ? nav.querySelector(`[data-nav-href="${CSS.escape(targetHref)}"]`)
+        : nav.querySelector('[data-nav-href][data-active="true"]')
+    ) as HTMLElement | null;
+    if (!item) return;
+    const y = item.getBoundingClientRect().top - nav.getBoundingClientRect().top;
+    indicator.style.transform = `translate3d(0, ${y}px, 0)`;
+    indicator.style.height = `${item.offsetHeight}px`;
+    indicator.dataset.ready = 'true';
+  }, []);
+
+  useLayoutEffect(() => {
+    paintIndicator(pendingHrefRef.current ?? undefined);
+  }, [pathname, expanded, paintIndicator]);
+
+  useLayoutEffect(() => {
+    pendingHrefRef.current = null;
+  }, [pathname]);
+
+  useEffect(() => {
+    const onResize = () => {
+      const indicator = indicatorRef.current;
+      if (indicator) indicator.style.transition = 'none';
+      paintIndicator(pendingHrefRef.current ?? undefined);
+      if (indicator) {
+        indicator.offsetHeight;
+        indicator.style.transition = '';
+      }
+    };
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, [paintIndicator]);
+
+  const activateHref = (href: string) => {
+    pendingHrefRef.current = href;
+    paintIndicator(href);
+  };
+
+  return (
+    <nav ref={navRef} aria-label="Primary" className="nav-list px-2 pt-1 flex flex-col gap-0.5 flex-shrink-0">
+      <span ref={indicatorRef} className="nav-indicator" aria-hidden />
+      {navItems.map((item) => {
+        const isActive =
+          pathname === item.href ||
+          (item.href !== '/' && pathname?.startsWith(item.href));
+        return (
+          <Link
+            key={item.href}
+            href={item.href}
+            prefetch={true}
+            data-nav-href={item.href}
+            onPointerDown={() => activateHref(item.href)}
+            onClick={() => {
+              activateHref(item.href);
+              onNavClick();
+            }}
+            aria-current={isActive ? 'page' : undefined}
+            title={!expanded ? item.label : undefined}
+            data-active={isActive}
+            className={cn(
+              NAV_BASE,
+              expanded ? 'px-3' : 'justify-center px-0'
+            )}
+          >
+            <item.icon className="w-4 h-4 flex-shrink-0" />
+            <span className="nav-label truncate">{item.label}</span>
+          </Link>
+        );
+      })}
+    </nav>
+  );
+}
 
 export const Sidebar = memo(function Sidebar({
   isMobileOpen,
@@ -111,7 +203,7 @@ export const Sidebar = memo(function Sidebar({
           <span className="logo-mark !h-9 !w-9">
             <Sparkles className="w-4 h-4" />
           </span>
-          {expanded && <span className="brand-wordmark truncate">IntelliDocs</span>}
+          <span className="nav-label brand-wordmark truncate">IntelliDocs</span>
         </Link>
       </div>
 
@@ -128,36 +220,11 @@ export const Sidebar = memo(function Sidebar({
           )}
         >
           <Plus className="w-4 h-4 flex-shrink-0" />
-          {expanded && <span>New Chat</span>}
+          <span className="nav-label">New Chat</span>
         </button>
       </div>
 
-      {/* Nav items */}
-      <nav aria-label="Primary" className="px-2 pt-1 space-y-0.5 flex-shrink-0">
-        {navItems.map((item) => {
-          const isActive =
-            pathname === item.href ||
-            (item.href !== '/' && pathname?.startsWith(item.href));
-          return (
-            <Link
-              key={item.href}
-              href={item.href}
-              prefetch={true}
-              onClick={handleNavClick}
-              aria-current={isActive ? 'page' : undefined}
-              title={!expanded ? item.label : undefined}
-              data-active={isActive}
-              className={cn(
-                NAV_BASE,
-                expanded ? 'px-3' : 'justify-center px-0'
-              )}
-            >
-              <item.icon className="w-4 h-4 flex-shrink-0" />
-              {expanded && <span className="truncate">{item.label}</span>}
-            </Link>
-          );
-        })}
-      </nav>
+      <PrimaryNav expanded={expanded} pathname={pathname} onNavClick={handleNavClick} />
 
       {/* Recent conversations (expanded only) */}
       {expanded && recentConversations.length > 0 && (
@@ -184,18 +251,20 @@ export const Sidebar = memo(function Sidebar({
 
       {/* Bottom: user + sign out */}
       <div className="px-2 mt-auto pt-2 pb-3 space-y-1">
-        {isAuthenticated && user && expanded && (
-          <div className="px-3 py-2.5 rounded-[14px] glass">
+        {isAuthenticated && user && (
+          <div
+            className={cn(
+              'rounded-[14px] overflow-hidden transition-[max-height,opacity,padding] duration-snap ease-snap',
+              expanded ? 'px-3 py-2.5 glass max-h-16 opacity-100' : 'max-h-0 opacity-0 py-0'
+            )}
+          >
             <div className="flex items-center gap-2.5">
               <span className="logo-mark !h-8 !w-8">
                 <User className="w-4 h-4" />
               </span>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-ink truncate">
-                  {user.name || user.email.split('@')[0]}
-                </p>
-                <p className="text-[11px] text-muted truncate">{user.email}</p>
-              </div>
+              <p className="nav-label text-sm font-medium text-ink truncate">
+                {user.name || user.email.split('@')[0]}
+              </p>
             </div>
           </div>
         )}
@@ -224,7 +293,7 @@ export const Sidebar = memo(function Sidebar({
                 {(user?.name?.[0] || user?.email?.[0] || '?').toUpperCase()}
               </span>
             )}
-            {expanded && <span>Sign out</span>}
+            <span className="nav-label">Sign out</span>
           </button>
         ) : (
           <Link
@@ -239,7 +308,7 @@ export const Sidebar = memo(function Sidebar({
             )}
           >
             <LogIn className="w-4 h-4 flex-shrink-0" />
-            {expanded && <span>Sign in</span>}
+            <span className="nav-label">Sign in</span>
           </Link>
         )}
       </div>
@@ -251,11 +320,12 @@ export const Sidebar = memo(function Sidebar({
       {/* Desktop rail - expands on hover */}
       <aside
         aria-label="Main navigation"
+        data-expanded={isExpanded}
         onMouseEnter={() => setIsExpanded(true)}
         onMouseLeave={() => setIsExpanded(false)}
         className={cn(
           'h-screen flex flex-col relative z-20 flex-shrink-0 sidebar-chrome',
-          'will-change-[width] transition-[width] duration-200 ease-[cubic-bezier(0.22,1,0.36,1)]',
+          'transition-[width] duration-snap ease-snap',
           'rounded-r-[22px] mr-2',
           'hidden lg:flex',
           isExpanded ? 'w-56' : 'w-[4.25rem]'
@@ -269,9 +339,9 @@ export const Sidebar = memo(function Sidebar({
         aria-hidden
         onClick={onMobileClose}
         className={cn(
-          'fixed inset-0 z-40 lg:hidden',
+          'fixed inset-0 z-40 lg:hidden overlay-backdrop',
           'bg-[rgba(15,23,42,0.28)] backdrop-blur-sm',
-          'transition-opacity duration-200',
+          'duration-overlay',
           isMobileOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         )}
       />
@@ -279,9 +349,10 @@ export const Sidebar = memo(function Sidebar({
       {/* Mobile drawer */}
       <aside
         aria-label="Main navigation"
+        data-expanded="true"
         className={cn(
           'fixed top-0 left-0 h-full w-72 max-w-[85vw] flex flex-col z-50 sidebar-chrome',
-          'transition-transform duration-200 ease-[cubic-bezier(0.22,1,0.36,1)]',
+          'transition-transform duration-overlay ease-[var(--ease-out)]',
           'lg:hidden',
           isMobileOpen ? 'translate-x-0' : '-translate-x-full'
         )}
@@ -298,7 +369,7 @@ export const Sidebar = memo(function Sidebar({
           </button>
         </div>
         <div className="flex-1 overflow-y-auto flex flex-col min-h-0">
-          {renderSidebarContent(!!isMobileOpen)}
+          {renderSidebarContent(true)}
         </div>
       </aside>
     </>

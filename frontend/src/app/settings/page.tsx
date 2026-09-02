@@ -1,8 +1,7 @@
 'use client';
 
 import { useState, useEffect, useCallback } from 'react';
-import Link from 'next/link';
-import { Settings, Trash2, HardDrive, FolderOpen, Check, Sun, Moon, Monitor, Pencil, X, Plus, MessageSquare } from 'lucide-react';
+import { Settings, Trash2, HardDrive, FolderOpen, Check, Sun, Moon, Monitor, Pencil, X, Plus } from 'lucide-react';
 import { PageHeader } from '@/components/ui/PageHeader';
 import { Button } from '@/components/ui/Button';
 import { useDocumentStore } from '@/store/documentStore';
@@ -12,7 +11,7 @@ import { useWorkspaceStore } from '@/store/workspaceStore';
 import { useThemeStore } from '@/store/themeStore';
 import { toast } from '@/components/ui/Toaster';
 import { ConfirmDialog } from '@/components/ui/ConfirmDialog';
-import { cn, formatFileSize } from '@/lib/utils';
+import { formatFileSize } from '@/lib/utils';
 import { fetchWorkspaces, fetchSkills, createSkill, updateSkill, deleteSkill, type SkillItem } from '@/lib/api';
 
 export default function SettingsPage() {
@@ -157,13 +156,12 @@ export default function SettingsPage() {
     <div className="h-full overflow-hidden flex flex-col min-h-0">
       <div className="flex-1 overflow-y-auto min-h-0 scroll-region">
         <div className="max-w-2xl mx-auto p-6">
-        <PageHeader title="Settings" subtitle="Manage your data" icon={Settings} />
+        <PageHeader title="Settings" icon={Settings} />
 
         <section className="mb-8">
           <h2 className="section-title mb-3">Appearance</h2>
           <div className="card p-4 sm:p-5">
-            <p className="card-title">Theme</p>
-            <p className="text-sm text-muted mt-1 mb-4">Light, dark, or match this device.</p>
+            <p className="card-title mb-4">Theme</p>
             <div className="flex flex-wrap gap-2" role="radiogroup" aria-label="Theme">
               {(
                 [
@@ -194,9 +192,6 @@ export default function SettingsPage() {
           <section className="mb-8">
             <h2 className="section-title mb-3">Default workspace</h2>
             <div className="card p-4 sm:p-5">
-              <p className="text-sm text-slate-600 dark:text-slate-400 mb-3">
-                New uploads and chat use this workspace by default. On Documents and Chat, choosing &quot;Default workspace&quot; shows this workspace&apos;s files.
-              </p>
               <div className="flex items-center gap-2">
                 <FolderOpen className="w-4 h-4 text-slate-500 dark:text-slate-400 shrink-0" />
                 <select
@@ -221,10 +216,6 @@ export default function SettingsPage() {
                     </option>
                   ))}
                 </select>
-                <span className="shrink-0 flex items-center gap-1 text-xs text-accent font-medium">
-                  <Check className="w-3.5 h-3.5" />
-                  Default
-                </span>
               </div>
             </div>
           </section>
@@ -234,24 +225,12 @@ export default function SettingsPage() {
         {user && (
           <section className="mb-8">
             <h2 className="section-title mb-3">Skills</h2>
-            <p className="text-sm text-slate-600 dark:text-slate-400 mb-3">
-              Use <code className="info-pill text-xs">/name</code> in chat to apply a skill. In Chat, type <code className="info-pill text-xs">/name</code> at the start of a message (e.g. <code className="info-pill text-xs">/short</code>).
-            </p>
-            <p className="text-sm text-slate-500 dark:text-slate-400 mb-3">
-              <Link href="/chat" className="inline-flex items-center gap-1.5 text-accent">
-                <MessageSquare className="w-4 h-4" />
-                Open Chat
-              </Link>
-            </p>
             <div className="card p-4 sm:p-5 space-y-4">
-              <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">Built-in</p>
               <ul className="space-y-1.5 mb-4">
                 <li className="flex items-center gap-2 rounded-lg p-2 info-row text-slate-600 dark:text-slate-400">
                   <span className="font-medium text-slate-700 dark:text-slate-300">/short</span>
-                  <span className="text-sm">Short, direct answer without extra explanation</span>
                 </li>
               </ul>
-              <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">Create additional skills below. Names must be unique.</p>
               <p className="text-xs text-slate-500 dark:text-slate-400 mb-2">Your skills</p>
               {skillsLoading ? (
                 <p className="text-sm text-slate-500 dark:text-slate-400">Loading skills...</p>
@@ -264,13 +243,13 @@ export default function SettingsPage() {
                           <input
                             value={editName}
                             onChange={(e) => setEditName(e.target.value)}
-                            placeholder="Name (slug)"
+                            placeholder="Name"
                             className="field flex-1 min-w-0 text-sm"
                           />
                           <input
                             value={editAction}
                             onChange={(e) => setEditAction(e.target.value)}
-                            placeholder="LLM instruction"
+                            placeholder="Instruction"
                             className="field flex-1 min-w-0 text-sm"
                           />
                           <div className="flex gap-1">
@@ -300,21 +279,18 @@ export default function SettingsPage() {
                   ))}
                 </ul>
               )}
-              <p className="text-xs text-slate-500 dark:text-slate-400 pt-2 border-t border-white/10 dark:border-white/5">
-                Name becomes the slash command (e.g. <code className="info-pill">brief</code> → <code className="info-pill">/brief</code>). Use lowercase; spaces turn into underscores.
-              </p>
               <form onSubmit={handleAddSkill} className="flex flex-col sm:flex-row gap-2 pt-2">
                 <input
                   value={addName}
                   onChange={(e) => setAddName(e.target.value)}
-                  placeholder="Name (e.g. short)"
+                  placeholder="Name"
                   aria-label="Skill name (slash command)"
                   className="field flex-1 min-w-0 text-sm"
                   />
                 <input
                   value={addAction}
                   onChange={(e) => setAddAction(e.target.value)}
-                  placeholder="LLM instruction (e.g. Give a short response)"
+                  placeholder="Instruction"
                   aria-label="Skill instruction for the model"
                   className="field flex-1 min-w-0 text-sm"
                 />
@@ -360,7 +336,7 @@ export default function SettingsPage() {
               <div className="min-w-0 flex-1">
                 <p className="font-medium text-slate-900 dark:text-slate-100">Clear all local data</p>
                 <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">
-                  Clears only this device: your login, cached workspaces, document list, and chat history in this browser. Your account and all data on the server (workspaces, documents) are not deleted. Other users are not affected.
+                  Clears this browser only. Server data is kept.
                 </p>
               </div>
               <Button
@@ -379,7 +355,7 @@ export default function SettingsPage() {
         <ConfirmDialog
           open={clearDataConfirmOpen}
           title="Clear all local data?"
-          message="This will clear login, cached workspaces, document list, and chat history on this device only. Your account and server data (workspaces, documents) are not deleted. The page will reload after clearing."
+          message="This device only. Page will reload."
           confirmLabel="Clear data"
           cancelLabel="Cancel"
           variant="danger"
@@ -389,12 +365,6 @@ export default function SettingsPage() {
           }}
           onCancel={() => setClearDataConfirmOpen(false)}
         />
-
-        {/* Version Info */}
-        <div className="mt-12 text-center text-xs text-slate-500 dark:text-slate-400">
-          <p>IntelliDocs v1.0.0</p>
-          <p className="mt-1">Powered by AWS Bedrock + Next.js 14</p>
-        </div>
         </div>
       </div>
     </div>

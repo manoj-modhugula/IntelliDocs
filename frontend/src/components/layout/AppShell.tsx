@@ -95,7 +95,12 @@ export const AppShell = memo(function AppShell({ children }: { children: React.R
     return (
       <div className="flex min-h-screen overflow-hidden">
         <ThemeSync />
-        <main id="main-content" className="flex-1 overflow-auto min-h-0" role="main">
+        <main
+          id="main-content"
+          key={pathname}
+          className="flex-1 overflow-auto min-h-0 page-enter"
+          role="main"
+        >
           {children}
         </main>
       </div>
@@ -129,7 +134,10 @@ export const AppShell = memo(function AppShell({ children }: { children: React.R
           </button>
           <span className="brand-wordmark">IntelliDocs</span>
         </div>
-        <div className="flex-1 overflow-hidden flex flex-col min-h-0 min-w-0">
+        <div
+          key={pathname}
+          className="flex-1 overflow-hidden flex flex-col min-h-0 min-w-0 page-enter"
+        >
           {children}
         </div>
       </main>

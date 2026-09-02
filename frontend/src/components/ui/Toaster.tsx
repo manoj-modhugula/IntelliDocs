@@ -39,16 +39,36 @@ export function dismissToast(id: string) {
   toastListeners.forEach(listener => listener({ id, type: 'info', message: '', duration: 0 }));
 }
 
+const EXIT_MS = 300;
+
 export function Toaster() {
   const [toasts, setToasts] = useState<Toast[]>([]);
+  const [leavingIds, setLeavingIds] = useState<Set<string>>(new Set());
+
+  const beginLeave = useCallback((id: string) => {
+    setLeavingIds((prev) => {
+      if (prev.has(id)) return prev;
+      const next = new Set(prev);
+      next.add(id);
+      return next;
+    });
+    window.setTimeout(() => {
+      setToasts((prev) => prev.filter((t) => t.id !== id));
+      setLeavingIds((prev) => {
+        if (!prev.has(id)) return prev;
+        const next = new Set(prev);
+        next.delete(id);
+        return next;
+      });
+    }, EXIT_MS);
+  }, []);
 
   const addToast = useCallback((newToast: Toast) => {
     if (newToast.duration === 0) {
-      // Dismiss
-      setToasts(prev => prev.filter(t => t.id !== newToast.id));
+      beginLeave(newToast.id);
       return;
     }
-    
+
     setToasts(prev => {
       // Check for duplicate
       if (prev.some(t => t.message === newToast.message && t.type === newToast.type)) {
@@ -61,10 +81,10 @@ export function Toaster() {
     const duration = newToast.duration ?? (newToast.type === 'error' ? 8000 : 4000);
     if (duration > 0) {
       setTimeout(() => {
-        setToasts(prev => prev.filter(t => t.id !== newToast.id));
+        beginLeave(newToast.id);
       }, duration);
     }
-  }, []);
+  }, [beginLeave]);
 
   useEffect(() => {
     toastListeners.add(addToast);
@@ -115,7 +135,12 @@ export function Toaster() {
       {toasts.map((toast) => (
         <div
           key={toast.id}
-          className={`${getToastStyles(toast.type)} pointer-events-auto max-w-sm min-w-[280px]`}
+          className={`${getToastStyles(toast.type)} pointer-events-auto max-w-sm min-w-[280px] ${
+            leavingIds.has(toast.id)
+              ? 'opacity-0 translate-y-[var(--enter-y)] transition-[opacity,transform] duration-leave ease-leave'
+              : 'overlay-in'
+          }`}
+          style={leavingIds.has(toast.id) ? { animation: 'none' } : undefined}
           role="alert"
         >
           {getToastIcon(toast.type)}

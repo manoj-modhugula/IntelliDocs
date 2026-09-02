@@ -76,10 +76,6 @@ export class ErrorBoundary extends Component<Props, State> {
               Something went wrong
             </h1>
 
-            <p className="text-slate-600 dark:text-slate-400 mb-4">
-              We encountered an unexpected error.
-            </p>
-
             {errorId && (
               <div className="mb-4 inline-flex items-center gap-2 px-3 py-1.5 glass rounded-md text-sm text-slate-600 dark:text-slate-300 font-mono">
                 <span>ID: {errorId}</span>

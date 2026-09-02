@@ -65,7 +65,7 @@ function ConversationRow({
       initial={{ opacity: 0, x: -10, scale: 0.98 }}
       animate={{ opacity: 1, x: 0, scale: 1 }}
       exit={{ opacity: 0, x: 24, scale: 0.94, height: 0, marginTop: 0, marginBottom: 0 }}
-      transition={{ type: 'spring', stiffness: 420, damping: 34, mass: 0.8 }}
+      transition={{ duration: 0.34, ease: [0.22, 1, 0.36, 1] }}
       className="group/list overflow-hidden"
     >
       <div
@@ -203,8 +203,8 @@ export const ChatSidebar = memo(function ChatSidebar({
         ref={leftPanelRef}
         className={cn(
           'flex-shrink-0 flex flex-col w-[240px] glass border-r border-white/20 dark:border-white/10',
-          'transition-[width,min-width,opacity] duration-200 ease-out',
-          'max-md:fixed max-md:inset-y-0 max-md:left-0 max-md:z-40 max-md:transform max-md:transition-transform max-md:duration-200 max-md:ease-out',
+          'transition-[width,min-width,opacity] duration-snap ease-snap',
+          'max-md:fixed max-md:inset-y-0 max-md:left-0 max-md:z-40 max-md:transform max-md:transition-transform max-md:duration-snap max-md:ease-snap',
           !sidebarOpen && 'max-md:translate-x-[-100%]',
           sidebarCollapsed && 'md:w-0 md:min-w-0 md:overflow-hidden md:border-0 md:opacity-0 md:pointer-events-none'
         )}

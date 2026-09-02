@@ -60,7 +60,6 @@ export default function RegisterPage() {
             <Sparkles className="w-7 h-7" />
           </span>
           <h1 className="page-title mt-4">IntelliDocs</h1>
-          <p className="text-muted mt-2">Create your account</p>
         </div>
 
         <Card className="p-8">
@@ -82,7 +81,7 @@ export default function RegisterPage() {
             </div>
 
             <div>
-              <Label htmlFor="email">Email address</Label>
+              <Label htmlFor="email">Email</Label>
               <Field
                 id="email"
                 type="email"
@@ -106,7 +105,6 @@ export default function RegisterPage() {
                 placeholder="••••••••"
                 autoComplete="new-password"
               />
-              <p className="mt-1 text-xs text-muted">Must be at least 8 characters</p>
             </div>
 
             <div>
