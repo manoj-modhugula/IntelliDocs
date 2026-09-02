@@ -191,7 +191,7 @@ export default function WorkspacesPage() {
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <div>
-            <h1 className="text-lg font-semibold text-slate-900 dark:text-slate-100">Workspaces</h1>
+            <h1 className="page-title text-[1.45rem] sm:text-[1.65rem]">Workspaces</h1>
             <p className="text-sm text-slate-600 dark:text-slate-400">
               Organize documents into separate workspaces
             </p>
@@ -201,15 +201,15 @@ export default function WorkspacesPage() {
           ) : isAuthenticated ? (
             <button
               onClick={() => setIsCreating(true)}
-              className="flex items-center gap-2 px-4 py-2 glass text-slate-900 dark:text-slate-100 rounded-lg hover:bg-black/5 dark:hover:bg-white/8 transition-colors text-sm font-medium"
+              className="btn btn-primary !py-2 !px-4 text-sm"
             >
               <Plus className="w-4 h-4" />
-              New Workspace
+              New workspace
             </button>
           ) : (
             <Link
               href="/login"
-              className="flex items-center gap-2 px-4 py-2 glass text-slate-900 dark:text-slate-100 rounded-lg hover:bg-black/5 dark:hover:bg-white/8 transition-colors text-sm font-medium"
+              className="btn btn-secondary !py-2 !px-4 text-sm"
             >
               Sign in to create workspaces
             </Link>
@@ -225,28 +225,28 @@ export default function WorkspacesPage() {
               exit={{ opacity: 0, height: 0 }}
               className="mb-6 overflow-hidden"
             >
-              <div className="p-4 glass-card rounded-xl">
+              <div className="card p-4 sm:p-5">
                 <div className="space-y-3">
                   <input
                     type="text"
                     placeholder="Workspace name"
                     value={newName}
                     onChange={(e) => setNewName(e.target.value)}
-                    className="w-full px-3 py-2 glass-input rounded-lg text-slate-900 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-white/30 dark:focus:ring-white/20"
+                    className="field"
                     autoFocus
                   />
                   <textarea
                     placeholder="Optional: what this workspace is for"
                     value={newDescription}
                     onChange={(e) => setNewDescription(e.target.value)}
-                    className="w-full px-3 py-2 glass-input rounded-lg text-slate-900 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-white/30 dark:focus:ring-white/20 resize-none"
+                    className="field resize-none"
                     rows={2}
                   />
                   <div className="flex gap-2">
                     <button
                       onClick={createWorkspace}
                       disabled={!newName.trim()}
-                      className="flex items-center gap-2 px-4 py-2 glass text-slate-900 dark:text-slate-100 rounded-lg hover:bg-black/5 dark:hover:bg-white/8 transition-colors text-sm disabled:opacity-50"
+                      className="btn btn-primary !py-2 !px-4 text-sm"
                     >
                       <Check className="w-4 h-4" />
                       Create
@@ -257,7 +257,7 @@ export default function WorkspacesPage() {
                         setNewName('');
                         setNewDescription('');
                       }}
-                      className="flex items-center gap-2 px-4 py-2 glass text-slate-700 dark:text-slate-300 rounded-lg hover:bg-black/5 dark:hover:bg-white/8 transition-colors text-sm"
+                      className="btn btn-secondary !py-2 !px-4 text-sm"
                     >
                       <X className="w-4 h-4" />
                       Cancel
@@ -416,8 +416,7 @@ const WorkspaceCard = memo(function WorkspaceCard({
       tabIndex={0}
       onKeyDown={(e) => e.key === 'Enter' && onOpen()}
       className={cn(
-        'group relative p-4 rounded-xl glass-card',
-        'hover:bg-black/5 dark:hover:bg-white/8 transition-all cursor-pointer'
+        'group relative p-4 item-row cursor-pointer'
       )}
     >
       {/* Icon */}

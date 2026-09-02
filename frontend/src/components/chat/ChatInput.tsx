@@ -169,11 +169,11 @@ export const ChatInput = memo(function ChatInput({
 
   return (
     <>
-      <div className="flex-shrink-0 border-t border-white/20 dark:border-white/10 glass p-3 sm:p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]">
+      <div className="flex-shrink-0 glass p-3 sm:p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]">
         <form onSubmit={handleSubmit} className="max-w-4xl mx-auto">
           {selectedSkill && (
             <div className="flex items-center gap-2 mb-2">
-              <span className="tag-accent inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-medium">
+              <span className="chip !py-1 !px-2.5 text-xs" data-active="true">
                 {chatSkills.find((s) => s.id === selectedSkill)?.name ?? selectedSkill.replace(/_/g, ' ')}
                 <button
                   type="button"
@@ -187,7 +187,7 @@ export const ChatInput = memo(function ChatInput({
             </div>
           )}
 
-          <div className="glass-interactive flex items-center gap-2 rounded-xl glass-input focus-within:ring-2 focus-within:ring-slate-300/50 dark:focus-within:ring-slate-500/50 focus-within:border-white/60 dark:focus-within:border-white/20 overflow-hidden">
+          <div className="field flex items-center gap-2 overflow-hidden !p-0">
             <textarea
               ref={inputRef}
               value={input}
@@ -198,9 +198,8 @@ export const ChatInput = memo(function ChatInput({
               rows={1}
               aria-label="Ask a question about your documents"
               className={cn(
-                'flex-1 min-h-[56px] py-3 px-4 resize-none bg-transparent',
-                'text-slate-900 dark:text-slate-100 placeholder-slate-500 dark:placeholder-slate-400',
-                'focus:outline-none',
+                'flex-1 min-h-[56px] py-3 px-4 resize-none bg-transparent text-ink',
+                'placeholder:text-[var(--field-placeholder)] focus:outline-none',
                 'disabled:opacity-50 disabled:cursor-not-allowed'
               )}
               style={{ maxHeight: '200px' }}
@@ -211,7 +210,7 @@ export const ChatInput = memo(function ChatInput({
                 onClick={onStop}
                 aria-label="Stop generating"
                 title="Stop generating"
-                className="flex-shrink-0 p-2.5 mr-2 rounded-lg self-center glass text-slate-900 dark:text-slate-100"
+                className="icon-btn flex-shrink-0 mr-2 self-center"
               >
                 <Square className="w-5 h-5" aria-hidden />
               </button>
@@ -222,11 +221,8 @@ export const ChatInput = memo(function ChatInput({
                 aria-label="Send message"
                 title="Send message"
                 className={cn(
-                  'flex-shrink-0 p-2.5 mr-2 rounded-lg transition-[color,background-color,transform,box-shadow] duration-150 self-center glass',
-                  'send-button',
-                  input.trim() && !disabled
-                    ? 'text-slate-900 dark:text-slate-100'
-                    : 'opacity-60 cursor-not-allowed text-slate-500 dark:text-slate-400'
+                  'send-button flex-shrink-0 mr-2 self-center',
+                  input.trim() && !disabled ? 'logo-mark !h-10 !w-10' : 'icon-btn opacity-60 cursor-not-allowed'
                 )}
               >
                 <Send className="w-5 h-5" aria-hidden />

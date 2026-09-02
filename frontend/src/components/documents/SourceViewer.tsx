@@ -236,18 +236,18 @@ export function SourceViewer({
     >
       <button
         type="button"
-        className="absolute inset-0 bg-slate-900/40 dark:bg-black/60"
+        className="absolute inset-0 bg-[rgba(15,23,42,0.38)]"
         aria-label="Close source"
         onClick={onClose}
       />
-      <aside className="relative flex h-full w-full max-w-xl flex-col glass-card border-l border-white/20 dark:border-white/10 shadow-2xl bg-[#f4efe4] dark:bg-[#1a1814]">
-        <header className="flex items-start gap-3 px-4 py-3 border-b border-black/10 dark:border-white/10">
-          <FileText className="mt-0.5 h-4 w-4 flex-shrink-0 text-amber-800 dark:text-amber-300" />
+      <aside className="relative flex h-full w-full max-w-xl flex-col sidebar-chrome rounded-none">
+        <header className="flex items-start gap-3 px-4 py-3">
+          <FileText className="mt-0.5 h-4 w-4 flex-shrink-0 text-ink-soft" />
           <div className="min-w-0 flex-1">
-            <p id="source-viewer-title" className="truncate text-sm font-semibold text-slate-900 dark:text-amber-50">
+            <p id="source-viewer-title" className="truncate text-sm font-semibold text-ink">
               {target.documentName}
             </p>
-            <p className="mt-0.5 flex items-center gap-1.5 text-[11px] uppercase tracking-[0.14em] text-amber-800/80 dark:text-amber-200/70">
+            <p className="mt-0.5 flex items-center gap-1.5 text-[11px] uppercase tracking-[0.14em] text-muted">
               <Highlighter className="h-3 w-3" />
               {target.pageNumber ? `Page ${target.pageNumber}` : 'Source passage'}
             </p>
@@ -255,7 +255,7 @@ export function SourceViewer({
           <button
             type="button"
             onClick={onClose}
-            className="rounded-lg p-1.5 text-slate-600 hover:bg-black/5 dark:text-amber-100 dark:hover:bg-white/10"
+            className="icon-btn !h-9 !w-9"
             aria-label="Close source viewer"
           >
             <X className="h-4 w-4" />
